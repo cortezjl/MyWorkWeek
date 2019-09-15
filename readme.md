@@ -12,3 +12,37 @@ Producing the weekly work schedule is being done manually and the manager writin
 I want to create a scheduling system that will allow users to submit time off requests and that managers can create a weekly work schedule that includes any current employees.  The time off request information needs to be available when creating the schedule for the work week to try an accommodate any days/times that the employees need off.
 An administrator user will need to be able to enter the users that can access the system and some info about the employees such as date of birth, dates of employment and roles (FOH, BOH)
 
+Project Technologies/Techniques
+Security/Authentication
+Tomcat's JDBC Realm Authentication
+Admin role: create/read/update/delete (crud) of all data
+User role: create trail, create trail report, edit data they have entered previously
+All: anyone can view trail information (no login)
+Database
+MySQL
+Store employee data
+Store all time off requests and week week schedules
+ORM Framework
+Hibernate 5
+Dependency Management
+Maven
+Web Services consumed using Java
+XXXX API for xxx
+CSS
+Bootstrap or Materialize
+Data Validation
+Bootstrap Validator for front end
+Explore Hibernate's validation
+Logging
+Configurable logging using Log4J2. In production, only errors will normally be logged, but logging at a debug level can be turned on to facilitate trouble-shooting.
+Hosting
+AWS
+Independent Research Topic/s
+CI tools in AWS
+Materialize
+Hibernate Validation
+Hibernate Search
+Project Lombok to eliminate boilerplate code like getters/setters/equals
+Unit Testing
+JUnit5 tests to achieve 80%+ code coverage
+IDE: IntelliJ IDEA
