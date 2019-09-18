@@ -5,20 +5,20 @@
 - [x] Create project structure in intellij and push
 - [ ] Add link to list of indie projects in student repo.
 - [x] Complete Problem Statement
-- [ ] Determine possible Web Services or APIs to use
+- [X ] Determine possible Web Services or APIs to use
 - [x] List technologies, versions and how they will be used
 - [x] Weekly journal entry
 - [x] Write project plan
-- [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
+- [ ] Document application flow in text and pictures 
 - [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
 - [ ] Complete database design
-- [ ] Create the database and employee table
+- [ ] Create the database and user, roles and user_roles tables
 - [ ] Create the employee entity class and annotate for hibernate
-- [ ] Create employee dao
+- [ ] Create user, roles and user_roles dao
 - [ ] Create the test database
-- [ ] Create employee dao unit tests
+- [ ] Create user, roles and user_roles dao unit tests
 - [ ] Weekly journal entry
 - [ ] Set up logging
 - [ ] Create class uml diagram
