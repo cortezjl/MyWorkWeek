@@ -16,6 +16,6 @@ Started week 3 custom tag library demo and activity.
 
 ### Sunday, Sept 14th 8 hours
 Didn't have week 3 activity for custom tag library working.  Completed this weeks readings, which helped.  Was able to 
-get the activity completed and the weeklyk exercise.  Created private repositories for both and added Paula as a 
+get the activity completed and the weekly exercise.  Created private repositories for both and added Paula as a 
 collaborator, so she has access to review them.  Added ProjectPlan for the individual project, using Paula's example as
 a model.
