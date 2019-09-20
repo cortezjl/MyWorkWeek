@@ -14,8 +14,25 @@ files should be processed.  Had trouble figuring out how to test the FileNotFoun
 the exception and not catch them, then it returned the exception to the test correctly.
 Started week 3 custom tag library demo and activity.
 
-### Sunday, Sept 14th 8 hours
+### Sunday, Sept 15th 8 hours
 Didn't have week 3 activity for custom tag library working.  Completed this weeks readings, which helped.  Was able to 
 get the activity completed and the weekly exercise.  Created private repositories for both and added Paula as a 
 collaborator, so she has access to review them.  Added ProjectPlan for the individual project, using Paula's example as
 a model.
+
+### Monday, Sept 16th 2 hours
+Started creating initial draft of some of the screens that will be needed, using paint for now.
+
+
+### Tuesday, Sept 17th 2 hours
+Created some additional initial version of some screens.  Started working on a flow document, but not sure if we are 
+documenting from the user perspective, the actions that will occur of if documenting the flow from a technical perspective.
+
+### Wednesday, Sept 18th
+Class night.  Made additional updates to the readme file.  Looked for an API to use again.  Initially will use 
+Workingdays API, which I can incorporate into the weekly schedule (create or display) to display the wording of any 
+holidays that occur during that week.  Can display it below the day/date.
+
+### Thursday, Sept 19th
+Started week 4 demos.  Finished DAO Demo.  Started Hibernate demos.  Left off at 11 minutes 32 seconds
+on Hibernate demo part 2.  Created UserDaoTest Junit tests and have them working.
