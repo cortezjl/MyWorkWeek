@@ -36,3 +36,6 @@ holidays that occur during that week.  Can display it below the day/date.
 ### Thursday, Sept 19th
 Started week 4 demos.  Finished DAO Demo.  Started Hibernate demos.  Left off at 11 minutes 32 seconds
 on Hibernate demo part 2.  Created UserDaoTest Junit tests and have them working.
+
+### Friday, Sept 20th 3 hours
+Finished week 4 demos. path for mydumpsql is not populated, so sent slack message for that.
