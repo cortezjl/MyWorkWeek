@@ -20,3 +20,9 @@ Class night.  Made additional updates to the readme file.  Looked for an API to 
 Workingdays API, which I can incorporate into the weekly schedule (create or display) to display the wording of any 
 holidays that occur during that week.  Can display it below the day/date.
 
+### Saturday, Sept 21st
+Re-worked a couple screen designs, for home screen and for Add/Edit Users.
+
+### Sunday, Sept 22nd
+Finished cleaning up user stories (for now).  Updated screen shots and added a couple new one.  Put them in same order
+as listed in application flow document.  Creating initial screen designs helped worked through application flow, somewhat.
