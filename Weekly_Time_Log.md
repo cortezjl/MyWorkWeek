@@ -39,3 +39,9 @@ on Hibernate demo part 2.  Created UserDaoTest Junit tests and have them working
 
 ### Friday, Sept 20th 3 hours
 Finished week 4 demos. path for mydumpsql is not populated, so sent slack message for that.
+
+### Saturday Sept 21st 8 hours
+Cleaned up some duplicate code in week for activity.  Worked on week 4 exercise.  Worked on screen shots.
+
+### Sunday Sept 22nd 6 hours
+Finished cleaning up user stories for individual project.
