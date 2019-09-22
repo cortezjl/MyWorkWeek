@@ -3,19 +3,19 @@
 ### Week 3
 - [x] Create project repository on GitHub
 - [x] Create project structure in intellij and push
-- [ ] Add link to list of indie projects in student repo.
+- [x] Add link to list of indie projects in student repo.
 - [x] Complete Problem Statement
-- [X ] Determine possible Web Services or APIs to use
+- [x] Determine possible Web Services or APIs to use
 - [x] List technologies, versions and how they will be used
 - [x] Weekly journal entry
 - [x] Write project plan
-- [ ] Document application flow in text and pictures 
+- [x] Document application flow 
 - [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
-- [ ] Complete database design
+- [ ] Create and complete database design
 - [ ] Create the database and user, roles and user_roles tables
-- [ ] Create the employee entity class and annotate for hibernate
+- [ ] Create the user, roles and user_roles entity class and annotate for hibernate
 - [ ] Create user, roles and user_roles dao
 - [ ] Create the test database
 - [ ] Create user, roles and user_roles dao unit tests
@@ -26,27 +26,27 @@
 
 
 ### Week 5
-
-- [ ] Create the template for all jsps using bootstrap or materialize
+- [ ] Create the template for all jsps using bootstrap 4
 - [ ] Weekly journal entry
 - [ ] Add the timeOffRequest table
 - [ ] Add the timeOffRequest entity
 - [ ] Create the timeOffRequest dao
 - [ ] Create the timeOffRequest dao unit tests
-- [ ] Add a jsp to display employee and timeOffRequests
-- [ ] Add jsp to add an employee
+- [ ] Add a jsp to display users and timeOffRequests
+- [ ] Add jsp to add a user
+- [ ] Add jsp to add time off request
 
 ### Week 6
-
+- [ ] Add update and delete functionality in jsp for user and timeOffRequest
 - [ ] Create db on AWS
 - [ ] Deploy to AWS for first time
 - [ ] Weekly journal entry
-- [ ] Create schedule table
-- [ ] Add the schedule entity (test and prod dbs)
-=- [ ] Add update and delete functionality in jsp for user and timeOffRequest
+- [ ] Create schedule and schedule_detail table
+- [ ] Add the schedule and schedule_detail entity (test and prod dbs)
 - [ ] Build the Schedule display jsp
-- [ ] Build the Schedule add/update/delete jsp
-- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
+- [ ] Build the Schedule add/update jsp
+- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO 
+implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
@@ -54,8 +54,8 @@
 - [ ] Weekly journal entry
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
-- [ ] Add the Schedule table, populate with data, (test and prod dbs)
-- [ ] Create the timeOffRequest and schedule entities
+- [ ] Add the Schedule and schedule_detail table, populate with data, (test and prod dbs)
+- [ ] Create the schedule and schedule_detail entities
 - [ ] Update Trail and Trail report to use trail type and grooming
 - [ ] Update Trail and Trail report tests to be sure they work with the new relationships
 - [ ] Review and incorporate any feedback from Checkpoint 2.
@@ -75,18 +75,18 @@
 
 ### Week 9
 - [ ] Weekly journal entry
-- [ ] Integration with weather service and/or snow depth data
+- [ ] Integration with working days to retrieve public holidays into schedule
 - [ ] Review and incorporate feedback from Checkpoint 3.
 - [ ] Carefully review code for standards and best practices - use a code quality tool? 
 
 ### Week 8
 - [ ] Weekly journal entry
-- [ ] Implement paging of search results
 - [ ] Code review
 
 ### Week 9
 - [ ] Weekly journal entry
-- [ ] Add password reset/reminder functionality
+- [ ] Implement paging of search results
+
 
 ### Week 10
 - [ ] Weekly journal entry
