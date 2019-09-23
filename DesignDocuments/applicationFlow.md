@@ -38,14 +38,6 @@ pages, depending on the user's role(s).  JDBCRealm used for authentication (user
 1. Dao updates the user and user_roles to the database
 1. Servlet sends confirmation to Add/Edit user page that the user has been updated.
 
-### Delete User
-1. Option only available to logged in users with proper role
-1. User clicks on delete icon on for a user that is displayed
-1. Details are sent to Add/Edit user servlet with Delete Indicator
-1. Servlet sends objects to dao
-1. Dao retrieves and deletes the user and user_roles from the database
-1. Servlet sends confirmation to Add/Edit user page that the user has been updated.
-
 ### Create Weekly Schedule
 1. Option only available to logged in users with proper role 
 1. User enters the schedules starting week date
