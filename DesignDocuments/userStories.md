@@ -1,32 +1,29 @@
-#User Stories
+# User Stories
 
-###Sign In
+### Sign In
 As an established user I want to log in so that I can access the weekly work schedule and time off requests.
 
-###Add new user
+### Add new user
 As an administrator I want to control the ability create an account for new users so only users that have been granted access can use the application.  As an administrator I want to control what type of user each user is to control what functionality the user is able to use.  Employee start and end dates are also needed for each user to control whether the user should be included on the schedule or not.  Employees may leave and return at a later date or they may be hired but not starting right away.
 
-###Find user(s)
+### Find user(s)
 As an administrator I want to be search for any existing users
 
 ### Modify User
 As an administrator I want to be able to modify user data.  User roles may change over time or users may leave so need to update their end date
 
-###Create Schedule
+### Create Schedule
 As a management user I want to be able to create a weekly work schedule that includes all active users, with the 
 exception of a user that is an administrator only.
 
-###Edit Schedule
+### Edit Schedule
 As a management user I want to be able to modify an existing weekly work schedule.
 
-###View Schedule
+### View Schedule
 As any user, I want to be able to view and print a weekly work schedule.
 
-###Add Time Off Request
+### Add Time Off Request
 As any user, I want to be able to add a new request for time off for one or more days and for partial days.
 
-###View Time Off Requests
+### View Time Off Requests
 As any user, I want to be able to search for any time off requests I have made.
-
-###About
-As a user I want to find out more information about this site so that I can make contact the administrator.
