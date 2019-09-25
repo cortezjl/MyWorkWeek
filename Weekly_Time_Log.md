@@ -45,3 +45,11 @@ Cleaned up some duplicate code in week for activity.  Worked on week 4 exercise.
 
 ### Sunday Sept 22nd 6 hours
 Finished cleaning up user stories for individual project.
+
+### Monday Sept 23rd 1 hour
+Created Role, RoleDao and RoleDao test.  Need to verify if this table is needed or not.
+
+### Tuesday, Sept 24th 2 hours
+Reversed some coding changes to the week 4 demo changes that were made to the week 1 exercise and also to the week 4 
+exercise.  I think I misunderstood what needed to be cleaned up as duplicate code.
+

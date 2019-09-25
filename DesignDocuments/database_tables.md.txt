@@ -1,0 +1,116 @@
+--
+-- Create Table structure for table `Role`
+--
+
+CREATE TABLE `Role` (
+  `id`   int(11)     NOT NULL AUTO_INCREMENT,
+  `name` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+ insert into Role values (1, 'Administrator');
+ insert into Role values (2, 'Manager');
+ insert into Role values (3, 'Front Of House');
+ insert into Role values (4, 'Back of House');
+ insert into Role values (5, 'Busser');
+
+--
+-- Create Table structure for table `User`
+--
+
+CREATE TABLE `User` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  'cellphone'  varchar(10)  DEFAULT NULL,
+  `createDate` datetime     DEFAULT NULL,
+  'dateOfBirth' date        DEFAULT NULL,
+  `email`      varchar(255) DEFAULT NULL,
+  `endDate` datetime        DEFAULT NULL,
+  `firstName`  varchar(25) DEFAULT NULL,
+  'homephone'  varchar(10)  DEFAULT NULL,
+  `lastName`   varchar(30) DEFAULT NULL,
+  `password`   varchar(255) DEFAULT NULL,
+  `startDate` datetime      DEFAULT NULL,
+  `updateDate` datetime DEFAULT NULL,
+  `userName`   varchar(15) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `userName_UNIQUE` (`userName`)
+) 
+
+ insert into user values (1, 'None', 'xxx', 'xxx', '', '99991231', 'Administrator', 'None', 'Administrator','admin', '20000101', 'xxx', 'admin');
+
+
+--
+-- Create Table structure for table `User_Role`
+--
+
+CREATE TABLE `User_Role` (
+  `id`         int(11)      NOT NULL AUTO_INCREMENT,
+  `role`       varchar(255) DEFAULT NULL,
+  `createDate` datetime     DEFAULT NULL,
+  `updateDate` datetime     DEFAULT NULL,
+  `userName`   varchar(15)  NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `userName_UNIQUE` (`userName`),
+  CONSTRAINT `User_Role_User_userName_fk` FOREIGN KEY (`userName`) REFERENCES `User` (`userName`)
+  CONSTRAINT `User_Role_Role_role_fk`     FOREIGN KEY (`role`)     REFERENCES `Role` (`role`)
+) 
+
+--
+-- Create Table structure for table `Time_Off_Request`
+--
+
+CREATE TABLE `Time_Off_Request` (
+  `id`         int(11)      NOT NULL AUTO_INCREMENT,
+  `startDate` datetime      DEFAULT NULL,
+  `endDate` datetime        DEFAULT NULL,
+  `createDate` datetime     DEFAULT NULL,
+  `updateDate` datetime     DEFAULT NULL,
+  `userName`   varchar(15)  NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `Time_Off_Request_User_userName_fk` FOREIGN KEY (`userName`) REFERENCES `User` (`userName`)
+) 
+
+--
+-- Create Table structure for table `Schedule`
+--
+
+CREATE TABLE `Schedule` (
+  `id`         int(11)      NOT NULL AUTO_INCREMENT,
+  `startDate` datetime      DEFAULT NULL,
+  `endDate` datetime        DEFAULT NULL,
+  `createDate` datetime     DEFAULT NULL,
+  `updateDate` datetime     DEFAULT NULL,
+  PRIMARY KEY (`id`),
+) 
+
+--
+-- Create Table structure for table `Schedule_Detail`
+--
+
+CREATE TABLE `Schedule_Detail` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `startDate` datetime      DEFAULT NULL,
+  `endDate` datetime        DEFAULT NULL,
+  'startTime1 varchar(07) DEFAULT NULL,
+  'endTime1   varchar(07) DEFAULT NULL,
+  'startTime2 varchar(07) DEFAULT NULL,
+  'endTime2   varchar(07) DEFAULT NULL,
+  'startTime3 varchar(07) DEFAULT NULL,
+  'endTime3   varchar(07) DEFAULT NULL,
+  'startTime4 varchar(07) DEFAULT NULL,
+  'endTime4   varchar(07) DEFAULT NULL,
+  'startTime5 varchar(07) DEFAULT NULL,
+  'endTime5   varchar(07) DEFAULT NULL,
+  'startTime6 varchar(07) DEFAULT NULL,
+  'endTime6   varchar(07) DEFAULT NULL,
+  'startTime7 varchar(07) DEFAULT NULL,
+  'endTime7   varchar(07) DEFAULT NULL,
+  `userName`   varchar(15) NOT NULL,
+  `schedule` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+  CONSTRAINT `Schedule_Detail_User_userName_fk` FOREIGN KEY (`userName`) REFERENCES `User` (`userName`)
+  KEY `Schedule_Detail_Schedule_id_fk` (`schedule`),
+  CONSTRAINT `Schedule_Detail_Schedule_id_fk` FOREIGN KEY (`schedule`) REFERENCES `Schedule` (`id`)
+) 
+
+
