@@ -27,3 +27,9 @@ As any user, I want to be able to add a new request for time off for one or more
 
 ### View Time Off Requests
 As any user, I want to be able to search for any time off requests I have made.
+
+### Note:  
+None of these User, Schedule or Time Off Requests will allow for data to be deleted.  
+
+I want to retain all historical information.  Since this is used for a small business, volume will grow over time, but dates on the various areas will be
+used to retrieve date needed such as only active users for the schedule.
