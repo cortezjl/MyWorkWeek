@@ -39,10 +39,6 @@ public class RoleDaoTest {
         assertEquals("Manager", retrievedRole.getName());
     }
 
-    // getAll
-    // getByPropertyEqual
-    // getByPropertyLike
-
     /**
      * Tests Save or update for success.
      */
