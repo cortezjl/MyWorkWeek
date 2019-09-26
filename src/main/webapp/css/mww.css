@@ -1,0 +1,38 @@
+/*  Project 4
+    Julie Cortez
+    Starting CSS */
+.wrapper {
+    background-color: #e9eef5;
+}
+.container {
+    background-color: white;
+}
+
+
+.jumbotron {
+    background-color: #F7F0D4;
+    color: #B84014;
+}
+
+
+body, footer {
+    background-color: #F7F0D4;
+}
+
+/* Desktops and Laptops with 768px or wider ---------- */
+@media screen and (min-width: 768px){
+    .right-align {
+        text-align: right;
+    }
+}
+
+/* When printing ---------- */
+@media print and (min-width: 768px){
+    header h1, body footer p {
+        display: none;
+    }
+
+    a:after{
+        content:" [" attr(href) "] ";
+    }
+}
