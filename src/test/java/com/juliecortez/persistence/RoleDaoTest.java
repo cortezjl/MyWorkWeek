@@ -24,7 +24,7 @@ public class RoleDaoTest {
         dao = new RoleDao();
 
         Database database = Database.getInstance();
-        database.runSQL("cleanRoleTable.sql");
+        database.runSQL("cleandb.sql");
     }
 
     /**
