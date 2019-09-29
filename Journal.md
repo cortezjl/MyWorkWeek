@@ -26,3 +26,9 @@ Re-worked a couple screen designs, for home screen and for Add/Edit Users.
 ### Sunday, Sept 22nd
 Finished cleaning up user stories (for now).  Updated screen shots and added a couple new one.  Put them in same order
 as listed in application flow document.  Creating initial screen designs helped worked through application flow, somewhat.
+
+### Thursday, Sept 26th
+Created inital version of some of the jsp's
+
+
+

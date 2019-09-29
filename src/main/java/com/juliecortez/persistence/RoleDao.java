@@ -76,6 +76,7 @@ public class RoleDao {
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Role> query = builder.createQuery( Role.class );
+        builder = session.getCriteriaBuilder();
         Root<Role> root = query.from( Role.class );
         List<Role> roles = session.createQuery( query ).getResultList();
 

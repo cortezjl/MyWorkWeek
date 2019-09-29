@@ -29,7 +29,7 @@ CREATE TABLE `User` (
   'homephone'  varchar(10)  DEFAULT NULL,
   `lastName`   varchar(30) DEFAULT NULL,
   `password`   varchar(255) DEFAULT NULL,
-  `startDate` datetime      DEFAULT NULL,
+  `startDate` date     DEFAULT NULL,
   `updateDate` datetime DEFAULT NULL,
   `userName`   varchar(15) NOT NULL,
   PRIMARY KEY (`id`),
@@ -45,9 +45,9 @@ CREATE TABLE `User` (
 
 CREATE TABLE `User_Role` (
   `id`         int(11)      NOT NULL AUTO_INCREMENT,
-  `role`       varchar(255) DEFAULT NULL,
   `createDate` datetime     DEFAULT NULL,
   `updateDate` datetime     DEFAULT NULL,
+  `role`       varchar(255) DEFAULT NULL,
   `userName`   varchar(15)  NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `userName_UNIQUE` (`userName`),

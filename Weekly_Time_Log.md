@@ -1,5 +1,5 @@
 
-###Wednesday, Sept 11th 1.5 hours
+### Wednesday, Sept 11th 1.5 hours
 Work on Week 2 Exercise Inverse Capchta.java getting FileInputStream working.  Started logic for determineInverseCaptcha 
 method 
 
@@ -52,4 +52,17 @@ Created Role, RoleDao and RoleDao test.  Need to verify if this table is needed 
 ### Tuesday, Sept 24th 2 hours
 Reversed some coding changes to the week 4 demo changes that were made to the week 1 exercise and also to the week 4 
 exercise.  I think I misunderstood what needed to be cleaned up as duplicate code.
+
+### Wednesday, Sept 25th 1 hour
+During class, started watching week 5 Hibernate videos
+
+### Thursday, Sept 26th 1 hour
+Created the start of some jsp's for my individual project
+
+### Friday, Sept 27th 1 hour
+Continued working on week 5 Hibernate demo
+
+### Saturday, Sept 28th 6 hours
+Finished week 5 Hibernate demo and completed the week 5 exercise.  Watched the additional videos on .equals and Generic
+Dao.  Added the .equals changes into the week 5 exercise
 

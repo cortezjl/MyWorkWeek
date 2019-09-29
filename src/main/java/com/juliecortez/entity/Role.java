@@ -12,8 +12,6 @@ import javax.persistence.*;
 @Entity(name = "Role") // Annotation to indicate this class is to be managed by Hibernate.  This is the name of the class
 @Table(name = "Role") // case sensitive!   This is the name of the table
 public class Role {
-    private String name;
-
     // Every Entity must have a unique identifier which is annotated @Id
     // Notice there is no @Column here as the column and instance variable name are the same
     @Id
@@ -21,14 +19,16 @@ public class Role {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
+    private String name;
+
     /**
-     * Instantiates a new Role.
+     * Instantiates a new Role.  Empty constructor
      */
     public Role() {
     }
 
     /**
-     * Instantiates a new Role.
+     * Instantiates a new Role.  Constructor with name parameter
      *
      * @param name the name
      */
