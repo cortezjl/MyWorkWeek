@@ -4,17 +4,16 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * The type User.
+ * A class to represent a user.
  *
  * @author JCortez
  */
-@Entity(name = "User") // Annotation to indicate this class is to be managed by Hibernate.  This is the name of this java class
-@Table(name = "User") // case sensitive!   This is the name of the table
+@Entity(name = "User") // Annotation to indicate this class is to be managed by Hibernate.  This is the name of the class
+@Table(name = "user") // case sensitive!   This is the name of the table
 public class User {
     // Every Entity must have a unique identifier which is annotated @Id
     // Notice there is no @Column here as the column and instance variable name are the same
@@ -23,24 +22,42 @@ public class User {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
-    private String cellPhone;
-    private LocalDateTime createDate;
-    private LocalDate dateOfBirth;
-    private String email;
-    private LocalDate endDate;
+    @Column(name = "first_name") // Use @Column annotation when variable name does not match database column name
     private String firstName;
-    private String homePhone;
-    private String lastName;
-    private String password;
-    private LocalDate startDate;
-    private LocalDateTime updateDate;
 
-    @OneToMany(mappedBy = "User", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<UserRole> userRole = new HashSet<>();   // Hold collection/set of roles for the user - one user to possibly many roles
+    @Column(name = "last_name")
+    private String lastName;
+
+    @Column(name = "user_name")
+    private String userName;
+
+    @Column(name = "date_of_birth")
+    private LocalDate dateOfBirth;
 
 
     /**
-     * Instantiates a new User.  Empty constructor
+     * Bidirectional @OneToMany
+
+     The bidirectional @OneToMany association also requires a @ManyToOne association on the child side.
+     Although the Domain Model exposes two sides to navigate this association, behind the scenes,
+     the relational database has only one foreign key for this relationship.
+
+     Every bidirectional association must have one owning side only (the child side),
+     the other one being referred to as the inverse (or the mappedBy) side.
+
+     Foreign key is on the child table (Order in this example)
+
+     Source: http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#associations-one-to-many
+
+     cascadeType is for how the database should handle an object that is deleted, ie delete from other tables where value is used
+     orphanRemoval has to do with Hibernate removing an object that has been deletee
+     */
+    // There is one User with zero to many orders
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<UserRole> userRoles = new HashSet<>();   // Hold collection/set of UserRoles for the user - zero to many
+
+    /**
+     * Instantiates a new User.
      */
     public User() {
     }
@@ -48,33 +65,18 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param cellPhone   the cell phone
-     * @param createDate  the create date
-     * @param dateOfBirth the date of birth
-     * @param email       the email
-     * @param endDate     the end date
      * @param firstName   the first name
-     * @param homePhone   the home phone
      * @param lastName    the last name
-     * @param password    the password
-     * @param startDate   the start date
-     * @param updateDate  the update date
-     * @param userRole    the user role
+     * @param userName    the user name
+     * @param dateOfBirth the date of birth
      */
-    public User(String cellPhone, LocalDateTime createDate, LocalDate dateOfBirth, String email, LocalDate endDate, String firstName, String homePhone, String lastName, String password, LocalDate startDate, LocalDateTime updateDate, Set<UserRole> userRole) {
-        this.cellPhone = cellPhone;
-        this.createDate = createDate;
-        this.dateOfBirth = dateOfBirth;
-        this.email = email;
-        this.endDate = endDate;
+    public User(String firstName, String lastName, String userName, LocalDate dateOfBirth) {
         this.firstName = firstName;
-        this.homePhone = homePhone;
         this.lastName = lastName;
-        this.password = password;
-        this.startDate = startDate;
-        this.updateDate = updateDate;
-        this.userRole = userRole;
+        this.userName = userName;
+        this.dateOfBirth = dateOfBirth;
     }
+
 
     /**
      * Gets id.
@@ -92,96 +94,6 @@ public class User {
      */
     public void setId(int id) {
         this.id = id;
-    }
-
-    /**
-     * Gets cell phone.
-     *
-     * @return the cell phone
-     */
-    public String getCellPhone() {
-        return cellPhone;
-    }
-
-    /**
-     * Sets cell phone.
-     *
-     * @param cellPhone the cell phone
-     */
-    public void setCellPhone(String cellPhone) {
-        this.cellPhone = cellPhone;
-    }
-
-    /**
-     * Gets create date.
-     *
-     * @return the create date
-     */
-    public LocalDateTime getCreateDate() {
-        return createDate;
-    }
-
-    /**
-     * Sets create date.
-     *
-     * @param createDate the create date
-     */
-    public void setCreateDate(LocalDateTime createDate) {
-        this.createDate = createDate;
-    }
-
-    /**
-     * Gets date of birth.
-     *
-     * @return the date of birth
-     */
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    /**
-     * Sets date of birth.
-     *
-     * @param dateOfBirth the date of birth
-     */
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    /**
-     * Gets email.
-     *
-     * @return the email
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * Sets email.
-     *
-     * @param email the email
-     */
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    /**
-     * Gets end date.
-     *
-     * @return the end date
-     */
-    public LocalDate getEndDate() {
-        return endDate;
-    }
-
-    /**
-     * Sets end date.
-     *
-     * @param endDate the end date
-     */
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
     }
 
     /**
@@ -203,24 +115,6 @@ public class User {
     }
 
     /**
-     * Gets home phone.
-     *
-     * @return the home phone
-     */
-    public String getHomePhone() {
-        return homePhone;
-    }
-
-    /**
-     * Sets home phone.
-     *
-     * @param homePhone the home phone
-     */
-    public void setHomePhone(String homePhone) {
-        this.homePhone = homePhone;
-    }
-
-    /**
      * Gets last name.
      *
      * @return the last name
@@ -239,93 +133,91 @@ public class User {
     }
 
     /**
-     * Gets password.
+     * Gets user name.
      *
-     * @return the password
+     * @return the user name
      */
-    public String getPassword() {
-        return password;
+    public String getUserName() {
+        return userName;
     }
 
     /**
-     * Sets password.
+     * Sets user name.
      *
-     * @param password the password
+     * @param userName the user name
      */
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /**
-     * Gets start date.
+     * Gets dateOfBirth.
      *
-     * @return the start date
+     * @return the dateOfBirth
      */
-    public LocalDate getStartDate() {
-        return startDate;
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
     }
 
     /**
-     * Sets start date.
+     * Sets dateOfBirth.
      *
-     * @param startDate the start date
+     * @param dateOfBirth the date of birth
      */
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+
+    /**
+     * Gets orders.
+     *
+     * @return the orders
+     */
+    public Set<UserRole> getOrders() {
+        return userRoles;
     }
 
     /**
-     * Gets update date.
+     * Sets orders.
      *
-     * @return the update date
+     * @param userRoles the userRoles
      */
-    public LocalDateTime getUpdateDate() {
-        return updateDate;
+    public void setOrders(Set<UserRole> userRoles) {
+        this.userRoles = userRoles;
     }
 
     /**
-     * Sets update date.
+     * Add userRole.
      *
-     * @param updateDate the update date
+     * @param userRole the userRole
      */
-    public void setUpdateDate(LocalDateTime updateDate) {
-        this.updateDate = updateDate;
+    public void addUserRole(UserRole userRole) {
+        userRoles.add(userRole);
+        userRole.setUser(this);
     }
 
     /**
-     * Gets user role.
+     * Remove userRole.
      *
-     * @return the user role
+     * @param userRole the userRole
      */
-    public Set<UserRole> getUserRole() {
-        return userRole;
+    public void removeUserRole(UserRole userRole) {
+        userRoles.remove(userRole);
+        userRole.setUser(null);
     }
 
-    /**
-     * Sets user role.
-     *
-     * @param userRole the user role
-     */
-    public void setUserRole(Set<UserRole> userRole) {
-        this.userRole = userRole;
-    }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", cellPhone='" + cellPhone + '\'' +
-                ", createDate=" + createDate +
-                ", dateOfBirth=" + dateOfBirth +
-                ", email='" + email + '\'' +
-                ", endDate=" + endDate +
-                ", firstName='" + firstName + '\'' +
-                ", homePhone='" + homePhone + '\'' +
+                "id='" + id + '\'' +
+                "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", password='" + password + '\'' +
-                ", startDate=" + startDate +
-                ", updateDate=" + updateDate +
-                ", userRole=" + userRole +
+                ", userName='" + userName + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
                 '}';
     }
+
+
 }

@@ -3,48 +3,60 @@ package com.juliecortez.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 /**
- * The type User role.
+ * The type Order.
  */
-@Entity(name = "UserRole") // Annotation to indicate this class is to be managed by Hibernate.  This is the name of this java class
-@Table(name = "User_Role") // case sensitive!   This is the name of the table
+@Entity(name = "UserRole")  // name of this class
+@Table(name = "user_role")  // name of the table (case-sensitive)
 public class UserRole {
-    // Every Entity must have a unique identifier which is annotated @Id
-    // Notice there is no @Column here as the column and instance variable name are the same
+
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
-    @GenericGenerator(name = "native",strategy = "native")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    private LocalDateTime createDate;
-    private LocalDateTime updateDate;
+    private String description;
 
-    private Role role;
+    /**
+     * Bidirectional @OneToMany (this goes on user because is zero to many orders for a user)
+     The bidirectional @OneToMany association also requires a @ManyToOne association on the child side.
+     Although the Domain Model exposes two sides to navigate this association, behind the scenes,
+     the relational database has only one foreign key for this relationship.
 
-    @ManyToOne  // many Roles to one User - create the User object instead of just variable Id for the User
+     Every bidirectional association must have one owning side only (the child side),
+     the other one being referred to as the inverse (or the mappedBy) side.
+
+     Foreign key is on the child table (Order in this example)
+
+     By default, the @ManyToOne association assumes that the parent-side entity identifier is to be used to join
+     with the client-side entity Foreign Key column.
+
+     However, when using a non-Primary Key association,
+     the column description and foreign key should be used to instruct Hibernate
+     which column should be used on the parent side to establish the many-to-one database relationship.
+     Source: http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#associations-one-to-many
+     */
+
+
+    @ManyToOne  // many Orders to one User (a user may have zero to many orders) - create the User object instead of just variable userId
     private User user;
 
     /**
-     * Instantiates a new User role.
+     * Instantiates a new UserRole.
      */
     public UserRole() {
     }
 
     /**
-     * Instantiates a new User role.
+     * Instantiates a new UserRole.
      *
-     * @param createDate the create date
-     * @param updateDate the update date
-     * @param role       the role
-     * @param user       the user
+     * @param description the description
+     * @param user        the user
      */
-    public UserRole(LocalDateTime createDate, LocalDateTime updateDate, Role role, User user) {
-        this.createDate = createDate;
-        this.updateDate = updateDate;
-        this.role = role;
+    public UserRole(String description, User user ) {
         this.user = user;
+        this.description = description;
     }
 
     /**
@@ -66,57 +78,21 @@ public class UserRole {
     }
 
     /**
-     * Gets create date.
+     * Gets description.
      *
-     * @return the create date
+     * @return the description
      */
-    public LocalDateTime getCreateDate() {
-        return createDate;
+    public String getDescription() {
+        return description;
     }
 
     /**
-     * Sets create date.
+     * Sets description.
      *
-     * @param createDate the create date
+     * @param description the description
      */
-    public void setCreateDate(LocalDateTime createDate) {
-        this.createDate = createDate;
-    }
-
-    /**
-     * Gets update date.
-     *
-     * @return the update date
-     */
-    public LocalDateTime getUpdateDate() {
-        return updateDate;
-    }
-
-    /**
-     * Sets update date.
-     *
-     * @param updateDate the update date
-     */
-    public void setUpdateDate(LocalDateTime updateDate) {
-        this.updateDate = updateDate;
-    }
-
-    /**
-     * Gets role.
-     *
-     * @return the role
-     */
-    public Role getRole() {
-        return role;
-    }
-
-    /**
-     * Sets role.
-     *
-     * @param role the role
-     */
-    public void setRole(Role role) {
-        this.role = role;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     /**
@@ -141,9 +117,7 @@ public class UserRole {
     public String toString() {
         return "UserRole{" +
                 "id=" + id +
-                ", createDate=" + createDate +
-                ", updateDate=" + updateDate +
-                ", role=" + role +
+                ", description='" + description + '\'' +
                 ", user=" + user +
                 '}';
     }

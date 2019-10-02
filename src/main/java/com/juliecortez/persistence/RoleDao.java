@@ -16,7 +16,7 @@ import java.util.List;
 public class RoleDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
+    private SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
      * Get Role by id
@@ -58,6 +58,7 @@ public class RoleDao {
      * Delete a role
      * @param role Role to be deleted
      */
+    /*  Not planning on deleting any role records ever, so this is commented out
     public void delete(Role role) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -65,6 +66,7 @@ public class RoleDao {
         transaction.commit();
         session.close();
     }
+    */
 
     /** Return a list of all Roles
      *

@@ -36,7 +36,7 @@ public class RoleDaoTest {
         // validate an entry was retrieved
         assertNotNull(retrievedRole);
         // validate one of the object values is the value expected
-        assertEquals("Manager", retrievedRole.getName());
+        assertEquals(2, retrievedRole.getId());
     }
 
     /**
@@ -44,12 +44,12 @@ public class RoleDaoTest {
      */
     @Test
     void saveOrUpdateSuccess() {
-        String newName = "Administrator";
+        String newRole = "Administrator";
         Role roleToUpdate = dao.getById(1);
-        roleToUpdate.setName(newName);
+        roleToUpdate.setRole(newRole);
         dao.saveOrUpdate(roleToUpdate);
         Role retrievedRole = dao.getById(1);
-        assertEquals(newName, retrievedRole.getName());
+        assertEquals(newRole, retrievedRole.getRole());
     }
 
     /**
@@ -61,17 +61,10 @@ public class RoleDaoTest {
         int id = dao.insert(newRole);
         assertNotEquals(0,id);
         Role insertedRole = dao.getById(id);
-        assertEquals("Test Role", insertedRole.getName());
+        assertEquals("Test Role", insertedRole.getRole());
     }
 
-    /**
-     * Tests Delete for success.
-     */
-    @Test
-    void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
-    }
+
 
     /**
      * Test Getting all Roles for success.
@@ -88,7 +81,7 @@ public class RoleDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Role> roles = dao.getByPropertyEqual("name","Busser");
+        List<Role> roles = dao.getByPropertyEqual("role","Busser");
         assertEquals(1, roles.size());
     }
 
@@ -97,7 +90,7 @@ public class RoleDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Role> roles = dao.getByPropertyLike("name","House");
+        List<Role> roles = dao.getByPropertyLike("role","House");
         assertEquals(2, roles.size());
     }
 }
