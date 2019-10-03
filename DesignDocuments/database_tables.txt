@@ -46,8 +46,6 @@ create table user
     user_name varchar(15) null,
     password varchar(30) null,
     date_of_birth date null,
-    cellphone varchar(10) null,
-    homephone varchar(10) null,
     constraint users_user_name_uindex
         unique (user_name)
 );
@@ -64,27 +62,26 @@ CREATE TABLE `User_Role` (
                              `roleId`       int(11)    NULL,
                              `user_id`      int(11) NOT NULL,
                              `user_name`   varchar(15)  NOT NULL,
-                             KEY `user_role_user_id_fk` (`user_id`),
-                             CONSTRAINT `user_role_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES user (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-                             KEY `user_role_user_user_name_fk` (`user_name`),
-                             CONSTRAINT user_role_user_user_name_fk FOREIGN KEY (`user_name`) REFERENCES user (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE,
-                             KEY `user_role_roleid_fk` (`roleId`),
-                             CONSTRAINT `user_role_roleid_fk` FOREIGN KEY (`roleId`) REFERENCES Role (`id`)
+                             KEY `role_user_id_fk` (`user_id`),
+                             CONSTRAINT `role_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES user (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+                             KEY `role_user_user_name_fk` (`user_name`),
+                             CONSTRAINT role_user_user_name_fk FOREIGN KEY (`user_name`) REFERENCES user (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE,
+                             KEY `role_roleid_fk` (`roleId`),
+                             CONSTRAINT `role_roleid_fk` FOREIGN KEY (`roleId`) REFERENCES Role (`id`)
 );
 
-insert into user_role value (1, '20190929', '20190929', 1, 1, 'admin');
+insert into role value (1, '20190929', '20190929', 1, 1, 'admin');
 
-CREATE TABLE `user_role` (
+CREATE TABLE `role` (
                           `id` int(11) NOT NULL AUTO_INCREMENT,
                           `description` varchar(100) DEFAULT NULL,
-                          `user_id` int(11) NOT NULL,
+                          `user_name` varchar(15) null,
                           PRIMARY KEY (`id`),
-                          UNIQUE KEY `user_roles_id_uindex` (`id`),
-                          KEY `user_roles_user_id_fk` (`user_id`),
-                          CONSTRAINT `user_roles_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+                          UNIQUE KEY `roles_id_uindex` (`id`),
+                          CONSTRAINT `roles_user_user_nane_fk` FOREIGN KEY (`user_name`) REFERENCES `user` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
 )
 
-insert into user_role values (1, 'System Administrator', 1);
+insert into role values (1, 'System Administrator', 'Admin');
 
 
 

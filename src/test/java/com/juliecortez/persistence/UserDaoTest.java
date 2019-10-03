@@ -2,7 +2,6 @@ package com.juliecortez.persistence;
 
 import com.juliecortez.entity.Role;
 import com.juliecortez.entity.User;
-import com.juliecortez.entity.UserRole;
 import com.juliecortez.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -71,24 +70,24 @@ public class UserDaoTest {
 
 
     /**
-     * Verify successful insert of a user with a UserRole
+     * Verify successful insert of a user with a Role
      */
     @Test
-    void insertWithUserRoleSuccess() {
+    void insertWithRoleSuccess() {
         // Instantiate and create a new user
         User newUser = new User("Fred", "Flintstone", "fflintstone", LocalDate.parse("1168-01-01"));
-        String userRoleDescription = "description won't apply for user role";
-        // Instantiate and create a new UserRole and add the user object to the UserRole object
-        UserRole userRole = new UserRole(userRoleDescription, newUser);
-        // add the UserRole to the set of UserRoles for the User
-        newUser.addUserRole(userRole);
-        // insert the User object, which will create the UserRole as well
+        String roleDescription = "description won't apply for user role";
+        // Instantiate and create a new Role and add the user object to the Role object
+        Role role = new Role(roleDescription, newUser);
+        // add the Role to the set of Roles for the User
+        newUser.addRole(role);
+        // insert the User object, which will create the Role as well
         int id = dao.insert(newUser);
 
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
         assertEquals("Fred", insertedUser.getFirstName());
-        assertEquals(1, insertedUser.getOrders().size());
+        assertEquals(1, insertedUser.getRoles().size());
         // Could continue comparing all values, but
         // it may make sense to use .equals()
         //  review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode

@@ -19,11 +19,30 @@ public class RoleDao {
     private SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
-     * Get Role by id
+     * Gets all Roles.
+     *
+     * @return the all Roles
+     */
+    public List<Role> getAll() {
+
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Role> query = builder.createQuery(Role.class);
+        Root<Role> root = query.from(Role.class);
+        List<Role> roles = session.createQuery(query).getResultList();
+        session.close();
+        return roles;
+    }
+
+
+    /**
+     * Gets a Role by id
+     * @param id role id to search by
+     * @return a Role
      */
     public Role getById(int id) {
         Session session = sessionFactory.openSession();
-        Role role = session.get( Role.class, id );
+        Role role = session.get(Role.class, id);
         session.close();
         return role;
     }
@@ -43,6 +62,7 @@ public class RoleDao {
     /**
      * insert Role
      * @param role  Role to be inserted
+     * @return id of the inserted Role
      */
     public int insert(Role role) {
         int id = 0;
@@ -55,10 +75,9 @@ public class RoleDao {
     }
 
     /**
-     * Delete a role
+     * Delete a Role
      * @param role Role to be deleted
      */
-    /*  Not planning on deleting any role records ever, so this is commented out
     public void delete(Role role) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -66,54 +85,43 @@ public class RoleDao {
         transaction.commit();
         session.close();
     }
-    */
 
-    /** Return a list of all Roles
-     *
-     * @return All Roles
-     */
-    public List<Role> getAll() {
-
-        Session session = sessionFactory.openSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Role> query = builder.createQuery( Role.class );
-        builder = session.getCriteriaBuilder();
-        Root<Role> root = query.from( Role.class );
-        List<Role> roles = session.createQuery( query ).getResultList();
-
-        logger.debug("The list of roles " + roles);
-        session.close();
-
-        return roles;
-    }
 
     /**
-     * Get roles by property (exact match)
-     * sample usage: getByPropertyEqual("name", "Manager")
+     * Get order by property (exact match)
+     * sample usage: getByPropertyEqual("lastName", "Curry")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of orders meeting the criteria search
      */
     public List<Role> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
-        logger.debug("Searching for roles with " + propertyName + " = " + value);
+        logger.debug("Searching for role with " + propertyName + " = " + value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Role> query = builder.createQuery( Role.class );
         Root<Role> root = query.from( Role.class );
         query.select(root).where(builder.equal(root.get(propertyName), value));
         List<Role> roles = session.createQuery( query ).getResultList();
+
         session.close();
         return roles;
     }
 
     /**
-     * Get users by property (like)
-     * sample usage: getByPropertyLike("name", "n")
+     * Get order by property (like)
+     * sample usage: getByPropertyLike("lastName", "C")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of orders meeting the criteria search
      */
     public List<Role> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
-        logger.debug("Searching for roles with {} = {}",  propertyName, value);
+        logger.debug("Searching for Role with {} = {}",  propertyName, value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Role> query = builder.createQuery( Role.class );
@@ -126,4 +134,6 @@ public class RoleDao {
         session.close();
         return roles;
     }
+
+
 }

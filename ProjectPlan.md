@@ -10,11 +10,11 @@
 - [x] Weekly journal entry
 - [x] Write project plan
 - [x] Document application flow 
-- [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
+- [x] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
 - [ ] Create and complete database design
-- [ ] Create the database and user, roles and user_roles tables
+- [ ] Create the database and user and roles tables
 - [ ] Create the user, roles and user_roles entity class and annotate for hibernate
 - [ ] Create user, roles and user_roles dao
 - [ ] Create the test database

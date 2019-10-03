@@ -54,7 +54,7 @@ public class User {
      */
     // There is one User with zero to many orders
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<UserRole> userRoles = new HashSet<>();   // Hold collection/set of UserRoles for the user - zero to many
+    private Set<Role> roles = new HashSet<>();   // Hold collection/set of Roles for the user - zero to many
 
     /**
      * Instantiates a new User.
@@ -172,39 +172,39 @@ public class User {
     /**
      * Gets orders.
      *
-     * @return the orders
+     * @return the roles
      */
-    public Set<UserRole> getOrders() {
-        return userRoles;
+    public Set<Role> getRoles() {
+        return roles;
     }
 
     /**
-     * Sets orders.
+     * Sets roles.
      *
-     * @param userRoles the userRoles
+     * @param roles the roles
      */
-    public void setOrders(Set<UserRole> userRoles) {
-        this.userRoles = userRoles;
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 
     /**
-     * Add userRole.
+     * Add role.
      *
-     * @param userRole the userRole
+     * @param role the role
      */
-    public void addUserRole(UserRole userRole) {
-        userRoles.add(userRole);
-        userRole.setUser(this);
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
     }
 
     /**
-     * Remove userRole.
+     * Remove role.
      *
-     * @param userRole the userRole
+     * @param role the role
      */
-    public void removeUserRole(UserRole userRole) {
-        userRoles.remove(userRole);
-        userRole.setUser(null);
+    public void removeRole(Role role) {
+        roles.remove(role);
+        role.setUser(null);
     }
 
 

@@ -66,3 +66,14 @@ Continued working on week 5 Hibernate demo
 Finished week 5 Hibernate demo and completed the week 5 exercise.  Watched the additional videos on .equals and Generic
 Dao.  Added the .equals changes into the week 5 exercise
 
+### Sunday, Sept 29th 2 hours
+Worked on Hibernate one to many changes in user, user_role and role tables. Running into issues.  Reading more online 
+to try and figure it out.
+
+### Monday, Sept 30th 1 hour
+Read more on Hibernate one to many and unidirectional to see if that is something I need for the role to user_role table
+
+### Tuesday, Oct 1st 2 hours
+Removed all 3 tables and replaced the entity, dao's and test dao's.  Using version from week 1/demo's to get them 
+working using those versions.  Then can make additional table changes as needed.  The test daos are working
+
