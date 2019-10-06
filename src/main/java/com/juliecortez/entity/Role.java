@@ -16,8 +16,7 @@ public class Role {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    private String description;
-
+    private String role;
     /**
      * Bidirectional @OneToMany (this goes on user because is zero to many orders for a user)
      The bidirectional @OneToMany association also requires a @ManyToOne association on the child side.
@@ -51,12 +50,12 @@ public class Role {
     /**
      * Instantiates a new Role.
      *
-     * @param description the description
-     * @param user        the user
+     * @param role  the role for the user
+     * @param user  the user
      */
-    public Role(String description, User user ) {
+    public Role(String role, User user ) {
         this.user = user;
-        this.description = description;
+        this.role = role;
     }
 
     /**
@@ -78,21 +77,21 @@ public class Role {
     }
 
     /**
-     * Gets description.
+     * Gets role.
      *
-     * @return the description
+     * @return the role
      */
-    public String getDescription() {
-        return description;
+    public String getRole() {
+        return role;
     }
 
     /**
-     * Sets description.
+     * Sets role.
      *
-     * @param description the description
+     * @param role the role
      */
-    public void setDescription(String description) {
-        this.description = description;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     /**
@@ -117,7 +116,7 @@ public class Role {
     public String toString() {
         return "Role{" +
                 "id=" + id +
-                ", description='" + description + '\'' +
+                ", role='" + role + '\'' +
                 ", user=" + user +
                 '}';
     }
