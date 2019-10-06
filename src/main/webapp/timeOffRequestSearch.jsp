@@ -3,7 +3,7 @@
 <html>
 <body>
 <div class="wrapper">
-    <div class="container">
+    <div class="container-fluid">
         <%@include file="header.jsp"%>
         <%@include file="navbar.jsp"%>
         <h2>Time Off Request Search</h2>
