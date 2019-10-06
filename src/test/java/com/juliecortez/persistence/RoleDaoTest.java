@@ -1,8 +1,6 @@
 package com.juliecortez.persistence;
 
 
-
-
 import com.juliecortez.entity.Role;
 import com.juliecortez.entity.User;
 import com.juliecortez.test.util.Database;
@@ -50,7 +48,7 @@ class RoleDaoTest {
     void getByIdSuccess() {
         Role retrievedRole = dao.getById(1);
         assertNotNull(retrievedRole);
-        assertEquals("System Administrator", retrievedRole.getDescription());
+        assertEquals("Administrator", retrievedRole.getRole());
     }
 
     /**
@@ -63,7 +61,7 @@ class RoleDaoTest {
         // retrieve user object by id
         User user = userDao.getById(1);
         // create the new order including the user object
-        Role newRole = new Role("Plates", user);
+        Role newRole = new Role("Manager", user);
         // add the Role to the set of Roles for the user object
         user.addRole(newRole);
         // insert the Role, which will update the user object
@@ -71,7 +69,7 @@ class RoleDaoTest {
 
         assertNotEquals(0,id);
         Role insertedRole = dao.getById(id);
-        assertEquals("Plates", insertedRole.getDescription());
+        assertEquals("Manager", insertedRole.getRole());
         assertNotNull(insertedRole.getUser());
         // For the inserted Role object, get the user object and get the users first name, and compare to expected value
         assertEquals("System", insertedRole.getUser().getFirstName());
@@ -95,12 +93,12 @@ class RoleDaoTest {
      */
     @Test
     void updateSuccess() {
-        String description = "Laptops";
+        String role = "Manager";
         Role roleToUpdate = dao.getById(1);
-        roleToUpdate.setDescription(description);
+        roleToUpdate.setRole(role);
         dao.saveOrUpdate(roleToUpdate);
         Role retrievedRole = dao.getById(1);
-        assertEquals(description, retrievedRole.getDescription());
+        assertEquals(role, retrievedRole.getRole());
     }
 
     /**
@@ -108,7 +106,7 @@ class RoleDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Role> roles = dao.getByPropertyEqual("description", "System Administrator");
+        List<Role> roles = dao.getByPropertyEqual("role", "Administrator");
         assertEquals(1, roles.size());
         assertEquals(1, roles.get(0).getId());
     }
@@ -118,7 +116,7 @@ class RoleDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Role> roles = dao.getByPropertyLike("description", "S");
+        List<Role> roles = dao.getByPropertyLike("role", "S");
         assertEquals(1, roles.size());
     }
 }
