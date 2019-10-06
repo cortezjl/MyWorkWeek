@@ -76,9 +76,9 @@ public class UserDaoTest {
     void insertWithRoleSuccess() {
         // Instantiate and create a new user
         User newUser = new User("Fred", "Flintstone", "fflintstone", LocalDate.parse("1168-01-01"));
-        String roleDescription = "description won't apply for user role";
+        String roleTitle = "Front Of House";
         // Instantiate and create a new Role and add the user object to the Role object
-        Role role = new Role(roleDescription, newUser);
+        Role role = new Role(roleTitle, newUser);
         // add the Role to the set of Roles for the User
         newUser.addRole(role);
         // insert the User object, which will create the Role as well
