@@ -13,21 +13,21 @@
 - [x] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
-- [ ] Create and complete database design
-- [ ] Create the database and user and roles tables
-- [ ] Create the user, roles and user_roles entity class and annotate for hibernate
-- [ ] Create user, roles and user_roles dao
-- [ ] Create the test database
-- [ ] Create user, roles and user_roles dao unit tests
-- [ ] Weekly journal entry
+- [x] Create and complete database design
+- [x] Create the database and user and role tables
+- [x] Create the user and role entity class and annotate for hibernate
+- [x] Create user and roles dao
+- [x] Create the test database
+- [x] Create user and role dao unit tests
+- [x] Weekly journal entry
 - [ ] Set up logging
 - [ ] Create class uml diagram
 - [ ] Prepare for Week 5 peer design/code review
 
 
 ### Week 5
-- [ ] Create the template for all jsps using bootstrap 4
-- [ ] Weekly journal entry
+- [x] Create the template for all jsps using bootstrap 4
+- [x] Weekly journal entry
 - [ ] Add the timeOffRequest table
 - [ ] Add the timeOffRequest entity
 - [ ] Create the timeOffRequest dao
