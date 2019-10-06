@@ -17,8 +17,8 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class RoleDaoTest {
 
-    RoleDao dao;
-    GenericDao genericDao;
+    // RoleDao dao;
+    GenericDao roleDao;
 
 
     /**
@@ -26,7 +26,8 @@ class RoleDaoTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new RoleDao();
+        // dao = new RoleDao();
+        roleDao = new GenericDao(Role.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -38,7 +39,7 @@ class RoleDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<Role> roles = dao.getAll();
+        List<Role> roles = roleDao.getAll();
         assertEquals(1, roles.size());
     }
 
@@ -48,7 +49,7 @@ class RoleDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Role retrievedRole = dao.getById(1);
+        Role retrievedRole = (Role)roleDao.getById(1);
         assertNotNull(retrievedRole);
         assertEquals("Administrator", retrievedRole.getRole());
     }
@@ -59,18 +60,18 @@ class RoleDaoTest {
     @Test
     void insertSuccess() {
 
-        UserDao userDao = new UserDao();
+        GenericDao userDao = new GenericDao(User.class);
         // retrieve user object by id
-        User user = userDao.getById(1);
+        User user = (User)userDao.getById(1);
         // create the new role including the user object
         Role newRole = new Role("Manager", user);
         // add the Role to the set of Roles for the user object
         user.addRole(newRole);
         // insert the Role, which will update the user object
-        int id = dao.insert(newRole);
+        int id = roleDao.insert(newRole);
 
         assertNotEquals(0,id);
-        Role insertedRole = dao.getById(id);
+        Role insertedRole = (Role)roleDao.getById(id);
         assertEquals("Manager", insertedRole.getRole());
         assertNotNull(insertedRole.getUser());
         // For the inserted Role object, get the user object and get the users first name, and compare to expected value
@@ -84,8 +85,8 @@ class RoleDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(1));
-        assertNull(dao.getById(1));
+        roleDao.delete(roleDao.getById(1));
+        assertNull(roleDao.getById(1));
     }
 
     /**
@@ -94,10 +95,10 @@ class RoleDaoTest {
     @Test
     void updateSuccess() {
         String role = "Manager";
-        Role roleToUpdate = dao.getById(1);
+        Role roleToUpdate = (Role)roleDao.getById(1);
         roleToUpdate.setRole(role);
-        dao.saveOrUpdate(roleToUpdate);
-        Role retrievedRole = dao.getById(1);
+        roleDao.saveOrUpdate(roleToUpdate);
+        Role retrievedRole = (Role)roleDao.getById(1);
         assertEquals(role, retrievedRole.getRole());
         assertEquals(roleToUpdate, retrievedRole);
     }
@@ -107,7 +108,7 @@ class RoleDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Role> roles = dao.getByPropertyEqual("role", "Administrator");
+        List<Role> roles = roleDao.getByPropertyEqual("role", "Administrator");
         assertEquals(1, roles.size());
         assertEquals(1, roles.get(0).getId());
     }
@@ -117,7 +118,7 @@ class RoleDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Role> roles = dao.getByPropertyLike("role", "S");
+        List<Role> roles = roleDao.getByPropertyLike("role", "S");
         assertEquals(1, roles.size());
     }
 }
