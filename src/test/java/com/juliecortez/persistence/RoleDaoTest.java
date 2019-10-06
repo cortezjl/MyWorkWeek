@@ -18,6 +18,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class RoleDaoTest {
 
     RoleDao dao;
+    GenericDao genericDao;
+
 
     /**
      * Creating the dao.
@@ -60,7 +62,7 @@ class RoleDaoTest {
         UserDao userDao = new UserDao();
         // retrieve user object by id
         User user = userDao.getById(1);
-        // create the new order including the user object
+        // create the new role including the user object
         Role newRole = new Role("Manager", user);
         // add the Role to the set of Roles for the user object
         user.addRole(newRole);
@@ -73,9 +75,7 @@ class RoleDaoTest {
         assertNotNull(insertedRole.getUser());
         // For the inserted Role object, get the user object and get the users first name, and compare to expected value
         assertEquals("System", insertedRole.getUser().getFirstName());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/orderguide/html_single/Hibernate_Order_Guide.html#mapping-model-pojo-equalshashcode
+        assertEquals(newRole, insertedRole);
     }
 
 
@@ -99,6 +99,7 @@ class RoleDaoTest {
         dao.saveOrUpdate(roleToUpdate);
         Role retrievedRole = dao.getById(1);
         assertEquals(role, retrievedRole.getRole());
+        assertEquals(roleToUpdate, retrievedRole);
     }
 
     /**
