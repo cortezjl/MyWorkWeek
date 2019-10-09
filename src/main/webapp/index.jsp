@@ -10,40 +10,49 @@
 
                 <h2 class="text-center">Welcome to My Work Week</h2>
 
-
                 <div class="card-columns">
                     <div class="card bg-info">
                         <div class="card-body text-center">
                             <h4 class="card-title">Time Off Requests</h4>
-                            <p>
-                                <a class="card-link text-dark" href="timeOffRequestSearch.jsp">View Time Off Request</a>
-                            </p>
-                            <p>
-                                <a class="card-link text-dark" href="timeOffRequestAddEdit.jsp">Add Time Off Request</a>
-                            </p>
+                            <div>
+                                <a href="timeOffRequests.jsp">
+                                <img class="img-fluid" src="images/kisspng-computer-icons-calendar-date-iconfinder-calendar-date-event-month-icon-5ab06bc5db9aa6.0629959215215113658995.jpg"
+                                     alt="Calendar image">
+                                </a>
+                            </div>
+                            <br> <br>
+                            <a class="card-link text-dark" href="timeOffRequestSearch.jsp">View Time Off Request</a>
+                            <a class="card-link text-dark" href="timeOffRequestAddEdit.jsp">Add Time Off Request</a>
                         </div>
                     </div>
+
                     <div class="card bg-info">
                         <div class="card-body text-center">
                             <h4 class="card-title">Scheduling</h4>
-                            <p>
-                                <a  class="card-link text-dark" href="scheduleSearch.jsp">View Schedule</a>
-                            </p>
-                            <p>
-                                <a  class="card-link text-dark"href="scheduleAddEdit.jsp">Add Schedule</a>
-                            </p>
+                            <div>
+                                <a href="scheduling.jsp">
+                                    <img class="img-fluid" src="images/calendar-blue-152-262206.webp"
+                                         alt="Calendar image">
+                                </a>
+                            </div>
+                            <br> <br>
+                            <a  class="card-link text-dark" href="scheduleSearch.jsp">View Schedule</a>
+                            <a  class="card-link text-dark"href="scheduleAddEdit.jsp">Add Schedule</a>
                         </div>
                     </div>
 
                     <div class="card bg-info">
                         <div class="card-body text-center">
                             <h4 class="card-title">Users</h4>
-                            <p>
-                                <a class="card-link text-dark" href="userSearch.jsp">View Users</a>
-                            </p>
-                            <p>
-                                <a class="card-link text-dark"href="userAddt.jsp">Add Users</a>
-                            </p>
+                            <div>
+                                <a href="userSearch.jsp">
+                                    <img class="img-fluid" src="images/Users-icon.png"
+                                         alt="Users image">
+                                </a>
+                            </div>
+                            <br> <br>
+                            <a class="card-link text-dark" href="userSearch.jsp">View Users</a>
+                            <a class="card-link text-dark"href="userAdd.jsp">Add Users</a>
                         </div>
                     </div>
                 </div>
