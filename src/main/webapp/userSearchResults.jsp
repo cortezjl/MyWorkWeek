@@ -20,19 +20,21 @@
                     <tr><th>User Name</th>
                         <th>First Name</>
                         <th>Last Name</th>
-                        <th>Date of Birth</th>
                         <th>Roles</th>
+                        <th></th>
                     </tr>
                     <c:forEach var="user" items="${users}">
                     <tr>
                         <td>${user.userName}</td>
                         <td>${user.firstName}</td>
                         <td>${user.lastName}</td>
-                        <td>${user.dateOfBirth}</td>
                         <td>
                             <c:forEach var="role" items="${user.roles}">
                                 ${role.role} </br>
                             </c:forEach>
+                        </td>
+                        <td>
+                            <a class="edit" title="Edit" data-toggle="tooltip" href="editUserServlet?id=${user.id}"><i class="fa" >&#xf044;</i></a> <!--Font Awesome Edit symbol -->
                         </td>
                     </tr>
                     </c:forEach>
