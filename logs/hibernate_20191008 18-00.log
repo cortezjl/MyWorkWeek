@@ -1,0 +1,1502 @@
+[DEBUG] 2019-10-08 18-00-26.017 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2019-10-08 18-00-26.023 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2019-10-08 18-00-26.026 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2019-10-08 18-00-26.095 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2019-10-08 18-00-26.097 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2019-10-08 18-00-26.233 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2019-10-08 18-00-26.234 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2019-10-08 18-00-26.239 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2019-10-08 18-00-26.466 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2019-10-08 18-00-26.490 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2019-10-08 18-00-26.491 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2019-10-08 18-00-26.510 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2019-10-08 18-00-26.536 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@71904469
+[DEBUG] 2019-10-08 18-00-26.537 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@71904469
+[DEBUG] 2019-10-08 18-00-26.537 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@71904469
+[DEBUG] 2019-10-08 18-00-26.537 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1907874b
+[DEBUG] 2019-10-08 18-00-26.538 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2d9dff65
+[DEBUG] 2019-10-08 18-00-26.538 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@34d52ecd
+[DEBUG] 2019-10-08 18-00-26.539 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@65bdd558
+[DEBUG] 2019-10-08 18-00-26.539 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@65bdd558
+[DEBUG] 2019-10-08 18-00-26.539 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@65bdd558
+[DEBUG] 2019-10-08 18-00-26.540 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@2af69643
+[DEBUG] 2019-10-08 18-00-26.540 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@2af69643
+[DEBUG] 2019-10-08 18-00-26.540 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2af69643
+[DEBUG] 2019-10-08 18-00-26.542 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@22587507
+[DEBUG] 2019-10-08 18-00-26.542 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@22587507
+[DEBUG] 2019-10-08 18-00-26.542 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@22587507
+[DEBUG] 2019-10-08 18-00-26.544 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@4760f169
+[DEBUG] 2019-10-08 18-00-26.544 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@4760f169
+[DEBUG] 2019-10-08 18-00-26.544 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4760f169
+[DEBUG] 2019-10-08 18-00-26.545 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3d904e9c
+[DEBUG] 2019-10-08 18-00-26.545 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3d904e9c
+[DEBUG] 2019-10-08 18-00-26.545 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@3d904e9c
+[DEBUG] 2019-10-08 18-00-26.546 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7f353d99
+[DEBUG] 2019-10-08 18-00-26.546 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7f353d99
+[DEBUG] 2019-10-08 18-00-26.546 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7f353d99
+[DEBUG] 2019-10-08 18-00-26.548 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1229a2b7
+[DEBUG] 2019-10-08 18-00-26.548 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1229a2b7
+[DEBUG] 2019-10-08 18-00-26.548 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1229a2b7
+[DEBUG] 2019-10-08 18-00-26.549 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@31ee2fdb
+[DEBUG] 2019-10-08 18-00-26.549 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@31ee2fdb
+[DEBUG] 2019-10-08 18-00-26.550 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@558756be
+[DEBUG] 2019-10-08 18-00-26.551 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@558756be
+[DEBUG] 2019-10-08 18-00-26.552 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@43045f9f
+[DEBUG] 2019-10-08 18-00-26.552 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@43045f9f
+[DEBUG] 2019-10-08 18-00-26.552 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@4eba373c
+[DEBUG] 2019-10-08 18-00-26.553 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@26f46fa6
+[DEBUG] 2019-10-08 18-00-26.554 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@26c47874
+[DEBUG] 2019-10-08 18-00-26.554 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@26c47874
+[DEBUG] 2019-10-08 18-00-26.555 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@7a0e7ecd
+[DEBUG] 2019-10-08 18-00-26.555 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7a0e7ecd
+[DEBUG] 2019-10-08 18-00-26.562 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@a9f023e
+[DEBUG] 2019-10-08 18-00-26.562 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@a9f023e
+[DEBUG] 2019-10-08 18-00-26.564 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@5679e96b
+[DEBUG] 2019-10-08 18-00-26.564 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@5679e96b
+[DEBUG] 2019-10-08 18-00-26.565 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4d41ba0f
+[DEBUG] 2019-10-08 18-00-26.566 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4d41ba0f
+[DEBUG] 2019-10-08 18-00-26.568 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@49faf066
+[DEBUG] 2019-10-08 18-00-26.568 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@49faf066
+[DEBUG] 2019-10-08 18-00-26.570 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@59072e9d
+[DEBUG] 2019-10-08 18-00-26.570 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@59072e9d
+[DEBUG] 2019-10-08 18-00-26.572 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5e5af8e1
+[DEBUG] 2019-10-08 18-00-26.572 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5e5af8e1
+[DEBUG] 2019-10-08 18-00-26.574 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@65e21ce3
+[DEBUG] 2019-10-08 18-00-26.574 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@65e21ce3
+[DEBUG] 2019-10-08 18-00-26.575 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@4b65d9f4
+[DEBUG] 2019-10-08 18-00-26.575 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4b65d9f4
+[DEBUG] 2019-10-08 18-00-26.576 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@4d21c56e
+[DEBUG] 2019-10-08 18-00-26.577 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4d21c56e
+[DEBUG] 2019-10-08 18-00-26.578 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@1cd3b138
+[DEBUG] 2019-10-08 18-00-26.578 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@1cd3b138
+[DEBUG] 2019-10-08 18-00-26.578 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@1cd3b138
+[DEBUG] 2019-10-08 18-00-26.579 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@a098d76
+[DEBUG] 2019-10-08 18-00-26.580 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@328d044f
+[DEBUG] 2019-10-08 18-00-26.580 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@328d044f
+[DEBUG] 2019-10-08 18-00-26.581 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@328d044f
+[DEBUG] 2019-10-08 18-00-26.581 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@fc807c1
+[DEBUG] 2019-10-08 18-00-26.582 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@6b350309
+[DEBUG] 2019-10-08 18-00-26.582 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6b350309
+[DEBUG] 2019-10-08 18-00-26.583 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@74174a23
+[DEBUG] 2019-10-08 18-00-26.583 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@74174a23
+[DEBUG] 2019-10-08 18-00-26.584 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4613311f
+[DEBUG] 2019-10-08 18-00-26.584 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4613311f
+[DEBUG] 2019-10-08 18-00-26.585 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@7724704f
+[DEBUG] 2019-10-08 18-00-26.585 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7724704f
+[DEBUG] 2019-10-08 18-00-26.586 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@74ecacc3
+[DEBUG] 2019-10-08 18-00-26.586 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@74ecacc3
+[DEBUG] 2019-10-08 18-00-26.587 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@27d33393
+[DEBUG] 2019-10-08 18-00-26.588 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@72f9f27c
+[DEBUG] 2019-10-08 18-00-26.588 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@72f9f27c
+[DEBUG] 2019-10-08 18-00-26.588 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@72f9f27c
+[DEBUG] 2019-10-08 18-00-26.589 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5634d0f4
+[DEBUG] 2019-10-08 18-00-26.589 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5634d0f4
+[DEBUG] 2019-10-08 18-00-26.589 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5634d0f4
+[DEBUG] 2019-10-08 18-00-26.590 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@69fe0ed4
+[DEBUG] 2019-10-08 18-00-26.590 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@698fee9a
+[DEBUG] 2019-10-08 18-00-26.591 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@181b8c4b
+[DEBUG] 2019-10-08 18-00-26.591 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@181b8c4b
+[DEBUG] 2019-10-08 18-00-26.591 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@181b8c4b
+[DEBUG] 2019-10-08 18-00-26.593 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@715b886f
+[DEBUG] 2019-10-08 18-00-26.594 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@715b886f
+[DEBUG] 2019-10-08 18-00-26.594 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@715b886f
+[DEBUG] 2019-10-08 18-00-26.595 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@18b8d173
+[DEBUG] 2019-10-08 18-00-26.596 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@46349b95
+[DEBUG] 2019-10-08 18-00-26.598 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@3a082ff4
+[DEBUG] 2019-10-08 18-00-26.598 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3a082ff4
+[DEBUG] 2019-10-08 18-00-26.598 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@58f39564
+[DEBUG] 2019-10-08 18-00-26.600 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6a1d3225
+[DEBUG] 2019-10-08 18-00-26.600 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6a1d3225
+[DEBUG] 2019-10-08 18-00-26.601 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@671d1157
+[DEBUG] 2019-10-08 18-00-26.602 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@671d1157
+[DEBUG] 2019-10-08 18-00-26.602 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@25aeb5ac
+[DEBUG] 2019-10-08 18-00-26.603 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@75d982d3
+[DEBUG] 2019-10-08 18-00-26.604 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@58ba5b30
+[DEBUG] 2019-10-08 18-00-26.608 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@6ad16c5d
+[DEBUG] 2019-10-08 18-00-26.608 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6ad16c5d
+[DEBUG] 2019-10-08 18-00-26.609 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6e4f263e
+[DEBUG] 2019-10-08 18-00-26.609 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@48b4a043
+[DEBUG] 2019-10-08 18-00-26.610 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2f5b8250
+[DEBUG] 2019-10-08 18-00-26.610 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4821aa9f
+[DEBUG] 2019-10-08 18-00-26.610 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5f481b73
+[DEBUG] 2019-10-08 18-00-26.610 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@32130e61
+[DEBUG] 2019-10-08 18-00-26.610 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@41294371
+[DEBUG] 2019-10-08 18-00-26.610 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4996c99
+[DEBUG] 2019-10-08 18-00-26.653 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2019-10-08 18-00-26.654 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2019-10-08 18-00-26.655 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-10-08 18-00-26.655 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-10-08 18-00-26.655 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2019-10-08 18-00-26.656 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2019-10-08 18-00-26.656 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2019-10-08 18-00-26.657 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-10-08 18-00-26.658 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2019-10-08 18-00-26.659 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2019-10-08 18-00-26.660 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2019-10-08 18-00-26.660 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2019-10-08 18-00-26.660 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-10-08 18-00-26.661 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2019-10-08 18-00-26.666 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_mww
+[INFO ] 2019-10-08 18-00-26.666 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=cortezjl}
+[INFO ] 2019-10-08 18-00-26.667 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2019-10-08 18-00-26.771 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2019-10-08 18-00-26.846 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.17
+      major : 8
+      minor : 0
+[DEBUG] 2019-10-08 18-00-26.846 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2019-10-08 18-00-26.847 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2019-10-08 18-00-26.873 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2019-10-08 18-00-26.889 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2019-10-08 18-00-26.906 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2019-10-08 18-00-26.943 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2019-10-08 18-00-26.947 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3127cb44] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3234474]
+[DEBUG] 2019-10-08 18-00-26.998 [main] AnnotationBinder - Binding entity from annotated class: com.juliecortez.entity.Role
+[DEBUG] 2019-10-08 18-00-27.019 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-10-08 18-00-27.023 [main] EntityBinder - Import with entity name Role
+[DEBUG] 2019-10-08 18-00-27.027 [main] EntityBinder - Bind entity com.juliecortez.entity.Role on table role
+[DEBUG] 2019-10-08 18-00-27.048 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.051 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-10-08 18-00-27.053 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.Role:id]
+[DEBUG] 2019-10-08 18-00-27.054 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-10-08 18-00-27.056 [main] PropertyBinder - Building property id
+[DEBUG] 2019-10-08 18-00-27.059 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-10-08 18-00-27.061 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=role, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.061 [main] PropertyBinder - MetadataSourceProcessor property role with lazy=false
+[DEBUG] 2019-10-08 18-00-27.061 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.Role:role]
+[DEBUG] 2019-10-08 18-00-27.061 [main] SimpleValueBinder - building SimpleValue for role
+[DEBUG] 2019-10-08 18-00-27.061 [main] PropertyBinder - Building property role
+[DEBUG] 2019-10-08 18-00-27.063 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-10-08 18-00-27.063 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.065 [main] PropertyBinder - Building property user
+[DEBUG] 2019-10-08 18-00-27.066 [main] AnnotationBinder - Binding entity from annotated class: com.juliecortez.entity.User
+[DEBUG] 2019-10-08 18-00-27.066 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-10-08 18-00-27.066 [main] EntityBinder - Import with entity name User
+[DEBUG] 2019-10-08 18-00-27.066 [main] EntityBinder - Bind entity com.juliecortez.entity.User on table user
+[DEBUG] 2019-10-08 18-00-27.071 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.071 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-10-08 18-00-27.071 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:id]
+[DEBUG] 2019-10-08 18-00-27.071 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-10-08 18-00-27.071 [main] PropertyBinder - Building property id
+[DEBUG] 2019-10-08 18-00-27.072 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-10-08 18-00-27.072 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=date_of_birth, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.072 [main] PropertyBinder - MetadataSourceProcessor property dateOfBirth with lazy=false
+[DEBUG] 2019-10-08 18-00-27.072 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:dateOfBirth]
+[DEBUG] 2019-10-08 18-00-27.072 [main] SimpleValueBinder - building SimpleValue for dateOfBirth
+[DEBUG] 2019-10-08 18-00-27.072 [main] PropertyBinder - Building property dateOfBirth
+[DEBUG] 2019-10-08 18-00-27.072 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.072 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2019-10-08 18-00-27.073 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:firstName]
+[DEBUG] 2019-10-08 18-00-27.073 [main] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2019-10-08 18-00-27.073 [main] PropertyBinder - Building property firstName
+[DEBUG] 2019-10-08 18-00-27.073 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.073 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2019-10-08 18-00-27.073 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:lastName]
+[DEBUG] 2019-10-08 18-00-27.073 [main] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2019-10-08 18-00-27.073 [main] PropertyBinder - Building property lastName
+[DEBUG] 2019-10-08 18-00-27.073 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-08 18-00-27.073 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.076 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.083 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.083 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.084 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-10-08 18-00-27.085 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-08 18-00-27.085 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-08 18-00-27.086 [main] CollectionBinder - Collection role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.087 [main] PropertyBinder - Building property roles
+[DEBUG] 2019-10-08 18-00-27.088 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-08 18-00-27.088 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-10-08 18-00-27.088 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:userName]
+[DEBUG] 2019-10-08 18-00-27.088 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-10-08 18-00-27.088 [main] PropertyBinder - Building property userName
+[DEBUG] 2019-10-08 18-00-27.089 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-10-08 18-00-27.090 [main] SimpleValueBinder - Starting fillSimpleValue for role
+[DEBUG] 2019-10-08 18-00-27.090 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-10-08 18-00-27.090 [main] SimpleValueBinder - Starting fillSimpleValue for dateOfBirth
+[DEBUG] 2019-10-08 18-00-27.090 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2019-10-08 18-00-27.090 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2019-10-08 18-00-27.090 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-10-08 18-00-27.095 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [role]
+[DEBUG] 2019-10-08 18-00-27.095 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2019-10-08 18-00-27.095 [main] CollectionSecondPass - Second pass for collection: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.096 [main] CollectionBinder - Binding a OneToMany: com.juliecortez.entity.User.roles through a foreign key
+[DEBUG] 2019-10-08 18-00-27.096 [main] CollectionBinder - Mapping collection: com.juliecortez.entity.User.roles -> role
+[DEBUG] 2019-10-08 18-00-27.097 [main] TableBinder - Retrieving property com.juliecortez.entity.Role.user
+[DEBUG] 2019-10-08 18-00-27.097 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: com.juliecortez.entity.Role
+[DEBUG] 2019-10-08 18-00-27.097 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.juliecortez.entity.User
+[DEBUG] 2019-10-08 18-00-27.101 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.juliecortez.entity.User
+[DEBUG] 2019-10-08 18-00-27.126 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - SessionFactory name : null
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Statistics: disabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Default null ordering: NONE
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2019-10-08 18-00-27.127 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Query language substitutions: {}
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Named query checking : enabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Second-level cache: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JDBC batch size: 15
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JPA compliance - query : 
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2019-10-08 18-00-27.128 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2019-10-08 18-00-27.170 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2019-10-08 18-00-27.186 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2019-10-08 18-00-27.186 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.c3p0.min_size=5, java.class.path=C:\Users\15635\IdeaProjects\myworkweek\target\test-classes;C:\Users\15635\IdeaProjects\myworkweek\target\classes;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\15635\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\15635\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\15635\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\15635\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\15635\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\15635\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\15635\.m2\repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar;C:\Users\15635\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\15635\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\15635\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\15635\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;C:\Users\15635\.m2\repository\org\hibernate\hibernate-core\5.4.4.Final\hibernate-core-5.4.4.Final.jar;C:\Users\15635\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\15635\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\15635\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\15635\.m2\repository\net\bytebuddy\byte-buddy\1.9.11\byte-buddy-1.9.11.jar;C:\Users\15635\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\15635\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\15635\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\15635\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\15635\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\15635\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\15635\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\15635\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\15635\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\15635\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\15635\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\15635\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\15635\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\15635\.m2\repository\org\hibernate\hibernate-c3p0\5.4.4.Final\hibernate-c3p0-5.4.4.Final.jar;C:\Users\15635\.m2\repository\com\mchange\c3p0\0.9.5.3\c3p0-0.9.5.3.jar;C:\Users\15635\.m2\repository\com\mchange\mchange-commons-java\0.2.15\mchange-commons-java-0.2.15.jar;, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=America/Chicago, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.4\bin, sun.java.command=C:\Users\15635\IdeaProjects\myworkweek\target\surefire\surefirebooter6864921100889567727.jar C:\Users\15635\IdeaProjects\myworkweek\target\surefire\surefire3288565695541965588tmp C:\Users\15635\IdeaProjects\myworkweek\target\surefire\surefire_011983273213391842472tmp, jdk.debug=release, surefire.test.class.path=C:\Users\15635\IdeaProjects\myworkweek\target\test-classes;C:\Users\15635\IdeaProjects\myworkweek\target\classes;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\15635\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\15635\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\15635\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\15635\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\15635\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\15635\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\15635\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\15635\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\15635\.m2\repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar;C:\Users\15635\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\15635\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\15635\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\15635\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;C:\Users\15635\.m2\repository\org\hibernate\hibernate-core\5.4.4.Final\hibernate-core-5.4.4.Final.jar;C:\Users\15635\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\15635\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\15635\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\15635\.m2\repository\net\bytebuddy\byte-buddy\1.9.11\byte-buddy-1.9.11.jar;C:\Users\15635\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\15635\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\15635\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\15635\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\15635\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\15635\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\15635\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\15635\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\15635\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\15635\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\15635\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\15635\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\15635\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\15635\.m2\repository\org\hibernate\hibernate-c3p0\5.4.4.Final\hibernate-c3p0-5.4.4.Final.jar;C:\Users\15635\.m2\repository\com\mchange\c3p0\0.9.5.3\c3p0-0.9.5.3.jar;C:\Users\15635\.m2\repository\com\mchange\mchange-commons-java\0.2.15\mchange-commons-java-0.2.15.jar;, sun.cpu.endian=little, user.home=C:\Users\15635, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2019-07-16, java.home=C:\Program Files\Java\jdk-11.0.4, idea.version2019.2.1=true, file.separator=\, basedir=C:\Users\15635\IdeaProjects\myworkweek, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, surefire.real.class.path=C:\Users\15635\IdeaProjects\myworkweek\target\surefire\surefirebooter6864921100889567727.jar, user.script=, connection.password=Security1!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.4+10-LTS, user.name=15635, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_mww, file.encoding=Cp1252, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, localRepository=C:\Users\15635\.m2\repository, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\15635\AppData\Local\Temp\, java.version=11.0.4, user.dir=C:\Users\15635\IdeaProjects\myworkweek, os.arch=amd64, connection.username=cortezjl, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@49cd946c, java.library.path=C:\Program Files\Java\jdk-11.0.4\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.4+10-LTS, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_mww, java.class.version=55.0}
+[DEBUG] 2019-10-08 18-00-27.201 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2019-10-08 18-00-27.201 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2019-10-08 18-00-27.201 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2019-10-08 18-00-27.202 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3127cb44] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@3c19592c]
+[DEBUG] 2019-10-08 18-00-27.240 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-08 18-00-27.240 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-08 18-00-27.256 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-08 18-00-27.256 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-08 18-00-27.433 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-08 18-00-27.433 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-08 18-00-27.433 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-08 18-00-27.433 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-08 18-00-27.452 [main] AbstractCollectionPersister - Static SQL for collection: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.452 [main] AbstractCollectionPersister -  Row insert: update role set user_id=? where id=?
+[DEBUG] 2019-10-08 18-00-27.452 [main] AbstractCollectionPersister -  Row update: update role set  where id=?
+[DEBUG] 2019-10-08 18-00-27.452 [main] AbstractCollectionPersister -  Row delete: update role set user_id=null where user_id=? and id=?
+[DEBUG] 2019-10-08 18-00-27.452 [main] AbstractCollectionPersister -  One-shot delete: update role set user_id=null where user_id=?
+[DEBUG] 2019-10-08 18-00-27.455 [main] AbstractEntityPersister - Static SQL for entity: com.juliecortez.entity.User
+[DEBUG] 2019-10-08 18-00-27.455 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2019-10-08 18-00-27.455 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.date_of_birth as date_of_2_1_, user_.first_name as first_na3_1_, user_.last_name as last_nam4_1_, user_.user_name as user_nam5_1_ from user user_ where user_.id=?
+[DEBUG] 2019-10-08 18-00-27.455 [main] AbstractEntityPersister -  Insert 0: insert into user (date_of_birth, first_name, last_name, user_name, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2019-10-08 18-00-27.455 [main] AbstractEntityPersister -  Update 0: update user set date_of_birth=?, first_name=?, last_name=?, user_name=? where id=?
+[DEBUG] 2019-10-08 18-00-27.455 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2019-10-08 18-00-27.455 [main] AbstractEntityPersister -  Identity insert: insert into user (date_of_birth, first_name, last_name, user_name) values (?, ?, ?, ?)
+[DEBUG] 2019-10-08 18-00-27.477 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@633ddc0c]
+[DEBUG] 2019-10-08 18-00-27.478 [main] MetamodelGraphWalker - Visiting attribute path : dateOfBirth
+[DEBUG] 2019-10-08 18-00-27.478 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-10-08 18-00-27.478 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-10-08 18-00-27.478 [main] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-10-08 18-00-27.481 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@307c59ea]
+[DEBUG] 2019-10-08 18-00-27.484 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6615237]
+[DEBUG] 2019-10-08 18-00-27.484 [main] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-10-08 18-00-27.485 [main] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-10-08 18-00-27.485 [main] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-10-08 18-00-27.485 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-10-08 18-00-27.485 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-08 18-00-27.495 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-08 18-00-27.500 [main] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:0>, path=com.juliecortez.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:1>, path=com.juliecortez.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:2>, path=com.juliecortez.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.juliecortez.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.juliecortez.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-10-08 18-00-27.508 [main] EntityLoader - Static select for entity com.juliecortez.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-27.508 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@439f2d87]
+[DEBUG] 2019-10-08 18-00-27.508 [main] MetamodelGraphWalker - Visiting attribute path : dateOfBirth
+[DEBUG] 2019-10-08 18-00-27.508 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-10-08 18-00-27.508 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-10-08 18-00-27.508 [main] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-10-08 18-00-27.509 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@852ef8d]
+[DEBUG] 2019-10-08 18-00-27.509 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44dd0d38]
+[DEBUG] 2019-10-08 18-00-27.509 [main] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-10-08 18-00-27.509 [main] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-10-08 18-00-27.509 [main] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-10-08 18-00-27.509 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-10-08 18-00-27.509 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-08 18-00-27.509 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-08 18-00-27.510 [main] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:0>, path=com.juliecortez.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:1>, path=com.juliecortez.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:2>, path=com.juliecortez.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.juliecortez.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.juliecortez.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-10-08 18-00-27.510 [main] EntityLoader - Static select for entity com.juliecortez.entity.User [READ]: select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-27.521 [main] Loader - Static select for action ACTION_MERGE on entity com.juliecortez.entity.User: select user0_.id as id1_1_1_, user0_.date_of_birth as date_of_2_1_1_, user0_.first_name as first_na3_1_1_, user0_.last_name as last_nam4_1_1_, user0_.user_name as user_nam5_1_1_, roles1_.user_id as user_id3_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role as role2_0_0_, roles1_.user_id as user_id3_0_0_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-27.521 [main] Loader - Static select for action ACTION_REFRESH on entity com.juliecortez.entity.User: select user0_.id as id1_1_1_, user0_.date_of_birth as date_of_2_1_1_, user0_.first_name as first_na3_1_1_, user0_.last_name as last_nam4_1_1_, user0_.user_name as user_nam5_1_1_, roles1_.user_id as user_id3_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role as role2_0_0_, roles1_.user_id as user_id3_0_0_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-27.521 [main] AbstractEntityPersister - Static SQL for entity: com.juliecortez.entity.Role
+[DEBUG] 2019-10-08 18-00-27.521 [main] AbstractEntityPersister -  Version select: select id from role where id =?
+[DEBUG] 2019-10-08 18-00-27.521 [main] AbstractEntityPersister -  Snapshot select: select role_.id, role_.role as role2_0_, role_.user_id as user_id3_0_ from role role_ where role_.id=?
+[DEBUG] 2019-10-08 18-00-27.521 [main] AbstractEntityPersister -  Insert 0: insert into role (role, user_id, id) values (?, ?, ?)
+[DEBUG] 2019-10-08 18-00-27.521 [main] AbstractEntityPersister -  Update 0: update role set role=?, user_id=? where id=?
+[DEBUG] 2019-10-08 18-00-27.521 [main] AbstractEntityPersister -  Delete 0: delete from role where id=?
+[DEBUG] 2019-10-08 18-00-27.521 [main] AbstractEntityPersister -  Identity insert: insert into role (role, user_id) values (?, ?)
+[DEBUG] 2019-10-08 18-00-27.522 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4567fb2b]
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-08 18-00-27.522 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5fd8dd66]
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Visiting attribute path : user.dateOfBirth
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-10-08 18-00-27.522 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-10-08 18-00-27.522 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-08 18-00-27.523 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-08 18-00-27.523 [main] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:0>, path=com.juliecortez.entity.Role)
+          - EntityAttributeFetchImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:1>, path=com.juliecortez.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-10-08 18-00-27.523 [main] EntityLoader - Static select for entity com.juliecortez.entity.Role [NONE]: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-27.523 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53cddaf8]
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-08 18-00-27.523 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ccc1026]
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Visiting attribute path : user.dateOfBirth
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-10-08 18-00-27.523 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-10-08 18-00-27.524 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-08 18-00-27.524 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-08 18-00-27.524 [main] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:0>, path=com.juliecortez.entity.Role)
+          - EntityAttributeFetchImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:1>, path=com.juliecortez.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-10-08 18-00-27.524 [main] EntityLoader - Static select for entity com.juliecortez.entity.Role [READ]: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-27.524 [main] Loader - Static select for action ACTION_MERGE on entity com.juliecortez.entity.Role: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-10-08 18-00-27.525 [main] Loader - Static select for action ACTION_REFRESH on entity com.juliecortez.entity.Role: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-10-08 18-00-27.528 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@677cb96e]
+[DEBUG] 2019-10-08 18-00-27.528 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b1252c8]
+[DEBUG] 2019-10-08 18-00-27.529 [main] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-08 18-00-27.529 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-08 18-00-27.529 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2019-10-08 18-00-27.529 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-08 18-00-27.530 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-08 18-00-27.530 [main] LoadPlanTreePrinter - LoadPlan(collection=com.juliecortez.entity.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:0>, path=[com.juliecortez.entity.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:1>, path=[com.juliecortez.entity.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.juliecortez.entity.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id3_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.Role)
+                - SQL table alias mapping - roles0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2019-10-08 18-00-27.531 [main] CollectionLoader - Static select for collection com.juliecortez.entity.User.roles: select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-27.555 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2019-10-08 18-00-27.555 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2019-10-08 18-00-27.555 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2019-10-08 18-00-27.559 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2019-10-08 18-00-27.560 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2019-10-08 18-00-27.561 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2019-10-08 18-00-27.561 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2019-10-08 18-00-27.562 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4416e18d
+[DEBUG] 2019-10-08 18-00-27.564 [main] SessionFactoryRegistry - Registering SessionFactory: 8ac60588-a7ca-4ed6-8b44-b91ff3028a55 (<unnamed>)
+[DEBUG] 2019-10-08 18-00-27.564 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2019-10-08 18-00-27.625 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2019-10-08 18-00-27.637 [main] SQL - select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-27.653 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-27.654 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-27.663 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-27.663 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-27.663 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.663 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-27.664 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-27.665 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.670 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-27.671 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.671 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-27.671 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-27.672 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-27.672 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-27.674 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-27.676 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-27.676 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-27.676 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.676 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-27.677 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.677 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-27.677 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-27.677 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.Role#1
+[DEBUG] 2019-10-08 18-00-27.677 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-27.681 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-10-08 18-00-27.681 [main] TransactionImpl - begin
+[DEBUG] 2019-10-08 18-00-27.717 [main] TransactionImpl - committing
+[DEBUG] 2019-10-08 18-00-27.718 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-10-08 18-00-27.719 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-10-08 18-00-27.721 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2019-10-08 18-00-27.721 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2019-10-08 18-00-27.723 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-10-08 18-00-27.723 [main] EntityPrinter - com.juliecortez.entity.Role{role=Administrator, id=1, user=com.juliecortez.entity.User#1}
+[DEBUG] 2019-10-08 18-00-27.731 [main] SQL - delete from role where id=?
+[DEBUG] 2019-10-08 18-00-27.740 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-27.741 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-27.741 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2019-10-08 18-00-27.741 [main] SQL - select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-27.744 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-27.744 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.Role#1
+[DEBUG] 2019-10-08 18-00-27.744 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-27.812 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Role as generatedAlias0
+[DEBUG] 2019-10-08 18-00-27.825 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@2dc21583
+[DEBUG] 2019-10-08 18-00-27.844 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.Role as generatedAlias0
+[DEBUG] 2019-10-08 18-00-27.848 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-27.855 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'juliecortez'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'Role'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2019-10-08 18-00-27.880 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-27.894 [main] FromElement - FromClause{level=1} : com.juliecortez.entity.Role (generatedAlias0) -> role0_
+[DEBUG] 2019-10-08 18-00-27.896 [main] FromReferenceNode - Resolved : generatedAlias0 -> role0_.id
+[DEBUG] 2019-10-08 18-00-27.898 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-27.898 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} role0_.id ) ( FromClause{level=1} role role0_ ) )
+[DEBUG] 2019-10-08 18-00-27.907 [main] JoinProcessor - Using FROM fragment [role role0_]
+[DEBUG] 2019-10-08 18-00-27.907 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-27.907 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (role)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'role0_.id as id1_0_' {alias=generatedAlias0, className=com.juliecortez.entity.Role, tableAlias=role0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'role0_.role as role2_0_, role0_.user_id as user_id3_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[role0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'role role0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=role,tableAlias=role0_,origin=null,columns={,className=com.juliecortez.entity.Role}}
+
+[DEBUG] 2019-10-08 18-00-27.908 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-27.913 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.Role as generatedAlias0
+[DEBUG] 2019-10-08 18-00-27.913 [main] QueryTranslatorImpl - SQL: select role0_.id as id1_0_, role0_.role as role2_0_, role0_.user_id as user_id3_0_ from role role0_
+[DEBUG] 2019-10-08 18-00-27.913 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-27.921 [main] SQL - select role0_.id as id1_0_, role0_.role as role2_0_, role0_.user_id as user_id3_0_ from role role0_
+[DEBUG] 2019-10-08 18-00-27.923 [main] Loader - Result set row: 0
+[DEBUG] 2019-10-08 18-00-27.924 [main] Loader - Result row: EntityKey[com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-27.924 [main] Loader - Result set row: 1
+[DEBUG] 2019-10-08 18-00-27.924 [main] Loader - Result row: EntityKey[com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-08 18-00-27.925 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-27.925 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-27.925 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.925 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-27.925 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.925 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-27.926 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-27.927 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-27.927 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.927 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-27.928 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.928 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-27.928 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.928 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-27.928 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Processing attribute `role` : value = Manager
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Processing attribute `user` : value = 2
+[DEBUG] 2019-10-08 18-00-27.928 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.928 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-27.929 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-27.930 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-27.930 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1992-10-02
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Tammy
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Johnson
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Processing attribute `userName` : value = TJohnson
+[DEBUG] 2019-10-08 18-00-27.930 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.931 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-08 18-00-27.931 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.931 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-08 18-00-27.931 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-27.931 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-27.931 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#2
+[DEBUG] 2019-10-08 18-00-27.931 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-08 18-00-27.932 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-27.982 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Role as generatedAlias0 where generatedAlias0.role=:param0
+[DEBUG] 2019-10-08 18-00-27.983 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.Role as generatedAlias0 where generatedAlias0.role=:param0
+[DEBUG] 2019-10-08 18-00-27.984 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-27.984 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  \-[IDENT] Node: 'juliecortez'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'Role'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'role'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2019-10-08 18-00-27.984 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-27.984 [main] FromElement - FromClause{level=1} : com.juliecortez.entity.Role (generatedAlias0) -> role0_
+[DEBUG] 2019-10-08 18-00-27.985 [main] FromReferenceNode - Resolved : generatedAlias0 -> role0_.id
+[DEBUG] 2019-10-08 18-00-27.986 [main] FromReferenceNode - Resolved : generatedAlias0 -> role0_.id
+[DEBUG] 2019-10-08 18-00-27.987 [main] DotNode - getDataType() : role -> org.hibernate.type.StringType@43045f9f
+[DEBUG] 2019-10-08 18-00-27.987 [main] FromReferenceNode - Resolved : generatedAlias0.role -> role0_.role
+[DEBUG] 2019-10-08 18-00-27.988 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-27.988 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} role0_.id ) ( FromClause{level=1} role role0_ ) ( where ( = ( role0_.role role0_.id role ) ? ) ) )
+[DEBUG] 2019-10-08 18-00-27.989 [main] JoinProcessor - Using FROM fragment [role role0_]
+[DEBUG] 2019-10-08 18-00-27.989 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-27.989 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (role)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'role0_.id as id1_0_' {alias=generatedAlias0, className=com.juliecortez.entity.Role, tableAlias=role0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'role0_.role as role2_0_, role0_.user_id as user_id3_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[role0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'role role0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=role,tableAlias=role0_,origin=null,columns={,className=com.juliecortez.entity.Role}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'role0_.role' {propertyName=role,dereferenceType=PRIMITIVE,getPropertyPath=role,path=generatedAlias0.role,tableAlias=role0_,className=com.juliecortez.entity.Role,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'role0_.id' {alias=generatedAlias0, className=com.juliecortez.entity.Role, tableAlias=role0_}
+          |  \-[IDENT] IdentNode: 'role' {originalText=role}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@43045f9f}
+
+[DEBUG] 2019-10-08 18-00-27.989 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-27.989 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.Role as generatedAlias0 where generatedAlias0.role=:param0
+[DEBUG] 2019-10-08 18-00-27.989 [main] QueryTranslatorImpl - SQL: select role0_.id as id1_0_, role0_.role as role2_0_, role0_.user_id as user_id3_0_ from role role0_ where role0_.role=?
+[DEBUG] 2019-10-08 18-00-27.989 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-27.995 [main] SQL - select role0_.id as id1_0_, role0_.role as role2_0_, role0_.user_id as user_id3_0_ from role role0_ where role0_.role=?
+[DEBUG] 2019-10-08 18-00-27.997 [main] Loader - Result set row: 0
+[DEBUG] 2019-10-08 18-00-27.997 [main] Loader - Result row: EntityKey[com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-27.997 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-27.997 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-27.997 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.997 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-27.997 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-27.998 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-27.999 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-27.999 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-27.999 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.000 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.000 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.000 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.000 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.000 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.000 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.001 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.001 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.050 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Role as generatedAlias0 where generatedAlias0.role like :param0
+[DEBUG] 2019-10-08 18-00-28.051 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.Role as generatedAlias0 where generatedAlias0.role like :param0
+[DEBUG] 2019-10-08 18-00-28.052 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.052 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  \-[IDENT] Node: 'juliecortez'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'Role'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[LIKE] Node: 'like'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'role'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2019-10-08 18-00-28.053 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.053 [main] FromElement - FromClause{level=1} : com.juliecortez.entity.Role (generatedAlias0) -> role0_
+[DEBUG] 2019-10-08 18-00-28.053 [main] FromReferenceNode - Resolved : generatedAlias0 -> role0_.id
+[DEBUG] 2019-10-08 18-00-28.054 [main] FromReferenceNode - Resolved : generatedAlias0 -> role0_.id
+[DEBUG] 2019-10-08 18-00-28.054 [main] DotNode - getDataType() : role -> org.hibernate.type.StringType@43045f9f
+[DEBUG] 2019-10-08 18-00-28.054 [main] FromReferenceNode - Resolved : generatedAlias0.role -> role0_.role
+[DEBUG] 2019-10-08 18-00-28.054 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.054 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} role0_.id ) ( FromClause{level=1} role role0_ ) ( where ( like ( role0_.role role0_.id role ) ? ) ) )
+[DEBUG] 2019-10-08 18-00-28.054 [main] JoinProcessor - Using FROM fragment [role role0_]
+[DEBUG] 2019-10-08 18-00-28.054 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.054 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (role)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'role0_.id as id1_0_' {alias=generatedAlias0, className=com.juliecortez.entity.Role, tableAlias=role0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'role0_.role as role2_0_, role0_.user_id as user_id3_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[role0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'role role0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=role,tableAlias=role0_,origin=null,columns={,className=com.juliecortez.entity.Role}}
+    \-[WHERE] SqlNode: 'where'
+       \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'role0_.role' {propertyName=role,dereferenceType=PRIMITIVE,getPropertyPath=role,path=generatedAlias0.role,tableAlias=role0_,className=com.juliecortez.entity.Role,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'role0_.id' {alias=generatedAlias0, className=com.juliecortez.entity.Role, tableAlias=role0_}
+          |  \-[IDENT] IdentNode: 'role' {originalText=role}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@43045f9f}
+
+[DEBUG] 2019-10-08 18-00-28.055 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.055 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.Role as generatedAlias0 where generatedAlias0.role like :param0
+[DEBUG] 2019-10-08 18-00-28.055 [main] QueryTranslatorImpl - SQL: select role0_.id as id1_0_, role0_.role as role2_0_, role0_.user_id as user_id3_0_ from role role0_ where role0_.role like ?
+[DEBUG] 2019-10-08 18-00-28.055 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.055 [main] SQL - select role0_.id as id1_0_, role0_.role as role2_0_, role0_.user_id as user_id3_0_ from role role0_ where role0_.role like ?
+[DEBUG] 2019-10-08 18-00-28.057 [main] Loader - Result set row: 0
+[DEBUG] 2019-10-08 18-00-28.057 [main] Loader - Result row: EntityKey[com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.057 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.057 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.057 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.057 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.057 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.058 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.060 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.061 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.062 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.062 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.062 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.062 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.062 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.063 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.063 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.063 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.063 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.101 [main] SQL - select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-28.103 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.103 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.104 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.105 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.105 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.105 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.105 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.106 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.106 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.106 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.106 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.107 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.107 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.107 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.107 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.107 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.Role#1
+[DEBUG] 2019-10-08 18-00-28.107 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.147 [main] SQL - select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-28.148 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.149 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.149 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.149 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.150 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.150 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.150 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.151 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.151 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.151 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.151 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.151 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.151 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.151 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.151 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.Role#1
+[DEBUG] 2019-10-08 18-00-28.151 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.152 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-10-08 18-00-28.152 [main] TransactionImpl - begin
+[DEBUG] 2019-10-08 18-00-28.153 [main] TransactionImpl - committing
+[DEBUG] 2019-10-08 18-00-28.154 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-10-08 18-00-28.154 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-10-08 18-00-28.154 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2019-10-08 18-00-28.154 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2019-10-08 18-00-28.154 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-10-08 18-00-28.154 [main] EntityPrinter - com.juliecortez.entity.Role{role=Manager, id=1, user=com.juliecortez.entity.User#1}
+[DEBUG] 2019-10-08 18-00-28.155 [main] SQL - update role set role=?, user_id=? where id=?
+[DEBUG] 2019-10-08 18-00-28.159 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.161 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.161 [main] SQL - select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-28.162 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.163 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Processing attribute `role` : value = Manager
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.163 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.163 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.163 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.164 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.164 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.164 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.164 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.164 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.165 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.165 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.165 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.165 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.165 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.Role#1
+[DEBUG] 2019-10-08 18-00-28.165 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.198 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.199 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.199 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.200 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.200 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.200 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.200 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.200 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.200 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.200 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.200 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.201 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-10-08 18-00-28.201 [main] TransactionImpl - begin
+[DEBUG] 2019-10-08 18-00-28.205 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-10-08 18-00-28.205 [main] SQL - insert into role (role, user_id) values (?, ?)
+[DEBUG] 2019-10-08 18-00-28.211 [main] IdentifierGeneratorHelper - Natively generated identity: 69
+[DEBUG] 2019-10-08 18-00-28.211 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.212 [main] TransactionImpl - committing
+[DEBUG] 2019-10-08 18-00-28.212 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-10-08 18-00-28.212 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-10-08 18-00-28.212 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2019-10-08 18-00-28.212 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2019-10-08 18-00-28.212 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-10-08 18-00-28.212 [main] EntityPrinter - com.juliecortez.entity.Role{role=Busser, id=69, user=com.juliecortez.entity.User#1}
+[DEBUG] 2019-10-08 18-00-28.215 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.215 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.216 [main] SQL - select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-08 18-00-28.217 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.218 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#69]
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Processing attribute `role` : value = Busser
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#69]
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.218 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.218 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.218 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.218 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.219 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.220 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.220 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.220 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-10-08 18-00-28.220 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.220 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.220 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.220 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.220 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.220 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.220 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.220 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.220 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.220 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.220 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.220 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.220 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.Role#69
+[DEBUG] 2019-10-08 18-00-28.220 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.263 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.265 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.265 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.266 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.266 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.266 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.266 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.266 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.266 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.267 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.267 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.268 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-10-08 18-00-28.268 [main] TransactionImpl - begin
+[DEBUG] 2019-10-08 18-00-28.270 [main] TransactionImpl - committing
+[DEBUG] 2019-10-08 18-00-28.270 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-10-08 18-00-28.270 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-10-08 18-00-28.272 [main] Collections - Collection dereferenced: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.273 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 2 deletions to 2 objects
+[DEBUG] 2019-10-08 18-00-28.273 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 1 removals to 1 collections
+[DEBUG] 2019-10-08 18-00-28.273 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-10-08 18-00-28.273 [main] EntityPrinter - com.juliecortez.entity.User{firstName=System, lastName=Administrator, roles=[com.juliecortez.entity.Role#1], dateOfBirth=1988-05-08, id=1, userName=Admin}
+[DEBUG] 2019-10-08 18-00-28.273 [main] EntityPrinter - com.juliecortez.entity.Role{role=Administrator, id=1, user=com.juliecortez.entity.User#1}
+[DEBUG] 2019-10-08 18-00-28.273 [main] SQL - delete from role where id=?
+[DEBUG] 2019-10-08 18-00-28.274 [main] SQL - delete from user where id=?
+[DEBUG] 2019-10-08 18-00-28.279 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.279 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.279 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2019-10-08 18-00-28.279 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.281 [main] CollectionLoadContext - No collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.281 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.281 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.281 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.312 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2019-10-08 18-00-28.312 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0
+[DEBUG] 2019-10-08 18-00-28.313 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.313 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'juliecortez'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2019-10-08 18-00-28.313 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.313 [main] FromElement - FromClause{level=1} : com.juliecortez.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2019-10-08 18-00-28.313 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-10-08 18-00-28.313 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.313 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) )
+[DEBUG] 2019-10-08 18-00-28.314 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2019-10-08 18-00-28.314 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.314 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=com.juliecortez.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=com.juliecortez.entity.User}}
+
+[DEBUG] 2019-10-08 18-00-28.314 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.314 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0
+[DEBUG] 2019-10-08 18-00-28.314 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_
+[DEBUG] 2019-10-08 18-00-28.314 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.314 [main] SQL - select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_
+[DEBUG] 2019-10-08 18-00-28.315 [main] Loader - Result set row: 0
+[DEBUG] 2019-10-08 18-00-28.315 [main] Loader - Result row: EntityKey[com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.316 [main] Loader - Result set row: 1
+[DEBUG] 2019-10-08 18-00-28.316 [main] Loader - Result row: EntityKey[com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1992-10-02
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Tammy
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Johnson
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Processing attribute `userName` : value = TJohnson
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.316 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-08 18-00-28.316 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-08 18-00-28.317 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.317 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-08 18-00-28.318 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.318 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-08 18-00-28.318 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-08 18-00-28.318 [main] TwoPhaseLoad - Processing attribute `role` : value = Manager
+[DEBUG] 2019-10-08 18-00-28.318 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.318 [main] TwoPhaseLoad - Processing attribute `user` : value = 2
+[DEBUG] 2019-10-08 18-00-28.318 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.318 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-08 18-00-28.318 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.318 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-08 18-00-28.318 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.318 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.318 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.318 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.319 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.320 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.320 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.320 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.320 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.320 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.320 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.320 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.320 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.320 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.320 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.320 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.320 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.321 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.321 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.321 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.351 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.firstName=:param0
+[DEBUG] 2019-10-08 18-00-28.352 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0 where generatedAlias0.firstName=:param0
+[DEBUG] 2019-10-08 18-00-28.352 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.352 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  \-[IDENT] Node: 'juliecortez'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'firstName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2019-10-08 18-00-28.352 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.353 [main] FromElement - FromClause{level=1} : com.juliecortez.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2019-10-08 18-00-28.353 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-10-08 18-00-28.353 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-10-08 18-00-28.353 [main] DotNode - getDataType() : firstName -> org.hibernate.type.StringType@43045f9f
+[DEBUG] 2019-10-08 18-00-28.353 [main] FromReferenceNode - Resolved : generatedAlias0.firstName -> user0_.first_name
+[DEBUG] 2019-10-08 18-00-28.353 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.353 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( = ( user0_.first_name user0_.id firstName ) ? ) ) )
+[DEBUG] 2019-10-08 18-00-28.353 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2019-10-08 18-00-28.353 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.353 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=com.juliecortez.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=com.juliecortez.entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.first_name' {propertyName=firstName,dereferenceType=PRIMITIVE,getPropertyPath=firstName,path=generatedAlias0.firstName,tableAlias=user0_,className=com.juliecortez.entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=com.juliecortez.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'firstName' {originalText=firstName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@43045f9f}
+
+[DEBUG] 2019-10-08 18-00-28.353 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.353 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0 where generatedAlias0.firstName=:param0
+[DEBUG] 2019-10-08 18-00-28.353 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_ where user0_.first_name=?
+[DEBUG] 2019-10-08 18-00-28.353 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.354 [main] SQL - select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_ where user0_.first_name=?
+[DEBUG] 2019-10-08 18-00-28.355 [main] Loader - Result set row: 0
+[DEBUG] 2019-10-08 18-00-28.355 [main] Loader - Result row: EntityKey[com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.355 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.356 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.356 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.356 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.356 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.357 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.357 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.357 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.357 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.357 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.357 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.357 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.357 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.357 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.357 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.357 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.357 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.357 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.389 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.lastName like :param0
+[DEBUG] 2019-10-08 18-00-28.389 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0 where generatedAlias0.lastName like :param0
+[DEBUG] 2019-10-08 18-00-28.390 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.390 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  \-[IDENT] Node: 'juliecortez'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[LIKE] Node: 'like'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'lastName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2019-10-08 18-00-28.390 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.391 [main] FromElement - FromClause{level=1} : com.juliecortez.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2019-10-08 18-00-28.391 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-10-08 18-00-28.391 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-10-08 18-00-28.391 [main] DotNode - getDataType() : lastName -> org.hibernate.type.StringType@43045f9f
+[DEBUG] 2019-10-08 18-00-28.391 [main] FromReferenceNode - Resolved : generatedAlias0.lastName -> user0_.last_name
+[DEBUG] 2019-10-08 18-00-28.391 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.391 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( like ( user0_.last_name user0_.id lastName ) ? ) ) )
+[DEBUG] 2019-10-08 18-00-28.391 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2019-10-08 18-00-28.391 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-08 18-00-28.391 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=com.juliecortez.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=com.juliecortez.entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'user0_.last_name' {propertyName=lastName,dereferenceType=PRIMITIVE,getPropertyPath=lastName,path=generatedAlias0.lastName,tableAlias=user0_,className=com.juliecortez.entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=com.juliecortez.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'lastName' {originalText=lastName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@43045f9f}
+
+[DEBUG] 2019-10-08 18-00-28.391 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.391 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0 where generatedAlias0.lastName like :param0
+[DEBUG] 2019-10-08 18-00-28.391 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_ where user0_.last_name like ?
+[DEBUG] 2019-10-08 18-00-28.391 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-08 18-00-28.392 [main] SQL - select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_ where user0_.last_name like ?
+[DEBUG] 2019-10-08 18-00-28.394 [main] Loader - Result set row: 0
+[DEBUG] 2019-10-08 18-00-28.394 [main] Loader - Result row: EntityKey[com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.394 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.395 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.395 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.395 [main] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-08 18-00-28.396 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.396 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.396 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.396 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.396 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.396 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.396 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.396 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.396 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.396 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.396 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.396 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.396 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.397 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-08 18-00-28.397 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.429 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.430 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.430 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.431 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.431 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.431 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.431 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.431 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.431 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.432 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.432 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.464 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.465 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.465 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.465 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.465 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.465 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.466 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.466 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.466 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.466 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.466 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.466 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.466 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.467 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-10-08 18-00-28.467 [main] TransactionImpl - begin
+[DEBUG] 2019-10-08 18-00-28.468 [main] TransactionImpl - committing
+[DEBUG] 2019-10-08 18-00-28.468 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-10-08 18-00-28.468 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-10-08 18-00-28.469 [main] Collections - Collection found: [com.juliecortez.entity.User.roles#1], was: [com.juliecortez.entity.User.roles#1] (initialized)
+[DEBUG] 2019-10-08 18-00-28.469 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 2 updates, 0 deletions to 2 objects
+[DEBUG] 2019-10-08 18-00-28.469 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2019-10-08 18-00-28.470 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-10-08 18-00-28.470 [main] EntityPrinter - com.juliecortez.entity.User{firstName=System, lastName=Davis, roles=[com.juliecortez.entity.Role#1], dateOfBirth=1988-05-08, id=1, userName=Admin}
+[DEBUG] 2019-10-08 18-00-28.470 [main] EntityPrinter - com.juliecortez.entity.Role{role=Administrator, id=1, user=com.juliecortez.entity.User#1}
+[DEBUG] 2019-10-08 18-00-28.470 [main] SQL - update user set date_of_birth=?, first_name=?, last_name=?, user_name=? where id=?
+[DEBUG] 2019-10-08 18-00-28.475 [main] SQL - update role set role=?, user_id=? where id=?
+[DEBUG] 2019-10-08 18-00-28.483 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.483 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.484 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.485 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.485 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.485 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Davis
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-08 18-00-28.485 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.486 [main] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-08 18-00-28.486 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.486 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-08 18-00-28.486 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.486 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-08 18-00-28.486 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.486 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.486 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#1
+[DEBUG] 2019-10-08 18-00-28.486 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.523 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-10-08 18-00-28.523 [main] TransactionImpl - begin
+[DEBUG] 2019-10-08 18-00-28.524 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-10-08 18-00-28.524 [main] SQL - insert into user (date_of_birth, first_name, last_name, user_name) values (?, ?, ?, ?)
+[DEBUG] 2019-10-08 18-00-28.527 [main] IdentifierGeneratorHelper - Natively generated identity: 200
+[DEBUG] 2019-10-08 18-00-28.527 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.527 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-10-08 18-00-28.527 [main] SQL - insert into role (role, user_id) values (?, ?)
+[DEBUG] 2019-10-08 18-00-28.529 [main] IdentifierGeneratorHelper - Natively generated identity: 70
+[DEBUG] 2019-10-08 18-00-28.529 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.529 [main] TransactionImpl - committing
+[DEBUG] 2019-10-08 18-00-28.529 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-10-08 18-00-28.529 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-10-08 18-00-28.529 [main] Collections - Collection found: [com.juliecortez.entity.User.roles#200], was: [<unreferenced>] (initialized)
+[DEBUG] 2019-10-08 18-00-28.529 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+[DEBUG] 2019-10-08 18-00-28.529 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2019-10-08 18-00-28.529 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-10-08 18-00-28.530 [main] EntityPrinter - com.juliecortez.entity.Role{role=Front Of House, id=70, user=com.juliecortez.entity.User#200}
+[DEBUG] 2019-10-08 18-00-28.530 [main] EntityPrinter - com.juliecortez.entity.User{firstName=Fred, lastName=Flintstone, roles=[com.juliecortez.entity.Role#70], dateOfBirth=1168-01-01, id=200, userName=fflintstone}
+[DEBUG] 2019-10-08 18-00-28.533 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.534 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.534 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.535 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.535 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.536 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#200]
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#200]
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1168-01-01
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Fred
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Flintstone
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Processing attribute `userName` : value = fflintstone
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#200]
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#70]
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Processing attribute `role` : value = Front Of House
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Processing attribute `user` : value = 200
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.536 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#70]
+[DEBUG] 2019-10-08 18-00-28.536 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.536 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#200]
+[DEBUG] 2019-10-08 18-00-28.536 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.536 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.536 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#200
+[DEBUG] 2019-10-08 18-00-28.536 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.568 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-10-08 18-00-28.568 [main] TransactionImpl - begin
+[DEBUG] 2019-10-08 18-00-28.569 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-10-08 18-00-28.569 [main] SQL - insert into user (date_of_birth, first_name, last_name, user_name) values (?, ?, ?, ?)
+[DEBUG] 2019-10-08 18-00-28.570 [main] IdentifierGeneratorHelper - Natively generated identity: 201
+[DEBUG] 2019-10-08 18-00-28.571 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.571 [main] TransactionImpl - committing
+[DEBUG] 2019-10-08 18-00-28.571 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-10-08 18-00-28.571 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-10-08 18-00-28.571 [main] Collections - Collection found: [com.juliecortez.entity.User.roles#201], was: [<unreferenced>] (initialized)
+[DEBUG] 2019-10-08 18-00-28.571 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2019-10-08 18-00-28.571 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2019-10-08 18-00-28.571 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-10-08 18-00-28.571 [main] EntityPrinter - com.juliecortez.entity.User{firstName=Fred, lastName=Flintstone, roles=[], dateOfBirth=1968-01-01, id=201, userName=fflintstone}
+[DEBUG] 2019-10-08 18-00-28.575 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.575 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-08 18-00-28.576 [main] SQL - select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-08 18-00-28.577 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-08 18-00-28.577 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-10-08 18-00-28.577 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.juliecortez.entity.User.roles#201]
+[DEBUG] 2019-10-08 18-00-28.577 [main] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#201]
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1968-01-01
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Fred
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Flintstone
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Processing attribute `userName` : value = fflintstone
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-08 18-00-28.578 [main] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#201]
+[DEBUG] 2019-10-08 18-00-28.578 [main] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.578 [main] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#201]
+[DEBUG] 2019-10-08 18-00-28.578 [main] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-08 18-00-28.578 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-08 18-00-28.578 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.juliecortez.entity.User#201
+[DEBUG] 2019-10-08 18-00-28.578 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

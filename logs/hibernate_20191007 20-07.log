@@ -1,0 +1,1200 @@
+[DEBUG] 2019-10-07 20-07-29.835 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2019-10-07 20-07-29.848 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2019-10-07 20-07-29.859 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2019-10-07 20-07-30.042 [http-nio-8080-exec-3] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2019-10-07 20-07-30.046 [http-nio-8080-exec-3] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2019-10-07 20-07-30.439 [http-nio-8080-exec-3] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2019-10-07 20-07-30.440 [http-nio-8080-exec-3] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2019-10-07 20-07-30.469 [http-nio-8080-exec-3] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2019-10-07 20-07-30.928 [http-nio-8080-exec-3] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2019-10-07 20-07-30.966 [http-nio-8080-exec-3] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2019-10-07 20-07-30.971 [http-nio-8080-exec-3] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2019-10-07 20-07-31.022 [http-nio-8080-exec-3] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2019-10-07 20-07-31.129 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@68074b83
+[DEBUG] 2019-10-07 20-07-31.130 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@68074b83
+[DEBUG] 2019-10-07 20-07-31.130 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@68074b83
+[DEBUG] 2019-10-07 20-07-31.131 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2a1264f5
+[DEBUG] 2019-10-07 20-07-31.133 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2215aa4f
+[DEBUG] 2019-10-07 20-07-31.134 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@35fe7c0b
+[DEBUG] 2019-10-07 20-07-31.136 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@38596f05
+[DEBUG] 2019-10-07 20-07-31.136 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@38596f05
+[DEBUG] 2019-10-07 20-07-31.136 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@38596f05
+[DEBUG] 2019-10-07 20-07-31.138 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7015ab51
+[DEBUG] 2019-10-07 20-07-31.138 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7015ab51
+[DEBUG] 2019-10-07 20-07-31.138 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7015ab51
+[DEBUG] 2019-10-07 20-07-31.140 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4f3494f8
+[DEBUG] 2019-10-07 20-07-31.140 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4f3494f8
+[DEBUG] 2019-10-07 20-07-31.140 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4f3494f8
+[DEBUG] 2019-10-07 20-07-31.142 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@499babdb
+[DEBUG] 2019-10-07 20-07-31.142 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@499babdb
+[DEBUG] 2019-10-07 20-07-31.142 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@499babdb
+[DEBUG] 2019-10-07 20-07-31.144 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@242cbfe4
+[DEBUG] 2019-10-07 20-07-31.144 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@242cbfe4
+[DEBUG] 2019-10-07 20-07-31.144 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@242cbfe4
+[DEBUG] 2019-10-07 20-07-31.145 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@57963125
+[DEBUG] 2019-10-07 20-07-31.145 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@57963125
+[DEBUG] 2019-10-07 20-07-31.146 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@57963125
+[DEBUG] 2019-10-07 20-07-31.147 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@248b896b
+[DEBUG] 2019-10-07 20-07-31.148 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@248b896b
+[DEBUG] 2019-10-07 20-07-31.148 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@248b896b
+[DEBUG] 2019-10-07 20-07-31.150 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@387a1556
+[DEBUG] 2019-10-07 20-07-31.150 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@387a1556
+[DEBUG] 2019-10-07 20-07-31.154 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@69c6425e
+[DEBUG] 2019-10-07 20-07-31.155 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@69c6425e
+[DEBUG] 2019-10-07 20-07-31.156 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@152c0e71
+[DEBUG] 2019-10-07 20-07-31.157 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@152c0e71
+[DEBUG] 2019-10-07 20-07-31.157 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@16eecaab
+[DEBUG] 2019-10-07 20-07-31.158 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3a8c3a06
+[DEBUG] 2019-10-07 20-07-31.160 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6d21b30a
+[DEBUG] 2019-10-07 20-07-31.160 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6d21b30a
+[DEBUG] 2019-10-07 20-07-31.161 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@4a34f8b2
+[DEBUG] 2019-10-07 20-07-31.162 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4a34f8b2
+[DEBUG] 2019-10-07 20-07-31.169 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@77bf5f20
+[DEBUG] 2019-10-07 20-07-31.169 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@77bf5f20
+[DEBUG] 2019-10-07 20-07-31.171 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@79022bf
+[DEBUG] 2019-10-07 20-07-31.171 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@79022bf
+[DEBUG] 2019-10-07 20-07-31.173 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@298ec3fa
+[DEBUG] 2019-10-07 20-07-31.173 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@298ec3fa
+[DEBUG] 2019-10-07 20-07-31.174 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@59ad8846
+[DEBUG] 2019-10-07 20-07-31.175 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@59ad8846
+[DEBUG] 2019-10-07 20-07-31.178 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22f1aad7
+[DEBUG] 2019-10-07 20-07-31.179 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22f1aad7
+[DEBUG] 2019-10-07 20-07-31.181 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@41710bea
+[DEBUG] 2019-10-07 20-07-31.181 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@41710bea
+[DEBUG] 2019-10-07 20-07-31.186 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2a89cf8
+[DEBUG] 2019-10-07 20-07-31.186 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2a89cf8
+[DEBUG] 2019-10-07 20-07-31.188 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1e2b666a
+[DEBUG] 2019-10-07 20-07-31.188 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1e2b666a
+[DEBUG] 2019-10-07 20-07-31.190 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2512e5f9
+[DEBUG] 2019-10-07 20-07-31.190 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2512e5f9
+[DEBUG] 2019-10-07 20-07-31.192 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@55c2de4d
+[DEBUG] 2019-10-07 20-07-31.192 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@55c2de4d
+[DEBUG] 2019-10-07 20-07-31.192 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@55c2de4d
+[DEBUG] 2019-10-07 20-07-31.194 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1ab94d1d
+[DEBUG] 2019-10-07 20-07-31.196 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@2f8e2a68
+[DEBUG] 2019-10-07 20-07-31.196 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2f8e2a68
+[DEBUG] 2019-10-07 20-07-31.196 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2f8e2a68
+[DEBUG] 2019-10-07 20-07-31.197 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5ee73aeb
+[DEBUG] 2019-10-07 20-07-31.199 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@66925259
+[DEBUG] 2019-10-07 20-07-31.200 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@66925259
+[DEBUG] 2019-10-07 20-07-31.202 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5b5871e5
+[DEBUG] 2019-10-07 20-07-31.202 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5b5871e5
+[DEBUG] 2019-10-07 20-07-31.203 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@275c5764
+[DEBUG] 2019-10-07 20-07-31.203 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@275c5764
+[DEBUG] 2019-10-07 20-07-31.205 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@37aa20bb
+[DEBUG] 2019-10-07 20-07-31.205 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@37aa20bb
+[DEBUG] 2019-10-07 20-07-31.207 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7d313909
+[DEBUG] 2019-10-07 20-07-31.207 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7d313909
+[DEBUG] 2019-10-07 20-07-31.207 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@59bee906
+[DEBUG] 2019-10-07 20-07-31.209 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@279202ee
+[DEBUG] 2019-10-07 20-07-31.209 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@279202ee
+[DEBUG] 2019-10-07 20-07-31.209 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@279202ee
+[DEBUG] 2019-10-07 20-07-31.211 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7076caa
+[DEBUG] 2019-10-07 20-07-31.211 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7076caa
+[DEBUG] 2019-10-07 20-07-31.211 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7076caa
+[DEBUG] 2019-10-07 20-07-31.213 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@65722c14
+[DEBUG] 2019-10-07 20-07-31.214 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1702bef3
+[DEBUG] 2019-10-07 20-07-31.216 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3de9d9e4
+[DEBUG] 2019-10-07 20-07-31.216 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3de9d9e4
+[DEBUG] 2019-10-07 20-07-31.216 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3de9d9e4
+[DEBUG] 2019-10-07 20-07-31.219 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2e881a50
+[DEBUG] 2019-10-07 20-07-31.219 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2e881a50
+[DEBUG] 2019-10-07 20-07-31.219 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2e881a50
+[DEBUG] 2019-10-07 20-07-31.222 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@5988875c
+[DEBUG] 2019-10-07 20-07-31.222 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@63bf90c3
+[DEBUG] 2019-10-07 20-07-31.225 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@6f18eceb
+[DEBUG] 2019-10-07 20-07-31.225 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6f18eceb
+[DEBUG] 2019-10-07 20-07-31.226 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1c3afac
+[DEBUG] 2019-10-07 20-07-31.228 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6a7a3a22
+[DEBUG] 2019-10-07 20-07-31.228 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6a7a3a22
+[DEBUG] 2019-10-07 20-07-31.231 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@389a56d7
+[DEBUG] 2019-10-07 20-07-31.231 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@389a56d7
+[DEBUG] 2019-10-07 20-07-31.232 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@273c84e9
+[DEBUG] 2019-10-07 20-07-31.233 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@74f60c5
+[DEBUG] 2019-10-07 20-07-31.236 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@4d7bcd61
+[DEBUG] 2019-10-07 20-07-31.244 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@5c2ae1fc
+[DEBUG] 2019-10-07 20-07-31.244 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5c2ae1fc
+[DEBUG] 2019-10-07 20-07-31.245 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@47f1bfa1
+[DEBUG] 2019-10-07 20-07-31.245 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2b2a6d3a
+[DEBUG] 2019-10-07 20-07-31.245 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5bb67c88
+[DEBUG] 2019-10-07 20-07-31.245 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6b4f8493
+[DEBUG] 2019-10-07 20-07-31.246 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@218932ec
+[DEBUG] 2019-10-07 20-07-31.246 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5932d85a
+[DEBUG] 2019-10-07 20-07-31.246 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3108bdc8
+[DEBUG] 2019-10-07 20-07-31.246 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2674cc66
+[DEBUG] 2019-10-07 20-07-31.308 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2019-10-07 20-07-31.309 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2019-10-07 20-07-31.310 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-10-07 20-07-31.310 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-10-07 20-07-31.311 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2019-10-07 20-07-31.314 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2019-10-07 20-07-31.316 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2019-10-07 20-07-31.319 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-10-07 20-07-31.321 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2019-10-07 20-07-31.321 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2019-10-07 20-07-31.322 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2019-10-07 20-07-31.323 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2019-10-07 20-07-31.323 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-10-07 20-07-31.324 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2019-10-07 20-07-31.337 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_mww
+[INFO ] 2019-10-07 20-07-31.337 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=cortezjl}
+[INFO ] 2019-10-07 20-07-31.337 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2019-10-07 20-07-31.546 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2019-10-07 20-07-32.119 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.17
+      major : 8
+      minor : 0
+[DEBUG] 2019-10-07 20-07-32.120 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2019-10-07 20-07-32.120 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2019-10-07 20-07-32.191 [http-nio-8080-exec-3] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2019-10-07 20-07-32.237 [http-nio-8080-exec-3] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2019-10-07 20-07-32.274 [http-nio-8080-exec-3] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2019-10-07 20-07-32.329 [http-nio-8080-exec-3] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2019-10-07 20-07-32.339 [http-nio-8080-exec-3] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@51b2f930] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@526ce4ab]
+[DEBUG] 2019-10-07 20-07-32.459 [http-nio-8080-exec-3] AnnotationBinder - Binding entity from annotated class: com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-32.523 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-10-07 20-07-32.527 [http-nio-8080-exec-4] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2019-10-07 20-07-32.528 [http-nio-8080-exec-4] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2019-10-07 20-07-32.528 [http-nio-8080-exec-4] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[DEBUG] 2019-10-07 20-07-32.539 [http-nio-8080-exec-4] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2019-10-07 20-07-32.540 [http-nio-8080-exec-4] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2019-10-07 20-07-32.542 [http-nio-8080-exec-4] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2019-10-07 20-07-32.564 [http-nio-8080-exec-3] EntityBinder - Import with entity name Role
+[DEBUG] 2019-10-07 20-07-32.575 [http-nio-8080-exec-3] EntityBinder - Bind entity com.juliecortez.entity.Role on table role
+[DEBUG] 2019-10-07 20-07-32.576 [http-nio-8080-exec-4] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2019-10-07 20-07-32.577 [http-nio-8080-exec-4] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2019-10-07 20-07-32.577 [http-nio-8080-exec-4] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@68074b83
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@68074b83
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@68074b83
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2a1264f5
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2215aa4f
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@35fe7c0b
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@38596f05
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@38596f05
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@38596f05
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7015ab51
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7015ab51
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7015ab51
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4f3494f8
+[DEBUG] 2019-10-07 20-07-32.578 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4f3494f8
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4f3494f8
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@499babdb
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@499babdb
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@499babdb
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@242cbfe4
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@242cbfe4
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@242cbfe4
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@57963125
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@57963125
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@57963125
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@248b896b
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@248b896b
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@248b896b
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@387a1556
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@387a1556
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@69c6425e
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@69c6425e
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@152c0e71
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@152c0e71
+[DEBUG] 2019-10-07 20-07-32.579 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@16eecaab
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3a8c3a06
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6d21b30a
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6d21b30a
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@4a34f8b2
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4a34f8b2
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@77bf5f20
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@77bf5f20
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@79022bf
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@79022bf
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@298ec3fa
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@298ec3fa
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@59ad8846
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@59ad8846
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22f1aad7
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22f1aad7
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@41710bea
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@41710bea
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2a89cf8
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2a89cf8
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1e2b666a
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1e2b666a
+[DEBUG] 2019-10-07 20-07-32.580 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2512e5f9
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2512e5f9
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@55c2de4d
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@55c2de4d
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@55c2de4d
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1ab94d1d
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@2f8e2a68
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2f8e2a68
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2f8e2a68
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5ee73aeb
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@66925259
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@66925259
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5b5871e5
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5b5871e5
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@275c5764
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@275c5764
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@37aa20bb
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@37aa20bb
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7d313909
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7d313909
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@59bee906
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@279202ee
+[DEBUG] 2019-10-07 20-07-32.581 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@279202ee
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@279202ee
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7076caa
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7076caa
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7076caa
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@65722c14
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1702bef3
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3de9d9e4
+[DEBUG] 2019-10-07 20-07-32.582 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3de9d9e4
+[DEBUG] 2019-10-07 20-07-32.583 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3de9d9e4
+[DEBUG] 2019-10-07 20-07-32.583 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2e881a50
+[DEBUG] 2019-10-07 20-07-32.583 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2e881a50
+[DEBUG] 2019-10-07 20-07-32.583 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2e881a50
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@5988875c
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@63bf90c3
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@6f18eceb
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6f18eceb
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1c3afac
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6a7a3a22
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6a7a3a22
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@389a56d7
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@389a56d7
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@273c84e9
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@74f60c5
+[DEBUG] 2019-10-07 20-07-32.584 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@4d7bcd61
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@5c2ae1fc
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5c2ae1fc
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6ec0f843
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1a57a960
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3f99afc6
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3260edcc
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5b8b1923
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7cb0a79b
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@ea5d054
+[DEBUG] 2019-10-07 20-07-32.585 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3b1e42c1
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2019-10-07 20-07-32.588 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_mww
+[INFO ] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=cortezjl}
+[INFO ] 2019-10-07 20-07-32.589 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[DEBUG] 2019-10-07 20-07-32.679 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.690 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-10-07 20-07-32.693 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.Role:id]
+[DEBUG] 2019-10-07 20-07-32.702 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.708 [http-nio-8080-exec-3] PropertyBinder - Building property id
+[DEBUG] 2019-10-07 20-07-32.722 [http-nio-8080-exec-3] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-10-07 20-07-32.725 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=role, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.725 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property role with lazy=false
+[DEBUG] 2019-10-07 20-07-32.725 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.Role:role]
+[DEBUG] 2019-10-07 20-07-32.725 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for role
+[DEBUG] 2019-10-07 20-07-32.725 [http-nio-8080-exec-3] PropertyBinder - Building property role
+[DEBUG] 2019-10-07 20-07-32.728 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-10-07 20-07-32.728 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[INFO ] 2019-10-07 20-07-32.730 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2019-10-07 20-07-32.755 [http-nio-8080-exec-3] PropertyBinder - Building property user
+[DEBUG] 2019-10-07 20-07-32.762 [http-nio-8080-exec-3] AnnotationBinder - Binding entity from annotated class: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-32.762 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-10-07 20-07-32.762 [http-nio-8080-exec-3] EntityBinder - Import with entity name User
+[DEBUG] 2019-10-07 20-07-32.762 [http-nio-8080-exec-3] EntityBinder - Bind entity com.juliecortez.entity.User on table user
+[DEBUG] 2019-10-07 20-07-32.764 [http-nio-8080-exec-4] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.17
+      major : 8
+      minor : 0
+[DEBUG] 2019-10-07 20-07-32.765 [http-nio-8080-exec-4] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2019-10-07 20-07-32.765 [http-nio-8080-exec-4] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2019-10-07 20-07-32.765 [http-nio-8080-exec-4] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2019-10-07 20-07-32.765 [http-nio-8080-exec-4] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2019-10-07 20-07-32.766 [http-nio-8080-exec-4] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2019-10-07 20-07-32.773 [http-nio-8080-exec-4] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2019-10-07 20-07-32.773 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.773 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-10-07 20-07-32.774 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:id]
+[DEBUG] 2019-10-07 20-07-32.775 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.776 [http-nio-8080-exec-3] PropertyBinder - Building property id
+[DEBUG] 2019-10-07 20-07-32.776 [http-nio-8080-exec-4] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@27d13d4c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@610b6630]
+[DEBUG] 2019-10-07 20-07-32.776 [http-nio-8080-exec-3] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-4] AnnotationBinder - Binding entity from annotated class: com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=date_of_birth, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-4] EntityBinder - Import with entity name Role
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-4] EntityBinder - Bind entity com.juliecortez.entity.Role on table role
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property dateOfBirth with lazy=false
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:dateOfBirth]
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for dateOfBirth
+[DEBUG] 2019-10-07 20-07-32.777 [http-nio-8080-exec-3] PropertyBinder - Building property dateOfBirth
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.Role:id]
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:firstName]
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-3] PropertyBinder - Building property firstName
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-4] PropertyBinder - Building property id
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-4] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-10-07 20-07-32.778 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:lastName]
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=role, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property role with lazy=false
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-3] PropertyBinder - Building property lastName
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.Role:role]
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for role
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-4] PropertyBinder - Building property role
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-10-07 20-07-32.779 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.780 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.781 [http-nio-8080-exec-4] PropertyBinder - Building property user
+[DEBUG] 2019-10-07 20-07-32.782 [http-nio-8080-exec-4] AnnotationBinder - Binding entity from annotated class: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-32.782 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-10-07 20-07-32.782 [http-nio-8080-exec-4] EntityBinder - Import with entity name User
+[DEBUG] 2019-10-07 20-07-32.782 [http-nio-8080-exec-4] EntityBinder - Bind entity com.juliecortez.entity.User on table user
+[DEBUG] 2019-10-07 20-07-32.783 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.783 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-10-07 20-07-32.784 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:id]
+[DEBUG] 2019-10-07 20-07-32.784 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.784 [http-nio-8080-exec-4] PropertyBinder - Building property id
+[DEBUG] 2019-10-07 20-07-32.784 [http-nio-8080-exec-4] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-10-07 20-07-32.784 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=date_of_birth, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.784 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property dateOfBirth with lazy=false
+[DEBUG] 2019-10-07 20-07-32.784 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:dateOfBirth]
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for dateOfBirth
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] PropertyBinder - Building property dateOfBirth
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:firstName]
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] PropertyBinder - Building property firstName
+[DEBUG] 2019-10-07 20-07-32.785 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.786 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2019-10-07 20-07-32.786 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:lastName]
+[DEBUG] 2019-10-07 20-07-32.786 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2019-10-07 20-07-32.786 [http-nio-8080-exec-4] PropertyBinder - Building property lastName
+[DEBUG] 2019-10-07 20-07-32.786 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-07 20-07-32.786 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.787 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.787 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.813 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.813 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.814 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.814 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.816 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-10-07 20-07-32.816 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-10-07 20-07-32.819 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-07 20-07-32.819 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-07 20-07-32.819 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-07 20-07-32.819 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-10-07 20-07-32.820 [http-nio-8080-exec-3] CollectionBinder - Collection role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-32.820 [http-nio-8080-exec-4] CollectionBinder - Collection role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-32.826 [http-nio-8080-exec-3] PropertyBinder - Building property roles
+[DEBUG] 2019-10-07 20-07-32.826 [http-nio-8080-exec-4] PropertyBinder - Building property roles
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:userName]
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.juliecortez.entity.User:userName]
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-4] PropertyBinder - Building property userName
+[DEBUG] 2019-10-07 20-07-32.827 [http-nio-8080-exec-3] PropertyBinder - Building property userName
+[DEBUG] 2019-10-07 20-07-32.829 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.829 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.829 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for role
+[DEBUG] 2019-10-07 20-07-32.829 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for role
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for dateOfBirth
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for dateOfBirth
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-10-07 20-07-32.830 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-10-07 20-07-32.843 [http-nio-8080-exec-4] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [role]
+[DEBUG] 2019-10-07 20-07-32.843 [http-nio-8080-exec-3] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [role]
+[DEBUG] 2019-10-07 20-07-32.843 [http-nio-8080-exec-4] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2019-10-07 20-07-32.843 [http-nio-8080-exec-3] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2019-10-07 20-07-32.843 [http-nio-8080-exec-4] CollectionSecondPass - Second pass for collection: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-32.843 [http-nio-8080-exec-3] CollectionSecondPass - Second pass for collection: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-32.845 [http-nio-8080-exec-3] CollectionBinder - Binding a OneToMany: com.juliecortez.entity.User.roles through a foreign key
+[DEBUG] 2019-10-07 20-07-32.845 [http-nio-8080-exec-4] CollectionBinder - Binding a OneToMany: com.juliecortez.entity.User.roles through a foreign key
+[DEBUG] 2019-10-07 20-07-32.847 [http-nio-8080-exec-4] CollectionBinder - Mapping collection: com.juliecortez.entity.User.roles -> role
+[DEBUG] 2019-10-07 20-07-32.847 [http-nio-8080-exec-3] CollectionBinder - Mapping collection: com.juliecortez.entity.User.roles -> role
+[DEBUG] 2019-10-07 20-07-32.851 [http-nio-8080-exec-3] TableBinder - Retrieving property com.juliecortez.entity.Role.user
+[DEBUG] 2019-10-07 20-07-32.851 [http-nio-8080-exec-4] TableBinder - Retrieving property com.juliecortez.entity.Role.user
+[DEBUG] 2019-10-07 20-07-32.852 [http-nio-8080-exec-3] CollectionSecondPass - Mapped collection key: user_id, one-to-many: com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-32.852 [http-nio-8080-exec-4] CollectionSecondPass - Mapped collection key: user_id, one-to-many: com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-32.852 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-32.852 [http-nio-8080-exec-4] InFlightMetadataCollectorImpl - Resolving reference to class: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-32.858 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-32.858 [http-nio-8080-exec-4] InFlightMetadataCollectorImpl - Resolving reference to class: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-32.923 [http-nio-8080-exec-4] SessionFactoryImpl - Building session factory
+[DEBUG] 2019-10-07 20-07-32.923 [http-nio-8080-exec-3] SessionFactoryImpl - Building session factory
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - SessionFactory name : null
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - SessionFactory name : null
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Statistics: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Statistics: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Default entity-mode: pojo
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Default entity-mode: pojo
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Default batch fetch size: -1
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Default batch fetch size: -1
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Default null ordering: NONE
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Default null ordering: NONE
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - JTA Track by Thread: enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - JTA Track by Thread: enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Query language substitutions: {}
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Query language substitutions: {}
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Named query checking : enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-3] Settings - Named query checking : enabled
+[DEBUG] 2019-10-07 20-07-32.925 [http-nio-8080-exec-4] Settings - Second-level cache: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Second-level cache: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Second-level query cache: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Second-level query cache: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Second-level query cache factory: null
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Second-level query cache factory: null
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Second-level cache region prefix: null
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Second-level cache region prefix: null
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - JDBC batch size: 15
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - JDBC batch size: 15
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Scrollable result sets: enabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Wrap result sets: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Scrollable result sets: enabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - JDBC result set fetch size: null
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Wrap result sets: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - Generate SQL with comments: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - JDBC result set fetch size: null
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - JPA compliance - query : 
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-4] Settings - Generate SQL with comments: disabled
+[DEBUG] 2019-10-07 20-07-32.926 [http-nio-8080-exec-3] Settings - JPA compliance - lists : 
+[DEBUG] 2019-10-07 20-07-32.927 [http-nio-8080-exec-3] Settings - JPA compliance - transactions : 
+[DEBUG] 2019-10-07 20-07-32.927 [http-nio-8080-exec-4] Settings - JPA compliance - query : 
+[DEBUG] 2019-10-07 20-07-32.927 [http-nio-8080-exec-4] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2019-10-07 20-07-32.927 [http-nio-8080-exec-4] Settings - JPA compliance - lists : 
+[DEBUG] 2019-10-07 20-07-32.927 [http-nio-8080-exec-4] Settings - JPA compliance - transactions : 
+[INFO ] 2019-10-07 20-07-33.059 [http-nio-8080-exec-3] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[INFO ] 2019-10-07 20-07-33.059 [http-nio-8080-exec-4] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2019-10-07 20-07-33.093 [http-nio-8080-exec-4] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2019-10-07 20-07-33.093 [http-nio-8080-exec-3] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2019-10-07 20-07-33.093 [http-nio-8080-exec-4] SessionFactoryImpl - Instantiating session factory with properties: {awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.c3p0.min_size=5, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, catalina.useNaming=true, openejb.provider.default=org.apache.tomee, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.4\bin, com.sun.management.jmxremote.ssl=false, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, openejb.embedder.source=ServerListener, java.version.date=2019-07-16, java.home=C:\Program Files\Java\jdk-11.0.4, ignore.endorsed.dirs=, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, openejb.scan.webapp.container=true, com.sun.management.jmxremote.password.file=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek\jmxremote.password, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, jdk.tls.ephemeralDHKeySize=2048, user.script=, java.util.logging.config.file=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek\conf\logging.properties, java.protocol.handler.pkgs=org.apache.catalina.webresources, connection.password=Security1!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, openejb.scan.webapp.container.excludes=, java.runtime.version=11.0.4+10-LTS, user.name=15635, org.apache.johnzon.max-string-length=8192, file.encoding=Cp1252, java.vendor.version=18.9, derby.system.home=C:\tomcat\bin, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.io.tmpdir=C:\tomcat\temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, java.version=11.0.4, com.sun.management.jmxremote.port=1099, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-jmx-remote.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina-ws.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, connection.username=cortezjl, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, tomcat.built=May 4 2019 09:17:16 UTC, java.library.path=C:\Program Files\Java\jdk-11.0.4\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;., java.vendor=Oracle Corporation, tomee.version=7.1.1, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, sun.desktop=windows, java.class.path=C:\tomcat\bin\bootstrap.jar;C:\tomcat\bin\tomcat-juli.jar, tomcat.version=8.5.41.0, java.vm.vendor=Oracle Corporation, openejb.home=C:\tomcat, user.variant=, openejb.system.apps=true, user.timezone=America/Chicago, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, openejb.base=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek, com.sun.management.jmxremote=, sun.cpu.endian=little, user.home=C:\Users\15635, hibernate.c3p0.max_statements=50, user.language=en, openejb.deployments.classpath=false, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, com.sun.management.jmxremote.access.file=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek\jmxremote.access, hibernate.c3p0.max_size=20, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, path.separator=;, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, common.loader="C:/tomcat/lib","C:/tomcat/lib/*.jar","C:\tomcat/lib","C:\tomcat/lib/*.jar", hibernate.connection.username=****, os.version=10.0, openejb.version=7.1.1, org.apache.security.jacc.EJBMethodPermission.methodInterfaces=BusinessLocalHome,BusinessRemoteHome,BusinessRemote,BusinessLocal, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_mww, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, openejb.scan.webapp.container.includes=.*(geronimo|mp-jwt|failsafe).*, java.vendor.url.bug=http://bugreport.java.com/bugreport/, tomee.remote.support=true, catalina.home=C:\tomcat, user.dir=C:\tomcat\bin, bval.in-container=true, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, hibernate.connection.password=****, tomee.serialization.class.blacklist=-, tomee.serialization.class.whitelist=, shared.loader=, catalina.base=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5dd34029, noBanner=true, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, java.vm.version=11.0.4+10-LTS, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.hostname=127.0.0.1, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, connection.url=jdbc:mysql://localhost:3306/test_mww, java.class.version=55.0, authconfigprovider.factory=false}
+[DEBUG] 2019-10-07 20-07-33.093 [http-nio-8080-exec-3] SessionFactoryImpl - Instantiating session factory with properties: {awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.c3p0.min_size=5, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, catalina.useNaming=true, openejb.provider.default=org.apache.tomee, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.4\bin, com.sun.management.jmxremote.ssl=false, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, openejb.embedder.source=ServerListener, java.version.date=2019-07-16, java.home=C:\Program Files\Java\jdk-11.0.4, ignore.endorsed.dirs=, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, openejb.scan.webapp.container=true, com.sun.management.jmxremote.password.file=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek\jmxremote.password, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, jdk.tls.ephemeralDHKeySize=2048, user.script=, java.util.logging.config.file=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek\conf\logging.properties, java.protocol.handler.pkgs=org.apache.catalina.webresources, connection.password=Security1!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, openejb.scan.webapp.container.excludes=, java.runtime.version=11.0.4+10-LTS, user.name=15635, org.apache.johnzon.max-string-length=8192, file.encoding=Cp1252, java.vendor.version=18.9, derby.system.home=C:\tomcat\bin, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.io.tmpdir=C:\tomcat\temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, java.version=11.0.4, com.sun.management.jmxremote.port=1099, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-jmx-remote.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina-ws.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, connection.username=cortezjl, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, tomcat.built=May 4 2019 09:17:16 UTC, java.library.path=C:\Program Files\Java\jdk-11.0.4\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;., java.vendor=Oracle Corporation, tomee.version=7.1.1, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, sun.desktop=windows, java.class.path=C:\tomcat\bin\bootstrap.jar;C:\tomcat\bin\tomcat-juli.jar, tomcat.version=8.5.41.0, java.vm.vendor=Oracle Corporation, openejb.home=C:\tomcat, user.variant=, openejb.system.apps=true, user.timezone=America/Chicago, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, openejb.base=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek, com.sun.management.jmxremote=, sun.cpu.endian=little, user.home=C:\Users\15635, hibernate.c3p0.max_statements=50, user.language=en, openejb.deployments.classpath=false, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, com.sun.management.jmxremote.access.file=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek\jmxremote.access, hibernate.c3p0.max_size=20, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, path.separator=;, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, common.loader="C:/tomcat/lib","C:/tomcat/lib/*.jar","C:\tomcat/lib","C:\tomcat/lib/*.jar", hibernate.connection.username=****, os.version=10.0, openejb.version=7.1.1, org.apache.security.jacc.EJBMethodPermission.methodInterfaces=BusinessLocalHome,BusinessRemoteHome,BusinessRemote,BusinessLocal, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_mww, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, openejb.scan.webapp.container.includes=.*(geronimo|mp-jwt|failsafe).*, java.vendor.url.bug=http://bugreport.java.com/bugreport/, tomee.remote.support=true, catalina.home=C:\tomcat, user.dir=C:\tomcat\bin, bval.in-container=true, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, hibernate.connection.password=****, tomee.serialization.class.blacklist=-, tomee.serialization.class.whitelist=, shared.loader=, catalina.base=C:\Users\15635\.IntelliJIdea2019.2\system\tomcat\Unnamed_myworkweek, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@32f32c7f, noBanner=true, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, java.vm.version=11.0.4+10-LTS, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.hostname=127.0.0.1, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, connection.url=jdbc:mysql://localhost:3306/test_mww, java.class.version=55.0, authconfigprovider.factory=false}
+[DEBUG] 2019-10-07 20-07-33.134 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-07 20-07-33.134 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-07 20-07-33.135 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.135 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.146 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-07 20-07-33.146 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-07 20-07-33.146 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.146 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.151 [http-nio-8080-exec-3] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2019-10-07 20-07-33.151 [http-nio-8080-exec-4] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2019-10-07 20-07-33.154 [http-nio-8080-exec-3] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2019-10-07 20-07-33.154 [http-nio-8080-exec-4] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2019-10-07 20-07-33.154 [http-nio-8080-exec-3] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@51b2f930] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@3371c5f6]
+[DEBUG] 2019-10-07 20-07-33.154 [http-nio-8080-exec-4] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@27d13d4c] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@33c01329]
+[DEBUG] 2019-10-07 20-07-33.240 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-07 20-07-33.240 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-07 20-07-33.240 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.240 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.285 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-07 20-07-33.285 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.User] is safe
+[DEBUG] 2019-10-07 20-07-33.285 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.285 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.733 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-07 20-07-33.733 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-07 20-07-33.733 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.733 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.734 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-07 20-07-33.734 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [com.juliecortez.entity.Role] is safe
+[DEBUG] 2019-10-07 20-07-33.734 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.734 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-3] AbstractCollectionPersister - Static SQL for collection: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-4] AbstractCollectionPersister - Static SQL for collection: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-3] AbstractCollectionPersister -  Row insert: update role set user_id=? where id=?
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-4] AbstractCollectionPersister -  Row insert: update role set user_id=? where id=?
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-4] AbstractCollectionPersister -  Row update: update role set  where id=?
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-4] AbstractCollectionPersister -  Row delete: update role set user_id=null where user_id=? and id=?
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-3] AbstractCollectionPersister -  Row update: update role set  where id=?
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-4] AbstractCollectionPersister -  One-shot delete: update role set user_id=null where user_id=?
+[DEBUG] 2019-10-07 20-07-33.758 [http-nio-8080-exec-3] AbstractCollectionPersister -  Row delete: update role set user_id=null where user_id=? and id=?
+[DEBUG] 2019-10-07 20-07-33.759 [http-nio-8080-exec-3] AbstractCollectionPersister -  One-shot delete: update role set user_id=null where user_id=?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-3] AbstractEntityPersister - Static SQL for entity: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-4] AbstractEntityPersister - Static SQL for entity: com.juliecortez.entity.User
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-3] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-4] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-3] AbstractEntityPersister -  Snapshot select: select user_.id, user_.date_of_birth as date_of_2_1_, user_.first_name as first_na3_1_, user_.last_name as last_nam4_1_, user_.user_name as user_nam5_1_ from user user_ where user_.id=?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-4] AbstractEntityPersister -  Snapshot select: select user_.id, user_.date_of_birth as date_of_2_1_, user_.first_name as first_na3_1_, user_.last_name as last_nam4_1_, user_.user_name as user_nam5_1_ from user user_ where user_.id=?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-4] AbstractEntityPersister -  Insert 0: insert into user (date_of_birth, first_name, last_name, user_name, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-3] AbstractEntityPersister -  Insert 0: insert into user (date_of_birth, first_name, last_name, user_name, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-4] AbstractEntityPersister -  Update 0: update user set date_of_birth=?, first_name=?, last_name=?, user_name=? where id=?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-3] AbstractEntityPersister -  Update 0: update user set date_of_birth=?, first_name=?, last_name=?, user_name=? where id=?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-4] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-3] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-4] AbstractEntityPersister -  Identity insert: insert into user (date_of_birth, first_name, last_name, user_name) values (?, ?, ?, ?)
+[DEBUG] 2019-10-07 20-07-33.765 [http-nio-8080-exec-3] AbstractEntityPersister -  Identity insert: insert into user (date_of_birth, first_name, last_name, user_name) values (?, ?, ?, ?)
+[DEBUG] 2019-10-07 20-07-33.824 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5ae67f8d]
+[DEBUG] 2019-10-07 20-07-33.824 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3c09200d]
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-10-07 20-07-33.827 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-10-07 20-07-33.840 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@e95302]
+[DEBUG] 2019-10-07 20-07-33.840 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@706fd7ef]
+[DEBUG] 2019-10-07 20-07-33.845 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@27f8cb4]
+[DEBUG] 2019-10-07 20-07-33.845 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6320ad99]
+[DEBUG] 2019-10-07 20-07-33.847 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-10-07 20-07-33.847 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-10-07 20-07-33.847 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-10-07 20-07-33.847 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-10-07 20-07-33.847 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-10-07 20-07-33.847 [http-nio-8080-exec-3] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-10-07 20-07-33.848 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-10-07 20-07-33.848 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-10-07 20-07-33.848 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.848 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.878 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.878 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.889 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:0>, path=com.juliecortez.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:1>, path=com.juliecortez.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:2>, path=com.juliecortez.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.juliecortez.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.juliecortez.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-10-07 20-07-33.889 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:0>, path=com.juliecortez.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:1>, path=com.juliecortez.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:2>, path=com.juliecortez.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.juliecortez.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.juliecortez.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-10-07 20-07-33.893 [http-nio-8080-exec-4] EntityLoader - Static select for entity com.juliecortez.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.893 [http-nio-8080-exec-3] EntityLoader - Static select for entity com.juliecortez.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d4aff4e]
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@771a860c]
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@178c44a6]
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@119032a]
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@daaa180]
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@67d9f84a]
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.894 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.895 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:0>, path=com.juliecortez.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:1>, path=com.juliecortez.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:2>, path=com.juliecortez.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.juliecortez.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.juliecortez.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-10-07 20-07-33.895 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:0>, path=com.juliecortez.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:1>, path=com.juliecortez.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:2>, path=com.juliecortez.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.juliecortez.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id3_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.juliecortez.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-10-07 20-07-33.895 [http-nio-8080-exec-4] EntityLoader - Static select for entity com.juliecortez.entity.User [READ]: select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.895 [http-nio-8080-exec-3] EntityLoader - Static select for entity com.juliecortez.entity.User [READ]: select user0_.id as id1_1_0_, user0_.date_of_birth as date_of_2_1_0_, user0_.first_name as first_na3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.user_name as user_nam5_1_0_, roles1_.user_id as user_id3_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role as role2_0_2_, roles1_.user_id as user_id3_0_2_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.925 [http-nio-8080-exec-3] Loader - Static select for action ACTION_MERGE on entity com.juliecortez.entity.User: select user0_.id as id1_1_1_, user0_.date_of_birth as date_of_2_1_1_, user0_.first_name as first_na3_1_1_, user0_.last_name as last_nam4_1_1_, user0_.user_name as user_nam5_1_1_, roles1_.user_id as user_id3_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role as role2_0_0_, roles1_.user_id as user_id3_0_0_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.925 [http-nio-8080-exec-4] Loader - Static select for action ACTION_MERGE on entity com.juliecortez.entity.User: select user0_.id as id1_1_1_, user0_.date_of_birth as date_of_2_1_1_, user0_.first_name as first_na3_1_1_, user0_.last_name as last_nam4_1_1_, user0_.user_name as user_nam5_1_1_, roles1_.user_id as user_id3_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role as role2_0_0_, roles1_.user_id as user_id3_0_0_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.925 [http-nio-8080-exec-3] Loader - Static select for action ACTION_REFRESH on entity com.juliecortez.entity.User: select user0_.id as id1_1_1_, user0_.date_of_birth as date_of_2_1_1_, user0_.first_name as first_na3_1_1_, user0_.last_name as last_nam4_1_1_, user0_.user_name as user_nam5_1_1_, roles1_.user_id as user_id3_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role as role2_0_0_, roles1_.user_id as user_id3_0_0_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.925 [http-nio-8080-exec-4] Loader - Static select for action ACTION_REFRESH on entity com.juliecortez.entity.User: select user0_.id as id1_1_1_, user0_.date_of_birth as date_of_2_1_1_, user0_.first_name as first_na3_1_1_, user0_.last_name as last_nam4_1_1_, user0_.user_name as user_nam5_1_1_, roles1_.user_id as user_id3_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role as role2_0_0_, roles1_.user_id as user_id3_0_0_ from user user0_ left outer join role roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-10-07 20-07-33.925 [http-nio-8080-exec-4] AbstractEntityPersister - Static SQL for entity: com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.925 [http-nio-8080-exec-3] AbstractEntityPersister - Static SQL for entity: com.juliecortez.entity.Role
+[DEBUG] 2019-10-07 20-07-33.925 [http-nio-8080-exec-4] AbstractEntityPersister -  Version select: select id from role where id =?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] AbstractEntityPersister -  Snapshot select: select role_.id, role_.role as role2_0_, role_.user_id as user_id3_0_ from role role_ where role_.id=?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] AbstractEntityPersister -  Version select: select id from role where id =?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] AbstractEntityPersister -  Insert 0: insert into role (role, user_id, id) values (?, ?, ?)
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] AbstractEntityPersister -  Snapshot select: select role_.id, role_.role as role2_0_, role_.user_id as user_id3_0_ from role role_ where role_.id=?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] AbstractEntityPersister -  Update 0: update role set role=?, user_id=? where id=?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] AbstractEntityPersister -  Insert 0: insert into role (role, user_id, id) values (?, ?, ?)
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] AbstractEntityPersister -  Update 0: update role set role=?, user_id=? where id=?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] AbstractEntityPersister -  Delete 0: delete from role where id=?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] AbstractEntityPersister -  Delete 0: delete from role where id=?
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] AbstractEntityPersister -  Identity insert: insert into role (role, user_id) values (?, ?)
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] AbstractEntityPersister -  Identity insert: insert into role (role, user_id) values (?, ?)
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@40150515]
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e299a47]
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@134dce08]
+[DEBUG] 2019-10-07 20-07-33.926 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71415c65]
+[DEBUG] 2019-10-07 20-07-33.929 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.929 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.929 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:0>, path=com.juliecortez.entity.Role)
+          - EntityAttributeFetchImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:1>, path=com.juliecortez.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-10-07 20-07-33.930 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:0>, path=com.juliecortez.entity.Role)
+          - EntityAttributeFetchImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:1>, path=com.juliecortez.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] EntityLoader - Static select for entity com.juliecortez.entity.Role [NONE]: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] EntityLoader - Static select for entity com.juliecortez.entity.Role [NONE]: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@10abd045]
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@66686d7b]
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6a45ec70]
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@536d212f]
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.dateOfBirth
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.931 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:0>, path=com.juliecortez.entity.Role)
+          - EntityAttributeFetchImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:1>, path=com.juliecortez.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-4] EntityLoader - Static select for entity com.juliecortez.entity.Role [READ]: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=com.juliecortez.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:0>, path=com.juliecortez.entity.Role)
+          - EntityAttributeFetchImpl(entity=com.juliecortez.entity.User, querySpaceUid=<gen:1>, path=com.juliecortez.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.juliecortez.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-3] EntityLoader - Static select for entity com.juliecortez.entity.Role [READ]: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_, user1_.id as id1_1_1_, user1_.date_of_birth as date_of_2_1_1_, user1_.first_name as first_na3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.user_name as user_nam5_1_1_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-4] Loader - Static select for action ACTION_MERGE on entity com.juliecortez.entity.Role: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-3] Loader - Static select for action ACTION_MERGE on entity com.juliecortez.entity.Role: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-4] Loader - Static select for action ACTION_REFRESH on entity com.juliecortez.entity.Role: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.932 [http-nio-8080-exec-3] Loader - Static select for action ACTION_REFRESH on entity com.juliecortez.entity.Role: select role0_.id as id1_0_0_, role0_.role as role2_0_0_, role0_.user_id as user_id3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5547139a]
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@479d14d2]
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@58288fe5]
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2ec74d8f]
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-3] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2019-10-07 20-07-33.943 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-10-07 20-07-33.947 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.947 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-10-07 20-07-33.947 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(collection=com.juliecortez.entity.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:0>, path=[com.juliecortez.entity.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:1>, path=[com.juliecortez.entity.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.juliecortez.entity.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id3_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.Role)
+                - SQL table alias mapping - roles0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2019-10-07 20-07-33.947 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(collection=com.juliecortez.entity.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=com.juliecortez.entity.User.roles, querySpaceUid=<gen:0>, path=[com.juliecortez.entity.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.juliecortez.entity.Role, querySpaceUid=<gen:1>, path=[com.juliecortez.entity.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.juliecortez.entity.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id3_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.juliecortez.entity.Role)
+                - SQL table alias mapping - roles0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2019-10-07 20-07-33.949 [http-nio-8080-exec-4] CollectionLoader - Static select for collection com.juliecortez.entity.User.roles: select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-33.949 [http-nio-8080-exec-3] CollectionLoader - Static select for collection com.juliecortez.entity.User.roles: select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-34.040 [http-nio-8080-exec-3] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2019-10-07 20-07-34.040 [http-nio-8080-exec-4] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2019-10-07 20-07-34.040 [http-nio-8080-exec-4] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2019-10-07 20-07-34.040 [http-nio-8080-exec-3] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2019-10-07 20-07-34.041 [http-nio-8080-exec-3] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2019-10-07 20-07-34.041 [http-nio-8080-exec-4] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2019-10-07 20-07-34.066 [http-nio-8080-exec-4] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2019-10-07 20-07-34.066 [http-nio-8080-exec-4] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2019-10-07 20-07-34.070 [http-nio-8080-exec-4] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2019-10-07 20-07-34.070 [http-nio-8080-exec-4] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2019-10-07 20-07-34.070 [http-nio-8080-exec-3] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2019-10-07 20-07-34.070 [http-nio-8080-exec-3] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2019-10-07 20-07-34.070 [http-nio-8080-exec-3] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2019-10-07 20-07-34.070 [http-nio-8080-exec-3] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2019-10-07 20-07-34.077 [http-nio-8080-exec-4] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@55545bfc
+[DEBUG] 2019-10-07 20-07-34.080 [http-nio-8080-exec-4] SessionFactoryRegistry - Registering SessionFactory: 1e15843a-042b-41ab-879e-a0d74c5beac6 (<unnamed>)
+[DEBUG] 2019-10-07 20-07-34.080 [http-nio-8080-exec-3] SessionFactoryRegistry - Registering SessionFactory: 821d84e8-a597-4f6c-bee5-4c0632a9ed4e (<unnamed>)
+[DEBUG] 2019-10-07 20-07-34.081 [http-nio-8080-exec-4] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2019-10-07 20-07-34.081 [http-nio-8080-exec-3] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2019-10-07 20-07-34.264 [http-nio-8080-exec-3] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2019-10-07 20-07-34.264 [http-nio-8080-exec-4] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2019-10-07 20-07-34.329 [http-nio-8080-exec-3] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2019-10-07 20-07-34.329 [http-nio-8080-exec-4] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2019-10-07 20-07-34.358 [http-nio-8080-exec-4] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@14181013
+[DEBUG] 2019-10-07 20-07-34.358 [http-nio-8080-exec-3] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@14181013
+[DEBUG] 2019-10-07 20-07-34.405 [http-nio-8080-exec-4] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0
+[DEBUG] 2019-10-07 20-07-34.405 [http-nio-8080-exec-3] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0
+[DEBUG] 2019-10-07 20-07-34.413 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-07 20-07-34.413 [http-nio-8080-exec-4] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-07 20-07-34.423 [http-nio-8080-exec-4] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'juliecortez'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2019-10-07 20-07-34.423 [http-nio-8080-exec-3] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'juliecortez'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2019-10-07 20-07-34.462 [http-nio-8080-exec-4] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-07 20-07-34.462 [http-nio-8080-exec-3] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-10-07 20-07-34.485 [http-nio-8080-exec-3] FromElement - FromClause{level=1} : com.juliecortez.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2019-10-07 20-07-34.485 [http-nio-8080-exec-4] FromElement - FromClause{level=1} : com.juliecortez.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2019-10-07 20-07-34.486 [http-nio-8080-exec-4] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-10-07 20-07-34.486 [http-nio-8080-exec-3] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-10-07 20-07-34.488 [http-nio-8080-exec-3] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-07 20-07-34.488 [http-nio-8080-exec-4] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-10-07 20-07-34.488 [http-nio-8080-exec-4] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) )
+[DEBUG] 2019-10-07 20-07-34.488 [http-nio-8080-exec-3] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) )
+[DEBUG] 2019-10-07 20-07-34.505 [http-nio-8080-exec-4] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2019-10-07 20-07-34.505 [http-nio-8080-exec-3] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2019-10-07 20-07-34.506 [http-nio-8080-exec-3] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-07 20-07-34.506 [http-nio-8080-exec-4] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-10-07 20-07-34.506 [http-nio-8080-exec-3] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=com.juliecortez.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=com.juliecortez.entity.User}}
+
+[DEBUG] 2019-10-07 20-07-34.506 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-07 20-07-34.506 [http-nio-8080-exec-4] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=com.juliecortez.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=com.juliecortez.entity.User}}
+
+[DEBUG] 2019-10-07 20-07-34.506 [http-nio-8080-exec-4] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-07 20-07-34.514 [http-nio-8080-exec-4] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0
+[DEBUG] 2019-10-07 20-07-34.514 [http-nio-8080-exec-4] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_
+[DEBUG] 2019-10-07 20-07-34.514 [http-nio-8080-exec-3] QueryTranslatorImpl - HQL: select generatedAlias0 from com.juliecortez.entity.User as generatedAlias0
+[DEBUG] 2019-10-07 20-07-34.514 [http-nio-8080-exec-3] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_
+[DEBUG] 2019-10-07 20-07-34.514 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-07 20-07-34.514 [http-nio-8080-exec-4] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-10-07 20-07-34.548 [http-nio-8080-exec-4] SQL - select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_
+[DEBUG] 2019-10-07 20-07-34.548 [http-nio-8080-exec-3] SQL - select user0_.id as id1_1_, user0_.date_of_birth as date_of_2_1_, user0_.first_name as first_na3_1_, user0_.last_name as last_nam4_1_, user0_.user_name as user_nam5_1_ from user user0_
+[DEBUG] 2019-10-07 20-07-34.592 [http-nio-8080-exec-4] Loader - Result set row: 0
+[DEBUG] 2019-10-07 20-07-34.592 [http-nio-8080-exec-3] Loader - Result set row: 0
+[DEBUG] 2019-10-07 20-07-34.597 [http-nio-8080-exec-4] Loader - Result row: EntityKey[com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-07 20-07-34.597 [http-nio-8080-exec-3] Loader - Result row: EntityKey[com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-4] Loader - Result set row: 1
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-3] Loader - Result set row: 1
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-4] Loader - Result row: EntityKey[com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-3] Loader - Result row: EntityKey[com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-3] Loader - Result set row: 2
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-4] Loader - Result set row: 2
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-3] Loader - Result row: EntityKey[com.juliecortez.entity.User#187]
+[DEBUG] 2019-10-07 20-07-34.614 [http-nio-8080-exec-4] Loader - Result row: EntityKey[com.juliecortez.entity.User#187]
+[DEBUG] 2019-10-07 20-07-34.617 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-07 20-07-34.617 [http-nio-8080-exec-3] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1988-05-08
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `firstName` : value = System
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.620 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `lastName` : value = Administrator
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-07 20-07-34.621 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.632 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-07 20-07-34.632 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `userName` : value = Admin
+[DEBUG] 2019-10-07 20-07-34.632 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.632 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#1]
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1992-10-02
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1992-10-02
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `firstName` : value = Tammy
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `lastName` : value = Johnson
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `firstName` : value = Tammy
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `lastName` : value = Johnson
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `userName` : value = TJohnson
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `userName` : value = TJohnson
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#187]
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1968-01-01
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `firstName` : value = Fred
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `lastName` : value = Flintstone
+[DEBUG] 2019-10-07 20-07-34.635 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#2]
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.User#187]
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `dateOfBirth` : value = 1968-01-01
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`dateOfBirth`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `firstName` : value = Fred
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `lastName` : value = Flintstone
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `userName` : value = fflintstone
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `userName` : value = fflintstone
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-3] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#187]
+[DEBUG] 2019-10-07 20-07-34.636 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.User#187]
+[DEBUG] 2019-10-07 20-07-34.643 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#187]
+[DEBUG] 2019-10-07 20-07-34.643 [http-nio-8080-exec-3] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#187]
+[DEBUG] 2019-10-07 20-07-34.643 [http-nio-8080-exec-3] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-34.643 [http-nio-8080-exec-4] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-34.646 [http-nio-8080-exec-4] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#187]
+[DEBUG] 2019-10-07 20-07-34.646 [http-nio-8080-exec-3] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#187]
+[DEBUG] 2019-10-07 20-07-34.653 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.653 [http-nio-8080-exec-3] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.653 [http-nio-8080-exec-4] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#187]
+[DEBUG] 2019-10-07 20-07-34.653 [http-nio-8080-exec-3] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#187]
+[DEBUG] 2019-10-07 20-07-34.653 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.653 [http-nio-8080-exec-3] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-4] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-3] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-3] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-3] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-3] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-34.654 [http-nio-8080-exec-4] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-34.656 [http-nio-8080-exec-3] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.656 [http-nio-8080-exec-4] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.656 [http-nio-8080-exec-3] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-07 20-07-34.656 [http-nio-8080-exec-4] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-07 20-07-34.659 [http-nio-8080-exec-3] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.659 [http-nio-8080-exec-4] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.666 [http-nio-8080-exec-3] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-07 20-07-34.666 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `role` : value = Manager
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `role` : value = Manager
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `user` : value = 2
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `user` : value = 2
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-3] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-07 20-07-34.667 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#2]
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-3] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-3] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-3] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-4] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#2]
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-3] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-07 20-07-34.668 [http-nio-8080-exec-4] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-07 20-07-34.669 [http-nio-8080-exec-3] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-07 20-07-34.669 [http-nio-8080-exec-3] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.669 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-07 20-07-34.669 [http-nio-8080-exec-3] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-34.669 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.669 [http-nio-8080-exec-4] SQL - select roles0_.user_id as user_id3_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role as role2_0_1_, roles0_.user_id as user_id3_0_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2019-10-07 20-07-34.670 [http-nio-8080-exec-4] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.670 [http-nio-8080-exec-3] ResultSetProcessorImpl - Preparing collection initializer : [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] CollectionReferenceInitializerImpl - Found row of collection: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] TwoPhaseLoad - Resolving attributes for [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `role` : value = Administrator
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`role`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `user` : value = 1
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-3] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-07 20-07-34.671 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [com.juliecortez.entity.Role#1]
+[DEBUG] 2019-10-07 20-07-34.672 [http-nio-8080-exec-3] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.672 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections were found in result set for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.672 [http-nio-8080-exec-3] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.672 [http-nio-8080-exec-4] CollectionLoadContext - Collection fully initialized: [com.juliecortez.entity.User.roles#1]
+[DEBUG] 2019-10-07 20-07-34.672 [http-nio-8080-exec-3] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.672 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections initialized for role: com.juliecortez.entity.User.roles
+[DEBUG] 2019-10-07 20-07-34.673 [http-nio-8080-exec-3] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-07 20-07-34.673 [http-nio-8080-exec-4] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-10-07 20-07-34.673 [http-nio-8080-exec-3] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-07 20-07-34.673 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-10-07 20-07-34.674 [http-nio-8080-exec-3] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-10-07 20-07-34.674 [http-nio-8080-exec-4] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

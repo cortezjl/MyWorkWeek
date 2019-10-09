@@ -544,7 +544,7 @@ java.sql.SQLSyntaxErrorException: Table 'mww.user' doesn't exist
 	at org.hibernate.query.Query.getResultList(Query.java:165) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
 	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
 	at com.juliecortez.persistence.UserDao.getAll(UserDao.java:85) [classes/:?]
-	at com.juliecortez.entity.SearchUser.doGet(SearchUser.java:32) [classes/:?]
+	at com.juliecortez.controller.SearchUser.doGet(SearchUser.java:32) [classes/:?]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [servlet-api.jar:?]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [servlet-api.jar:?]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.41]
