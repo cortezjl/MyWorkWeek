@@ -13,7 +13,7 @@
             <li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="timeOffRequests.jsp">Time Off Requests</a></li>
             <li class="nav-item"><a class="nav-link" href="scheduling.jsp">Scheduling</a></li>
-            <li class="nav-item"><a class="nav-link" href="userSearchResults.jsp">Users</a></li>
+            <li class="nav-item"><a class="nav-link" href="userSearch.jsp">Users</a></li>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" ><a class="nav-link" href="#"><i class="fa fa-fw fa-sign-in"></i>Login</a></li><!--uses fixed width font awesome sign-in icon -->
