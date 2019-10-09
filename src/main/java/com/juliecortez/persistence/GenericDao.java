@@ -49,6 +49,7 @@ public class GenericDao<T> {
     public void delete(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
+        logger.info("Deleting " + type + " " + entity);
         session.delete(entity);
         transaction.commit();
         session.close();
@@ -62,6 +63,7 @@ public class GenericDao<T> {
         int id = 0;
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
+        logger.info("Inserting " + type + " " + entity);
         id = (int)session.save(entity);
         transaction.commit();
         session.close();
@@ -76,6 +78,7 @@ public class GenericDao<T> {
     public void saveOrUpdate(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
+        logger.info("Saving or Updating " + type + " " + entity);
         session.saveOrUpdate(entity);
         transaction.commit();
         session.close();
