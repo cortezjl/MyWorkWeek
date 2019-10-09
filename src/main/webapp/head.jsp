@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <%--
   User: JCortez
   Date: 9/22/2019
