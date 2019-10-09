@@ -2,12 +2,20 @@
 -- Create Table structure for table `Role`
 --
 
-CREATE TABLE `Role` (
-  `id`   int(11)     NOT NULL AUTO_INCREMENT,
-  `role` varchar(15) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-    constraint role_uindex unique (role)
+CREATE TABLE `role` (
+   `id` int(11) NOT NULL AUTO_INCREMENT,
+   `role` varchar(20) DEFAULT NULL,
+   `user_id`      int(11) NOT NULL,
+   `user_name` varchar(15) null,
+   PRIMARY KEY (`id`),
+   UNIQUE KEY `roles_id_uindex` (`id`),
+   KEY `role_user_id_fk` (`user_id`),
+   CONSTRAINT `role_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES user (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+   KEY `role_user_user_name_fk` (`user_name`),
+   CONSTRAINT `role_user_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `user` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+insert into role values (1, 'Administrator', 1, 'Admin');
 
  insert into Role values (1, 'Administrator');
  insert into Role values (2, 'Manager');
@@ -72,20 +80,7 @@ CREATE TABLE `User_Role` (
 
 insert into role value (1, '20190929', '20190929', 1, 1, 'admin');
 
-CREATE TABLE `role` (
-                          `id` int(11) NOT NULL AUTO_INCREMENT,
-                          `role` varchar(20) DEFAULT NULL,
-                          `user_id`      int(11) NOT NULL,
-                          `user_name` varchar(15) null,
-                          PRIMARY KEY (`id`),
-                          UNIQUE KEY `roles_id_uindex` (`id`),
-                           KEY `role_user_id_fk` (`user_id`),
-                           CONSTRAINT `role_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES user (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-                             KEY `role_user_user_name_fk` (`user_name`),
-                          CONSTRAINT `roles_user_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `user` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
-)
 
-insert into role values (1, 'Administrator', 1, 'Admin');
 
 
 
