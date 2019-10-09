@@ -18,14 +18,15 @@ public class UserDaoTest {
     /**
      * The Dao variable for the UserDao object.
      */
-    UserDao dao;
+    // UserDao dao;
+    GenericDao userDao;
 
     /**
      * Sets up before each test - instantiates a UserDao object
      */
     @BeforeEach
     void setUp() {
-        dao = new UserDao();
+        userDao = new GenericDao(User.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -36,7 +37,7 @@ public class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(1);
+        User retrievedUser = (User)userDao.getById(1);
         // validate an entry was retrieved
         assertNotNull(retrievedUser);
         // validate one of the object values is the value expected
@@ -48,8 +49,8 @@ public class UserDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<User> users = dao.getAll();
-        assertEquals(1, users.size());
+        List<User> users = userDao.getAll();
+        assertEquals(2, users.size());
     }
 
 
@@ -59,9 +60,9 @@ public class UserDaoTest {
     @Test
     void insertSuccess() {
         User newUser = new User("Fred", "Flintstone", "fflintstone", LocalDate.parse("1968-01-01"));
-        int id = dao.insert(newUser);
+        int id = userDao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)userDao.getById(id);
         assertEquals("Fred", insertedUser.getFirstName());
         // Could continue comparing all values, but
         // it may make sense to use .equals()
@@ -82,10 +83,10 @@ public class UserDaoTest {
         // add the Role to the set of Roles for the User
         newUser.addRole(role);
         // insert the User object, which will create the Role as well
-        int id = dao.insert(newUser);
+        int id = userDao.insert(newUser);
 
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)userDao.getById(id);
         assertEquals("Fred", insertedUser.getFirstName());
         assertEquals(1, insertedUser.getRoles().size());
         // Could continue comparing all values, but
@@ -98,8 +99,8 @@ public class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(1));
-        assertNull(dao.getById(1));
+        userDao.delete((User)userDao.getById(1));
+        assertNull((User)userDao.getById(1));
     }
 
     /**
@@ -108,10 +109,10 @@ public class UserDaoTest {
     @Test
     void updateSuccess() {
         String newLastName = "Davis";
-        User userToUpdate = dao.getById(1);
+        User userToUpdate = (User)userDao.getById(1);
         userToUpdate.setLastName(newLastName);
-        dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(1);
+        userDao.saveOrUpdate(userToUpdate);
+        User retrievedUser = (User)userDao.getById(1);
         assertEquals(newLastName, retrievedUser.getLastName());
     }
 
@@ -120,7 +121,7 @@ public class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyEqual("firstName","System");
+        List<User> users = userDao.getByPropertyEqual("firstName","System");
         assertEquals(1, users.size());
     }
 
@@ -129,7 +130,7 @@ public class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName","A");
+        List<User> users = userDao.getByPropertyLike("lastName","A");
         assertEquals(1, users.size());
     }
 
