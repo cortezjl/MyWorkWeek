@@ -40,7 +40,7 @@ class RoleDaoTest {
     @Test
     void getAllSuccess() {
         List<Role> roles = roleDao.getAll();
-        assertEquals(2, roles.size());
+        assertEquals(3, roles.size());
     }
 
 
@@ -109,7 +109,7 @@ class RoleDaoTest {
     @Test
     void getByPropertyEqualSuccess() {
         List<Role> roles = roleDao.getByPropertyEqual("role", "Administrator");
-        assertEquals(1, roles.size());
+        assertEquals(2, roles.size());
         assertEquals(1, roles.get(0).getId());
     }
 
@@ -118,7 +118,7 @@ class RoleDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Role> roles = roleDao.getByPropertyLike("role", "S");
-        assertEquals(1, roles.size());
+        List<Role> roles = roleDao.getByPropertyLike("role", "M");
+        assertEquals(3, roles.size());
     }
 }
