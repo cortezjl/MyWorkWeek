@@ -52,7 +52,7 @@
                             </div>
                             <br> <br>
                             <a class="card-link text-dark" href="userSearch.jsp">View Users</a>
-                            <a class="card-link text-dark"href="userAdd.jsp">Add Users</a>
+                            <a class="card-link text-dark"href="addUserServlet">Add Users</a>
                         </div>
                     </div>
                 </div>
