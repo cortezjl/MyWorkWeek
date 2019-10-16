@@ -33,9 +33,13 @@ public class User {
     @Column(name = "user_name")
     private String userName;
 
+    private String password;
+
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 
+    private LocalDate startDate;
+    private LocalDate endDate;
 
     /**
      * Bidirectional @OneToMany
@@ -70,13 +74,19 @@ public class User {
      * @param firstName   the first name
      * @param lastName    the last name
      * @param userName    the user name
+     * @param password    users password
      * @param dateOfBirth the date of birth
+     * @param startDate   the users start date
+     * @param endDate     the users end date
      */
-    public User(String firstName, String lastName, String userName, LocalDate dateOfBirth) {
+    public User(String firstName, String lastName, String userName, String password, LocalDate dateOfBirth, LocalDate startDate, LocalDate endDate) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
+        this.password = password;
         this.dateOfBirth = dateOfBirth;
+        this.startDate = startDate;
+        this.endDate = endDate;
     }
 
 
@@ -153,6 +163,24 @@ public class User {
     }
 
     /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
      * Gets dateOfBirth.
      *
      * @return the dateOfBirth
@@ -170,6 +198,41 @@ public class User {
         this.dateOfBirth = dateOfBirth;
     }
 
+    /**
+     * Gets start date.
+     *
+     * @return the start date
+     */
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    /**
+     * Sets start date.
+     *
+     * @param startDate the start date
+     */
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
+    }
+
+    /**
+     * Gets end date.
+     *
+     * @return the end date
+     */
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    /**
+     * Sets end date.
+     *
+     * @param endDate the end date
+     */
+    public void setEndDate(LocalDate endDate) {
+        this.endDate = endDate;
+    }
 
     /**
      * Gets roles.
@@ -219,6 +282,26 @@ public class User {
         return dateTimeFormatter.format(dateOfBirth);
     }
 
+    /**
+     * Gets start date for display in datepicker
+     *
+     * @return the start date as a string
+     */
+    public String getStartDateForDisplay() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        return dateTimeFormatter.format(startDate);
+    }
+
+    /**
+     * Gets end date for display in datepicker
+     *
+     * @return the end date as a string
+     */
+    public String getEndDateForDisplay() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        return dateTimeFormatter.format(endDate);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -228,24 +311,14 @@ public class User {
                 Objects.equals(firstName, user.firstName) &&
                 Objects.equals(lastName, user.lastName) &&
                 Objects.equals(userName, user.userName) &&
-                Objects.equals(dateOfBirth, user.dateOfBirth);
+                Objects.equals(password, user.password) &&
+                Objects.equals(dateOfBirth, user.dateOfBirth) &&
+                Objects.equals(startDate, user.startDate) &&
+                Objects.equals(endDate, user.endDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, userName, dateOfBirth);
+        return Objects.hash(id, firstName, lastName, userName, password, dateOfBirth, startDate, endDate);
     }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id='" + id + '\'' +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", userName='" + userName + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                '}';
-    }
-
-
 }
