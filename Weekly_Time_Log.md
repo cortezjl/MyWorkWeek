@@ -77,3 +77,32 @@ Read more on Hibernate one to many and unidirectional to see if that is somethin
 Removed all 3 tables and replaced the entity, dao's and test dao's.  Using version from week 1/demo's to get them 
 working using those versions.  Then can make additional table changes as needed.  The test daos are working
 
+### Wednesday, Oct 9th 1 hours
+Class night - code reviews.  Added code to servlet to add users to create a select options list
+
+### Thursday, Oct 10th 2 hours
+Got the edit user screen working to show in the select list, the value from the existing record.  Also added
+additional roles, if applicable.
+
+### Friday, Oct 11th 2 hours
+Worked on the user edit screen for users that have more than 1 role, so the lists display correctly.  Started working on
+updates to the role lists.
+
+### Saturday, Oct 12th 3 hours
+Worked on week 7 demo and exercise for login form authentication.  Used the code from the clone of the demo, which made it 
+harder because there was several weeks worth of demos code that were not in there.  Got it working for the most
+part but need tweek the exercise a little yet.
+
+### Sunday, Oct 13th 4 hours
+Finished the week 7 exercise.  Started writing up info for Hibernate Validator for my professional development
+presentation.  
+
+### Monday, Oct 14th 2 hours
+Started changing the add edit and delete demo to use for the Hibernate Validator demo for my professional development 
+presentation.  Had to add hibernate ORM changes to it
+
+### Tuesday, Oct 15th 2 hours
+Got the add and edit working for the Hibernate Validator demo example.  Needed to get the basic project working before I 
+attempt to add the Hibernate Validator changes to it.
+
+### Wednesday, Oct 15th
