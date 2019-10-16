@@ -53,30 +53,13 @@ public class UserDaoTest {
         assertEquals(2, users.size());
     }
 
-
     /**
-     * Verify successful insert of a user
-     */
-    @Test
-    void insertSuccess() {
-        User newUser = new User("Fred", "Flintstone", "fflintstone", LocalDate.parse("1968-01-01"));
-        int id = userDao.insert(newUser);
-        assertNotEquals(0,id);
-        User insertedUser = (User)userDao.getById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
-    }
-
-
-    /**
-     * Verify successful insert of a user with a Role
+     * Verify successful insert of a user with a Role, user must have at least one role
      */
     @Test
     void insertWithRoleSuccess() {
         // Instantiate and create a new user
-        User newUser = new User("Fred", "Flintstone", "fflintstone", LocalDate.parse("1168-01-01"));
+        User newUser = new User("Fred", "Flintstone", "fflintstone", "password", LocalDate.parse("1968-01-01"), LocalDate.parse("2015-08-16"), LocalDate.parse("9999-12-31"));
         String roleTitle = "Front Of House";
         // Instantiate and create a new Role and add the user object to the Role object
         Role role = new Role(roleTitle, newUser);
