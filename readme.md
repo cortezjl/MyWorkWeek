@@ -41,8 +41,8 @@ I want to create a scheduling system that will allow users to submit time off re
 * Dependency Management
     * Maven
 * Web Services consumed using Java
-    * [Working Days API] (https://api.workingdays.org/1.2/api.php) to identify public holidays during the weekly work schedule 
-        * For more info on the API (https://www.programmableweb.com/api/working-days)
+    * [Holidays API] (https://holidayapi.com) to identify public holidays during the weekly work schedule 
+        * For more info on the API (https://www.programmableweb.com/api/holiday)  Key 3ecf5239-df14-44b5-bef8-0b785cd7a762
 * CSS
 * Bootstrap 4
 * Data Validation
