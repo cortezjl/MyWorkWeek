@@ -26,8 +26,8 @@
 
 
 ### Week 5
-- [ ] Create the template for all jsps using bootstrap 4
-- [ ] Weekly journal entry
+- [x] Create the template for all jsps using bootstrap 4
+- [x] Weekly journal entry
 - [ ] Add the timeOffRequest table
 - [ ] Add the timeOffRequest entity
 - [ ] Create the timeOffRequest dao
