@@ -1,6 +1,6 @@
+<%@include file="head.jsp"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@include file="head.jsp"%>
 <c:set var="title" value="User Search Results" />
 <html>
     <body>
