@@ -16,7 +16,7 @@
             <li class="nav-item"><a class="nav-link" href="userSearch.jsp">Users</a></li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item" ><a class="nav-link" href="#"><i class="fa fa-fw fa-sign-in"></i>Login</a></li><!--uses fixed width font awesome sign-in icon -->
+            <li class="nav-item" ><a class="nav-link" href="loginServlet"><i class="fa fa-fw fa-sign-in"></i>Login</a></li><!--uses fixed width font awesome sign-in icon -->
         </ul>
     </div>   <!-- close Navbar links -->
 </nav>
