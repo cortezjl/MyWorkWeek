@@ -16,7 +16,7 @@ create table user
         unique (user_name)
 );
 
-insert into user values (1, 'System', 'Administrator', 'Admin', 'password', '2000/01/01', 2019/01/01, 9999/12/31);
+insert into user values (1, 'System', 'Administrator', 'admin', 'password', '2000/01/01', '2019/01/01', '9999/12/31');
 
 
 CREATE TABLE `User` (
@@ -56,7 +56,7 @@ CREATE TABLE `role` (
    CONSTRAINT `role_user_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `user` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-insert into role values (1, 'Administrator', 1, 'Admin');
+insert into role values (1, 'Administrator', 1, 'admin');
 
 --
 -- Create Table structure for table `Time_Off_Request`
