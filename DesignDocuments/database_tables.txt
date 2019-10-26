@@ -15,33 +15,31 @@ create table user
     constraint users_user_name_uindex
         unique (user_name)
 );
+-- other fields to consider if I want to use, not necessary at this point
+-- cellphone  varchar(10)  NULL,
+-- homephone  varchar(10)   NULL,
+-- createDate datetime     NULL,
+-- email      varchar(50)  NULL,
+-- updateDate datetime  NULL,
 
 insert into user values (1, 'System', 'Administrator', 'admin', 'password', '2000/01/01', '2019/01/01', '9999/12/31');
-
-
-CREATE TABLE `User` (
-  id int(11) NOT NULL AUTO_INCREMENT primary key,
-  cellphone  varchar(10)  NULL,
-  createDate datetime     NULL,
-  dateOfBirth date        NULL,
-  email      varchar(50)  NULL,
-  endDate    datetime     NULL,
-  firstName  varchar(25)  NULL,
-  homephone  varchar(10)   NULL,
-  lastName   varchar(30)  NULL,
-  password   varchar(20)  NULL,
-  startDate date      NULL,
-  updateDate datetime  NULL,
-  user_name varchar(15) NOT NULL,
-  constraint users_user_name_uindex unique (user_name)
-);
-
-insert into user values (1, 'None', '20190929', '20000101', '', '99991231', 'Administrator', 'None', 'Administrator','admin', '20190101', '20190929', 'admin');
-
 
 --
 -- Create Table structure for table `Role`
 --
+
+create table role (
+   id int(11) NOT NULL AUTO_INCREMENT,
+   role        varchar(20) DEFAULT NULL,
+   user_id     int(11) NOT NULL,
+   user_name   varchar(15) NULL,
+   PRIMARY KEY (id),
+   UNIQUE KEY roles_id_uindex (id),
+   KEY role_user_id_fk (user_id),
+   CONSTRAINT role_user_id_fk FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE,
+   KEY role_user_user_name_fk (user_name),
+   CONSTRAINT role_user_user_name_fk FOREIGN KEY (user_name) REFERENCES user (user_name) ON DELETE CASCADE ON UPDATE CASCADE
+);
 
 CREATE TABLE `role` (
    `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -55,7 +53,6 @@ CREATE TABLE `role` (
    KEY `role_user_user_name_fk` (`user_name`),
    CONSTRAINT `role_user_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `user` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
 insert into role values (1, 'Administrator', 1, 'admin');
 
 --
