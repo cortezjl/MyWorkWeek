@@ -21,11 +21,11 @@
       <role-name>Administrator</role-name>
     </auth-constraint>
   </security-constraint>
-  <!-- Protect the User Search page - only allowed for users with an Administrator or Manager role -->
+
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>UserEdit</web-resource-name>
-      <url-pattern>/userEdit.jsp</url-pattern>
+      <web-resource-name>user-search</web-resource-name>
+      <url-pattern>/userSearch.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>Administrator</role-name>
@@ -33,11 +33,22 @@
     </auth-constraint>
   </security-constraint>
 
-  <!-- Protect the display page for for user by users with either an admin or all role -->
+
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>user-search</web-resource-name>
-      <url-pattern>/userSearch.jsp</url-pattern>
+      <web-resource-name>user-search-results</web-resource-name>
+      <url-pattern>/userSearchResults.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>user-edit</web-resource-name>
+      <url-pattern>/userEdit.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>Administrator</role-name>
