@@ -26,35 +26,39 @@
                         </div>
                     </div>
 
-                    <div class="card bg-info">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Scheduling</h4>
-                            <div>
-                                <a href="scheduling.jsp">
-                                    <img class="img-fluid" src="images/calendar-blue-152-262206.webp"
-                                         alt="Calendar image">
-                                </a>
+                    <c:if test="${pageContext.request.isUserInRole('Administrator') || pageContext.request.isUserInRole('Manager')}">
+                        <div class="card bg-info">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Scheduling</h4>
+                                <div>
+                                    <a href="scheduling.jsp">
+                                        <img class="img-fluid" src="images/calendar-blue-152-262206.webp"
+                                             alt="Calendar image">
+                                    </a>
+                                </div>
+                                <br> <br>
+                                <a  class="card-link text-dark" href="scheduleSearch.jsp">View Schedule</a>
+                                <a  class="card-link text-dark"href="scheduleAddEdit.jsp">Add Schedule</a>
                             </div>
-                            <br> <br>
-                            <a  class="card-link text-dark" href="scheduleSearch.jsp">View Schedule</a>
-                            <a  class="card-link text-dark"href="scheduleAddEdit.jsp">Add Schedule</a>
                         </div>
-                    </div>
+                    </c:if>
 
-                    <div class="card bg-info">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Users</h4>
-                            <div>
-                                <a href="userSearch.jsp">
-                                    <img class="img-fluid" src="images/Users-icon.png"
-                                         alt="Users image">
-                                </a>
+                    <c:if test="${pageContext.request.isUserInRole('Administrator') || pageContext.request.isUserInRole('Manager')}">
+                        <div class="card bg-info">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Users</h4>
+                                <div>
+                                    <a href="userSearch.jsp">
+                                        <img class="img-fluid" src="images/Users-icon.png"
+                                             alt="Users image">
+                                    </a>
+                                </div>
+                                <br> <br>
+                                <a class="card-link text-dark" href="userSearch.jsp">View Users</a>
+                                <a class="card-link text-dark"href="editUserServlet?userAction=add&">Add Users</a>
                             </div>
-                            <br> <br>
-                            <a class="card-link text-dark" href="userSearch.jsp">View Users</a>
-                            <a class="card-link text-dark"href="addUserServlet">Add Users</a>
                         </div>
-                    </div>
+                    </c:if>
                 </div>
             </div>
         </div>
