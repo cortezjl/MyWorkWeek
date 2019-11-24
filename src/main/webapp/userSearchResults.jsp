@@ -18,7 +18,7 @@
                 <h2>Users</h2>
                 <table id="userTable"  class="table table-striped table-bordered display dt-responsive nowrap"  >
                     <tr><th>User Name</th>
-                        <th>First Name</>
+                        <th>First Name</th>
                         <th>Last Name</th>
                         <th>Roles</th>
                         <th></th>
@@ -34,7 +34,7 @@
                             </c:forEach>
                         </td>
                         <td>
-                            <a class="edit" title="Edit" data-toggle="tooltip" href="editUserServlet?id=${user.id}"><i class="fa" >&#xf044;</i></a> <!--Font Awesome Edit symbol -->
+                            <a class="edit" title="Edit" data-toggle="tooltip" href="editUserServlet?userAction=edit&id=${user.id}"><i class="fa" >&#xf044;</i></a> <!--Font Awesome Edit symbol -->
                         </td>
                     </tr>
                     </c:forEach>
