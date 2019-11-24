@@ -19,6 +19,20 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+      <role-name>All</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>login-icon</web-resource-name>
+      <url-pattern>/loginAction</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+      <role-name>All</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -63,5 +77,7 @@
   <security-role>
     <role-name>Manager</role-name>
   </security-role>
-
+  <security-role>
+    <role-name>All</role-name>
+  </security-role>
 </web-app>
