@@ -1,3 +1,5 @@
+create database mww;
+
 --
 -- Create Table structure for table `User`
 --
