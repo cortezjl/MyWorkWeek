@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 /**
- * The type Order.
+ * The type Role.
  */
 @Entity(name = "Role")  // name of this class
 @Table(name = "role")  // name of the table (case-sensitive)
@@ -18,8 +18,11 @@ public class Role {
     private int id;
 
     private String role;
+
+    @Column(name = "user_name")
+    private String userName;
     /**
-     * Bidirectional @OneToMany (this goes on user because is zero to many orders for a user)
+     * Bidirectional @OneToMany (this goes on user because is zero to many roles for a user)
      The bidirectional @OneToMany association also requires a @ManyToOne association on the child side.
      Although the Domain Model exposes two sides to navigate this association, behind the scenes,
      the relational database has only one foreign key for this relationship.
@@ -27,7 +30,7 @@ public class Role {
      Every bidirectional association must have one owning side only (the child side),
      the other one being referred to as the inverse (or the mappedBy) side.
 
-     Foreign key is on the child table (Order in this example)
+     Foreign key is on the child table (role in this example)
 
      By default, the @ManyToOne association assumes that the parent-side entity identifier is to be used to join
      with the client-side entity Foreign Key column.
@@ -39,7 +42,7 @@ public class Role {
      */
 
 
-    @ManyToOne  // many Orders to one User (a user may have zero to many orders) - create the User object instead of just variable userId
+    @ManyToOne  // many roles to one User (a user may have zero to many roles) - create the User object instead of just variable userId
     private User user;
 
     /**
@@ -96,6 +99,23 @@ public class Role {
     }
 
     /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUser_name(String userName) {
+        this.userName = userName;
+    }
+    /**
      * Gets user.
      *
      * @return the user
@@ -132,7 +152,7 @@ public class Role {
         return "Role{" +
                 "id=" + id +
                 ", role='" + role + '\'' +
-                ", user=" + user +
+                ", user_name='" + userName + '\'' +
                 '}';
     }
 }
