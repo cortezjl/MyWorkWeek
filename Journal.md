@@ -30,5 +30,13 @@ as listed in application flow document.  Creating initial screen designs helped 
 ### Thursday, Sept 26th
 Created inital version of some of the jsp's
 
+### Saturday, Oct 26th
+Added tomcat authentication changes for user screens.  Set up AWS and created database for application on AWS.
 
+### Sunday, Nov 3rd
+Add functionality for Add user.  Need to work on roles part of it.
+
+### Monday, Nov 4th
+Updated login icon on navbar to prompt user for logon.  Updated home page to not display the scheduling and
+user options if logged on user is not an Administrator or Manager.
 
