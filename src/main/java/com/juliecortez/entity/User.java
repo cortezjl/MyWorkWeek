@@ -69,7 +69,7 @@ public class User {
     }
 
     /**
-     * Instantiates a new User.
+     * Instantiates a new User object.
      *
      * @param firstName   the first name
      * @param lastName    the last name
@@ -80,6 +80,7 @@ public class User {
      * @param endDate     the users end date
      */
     public User(String firstName, String lastName, String userName, String password, LocalDate dateOfBirth, LocalDate startDate, LocalDate endDate) {
+        this();
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
@@ -89,6 +90,22 @@ public class User {
         this.endDate = endDate;
     }
 
+    /**
+     * Instantiates a new User object.
+     *
+     * @param id          the id
+     * @param firstName   the first name
+     * @param lastName    the last name
+     * @param userName    the user name
+     * @param password    users password
+     * @param dateOfBirth the date of birth
+     * @param startDate   the users start date
+     * @param endDate     the users end date
+     */
+    public User(int id, String firstName, String lastName, String userName, String password, LocalDate dateOfBirth, LocalDate startDate, LocalDate endDate) {
+        this(firstName, lastName,userName, password, dateOfBirth, startDate, endDate);
+        this.id = id;
+    }
 
     /**
      * Gets id.
@@ -320,5 +337,20 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstName, lastName, userName, password, dateOfBirth, startDate, endDate);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", roles=" + roles +
+                '}';
     }
 }
