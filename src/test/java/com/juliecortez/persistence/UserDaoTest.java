@@ -67,9 +67,9 @@ public class UserDaoTest {
         newUser.addRole(role);
         // insert the User object, which will create the Role as well
         int id = userDao.insert(newUser);
+        User insertedUser = (User)userDao.getById(id);
 
         assertNotEquals(0,id);
-        User insertedUser = (User)userDao.getById(id);
         assertEquals("Fred", insertedUser.getFirstName());
         assertEquals(1, insertedUser.getRoles().size());
         // Could continue comparing all values, but
