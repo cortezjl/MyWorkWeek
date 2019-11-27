@@ -26,10 +26,10 @@ import java.util.List;
  * sources used: https://www.javaguides.net/2019/03/jsp-servlet-jdbc-mysql-crud-example-tutorial.html
  */
 @WebServlet(
-        urlPatterns = {"/editUserServlet"}
+        urlPatterns = {"/addEditUserServlet"}
 )
 
-public class EditUserServlet extends HttpServlet {
+public class AddEditUserServlet extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 
