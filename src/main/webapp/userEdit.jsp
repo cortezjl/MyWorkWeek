@@ -22,10 +22,10 @@
             <form id="editUserForm" role="form" data-toggle="validator"
                   class="form-horizontal"
                     <c:if test="${userAction == 'edit'}">
-                        action="editUserServlet?userAction=${userAction}"
+                        action="addEditUserServlet?userAction=${userAction}"
                     </c:if>
                     <c:if test="${userAction == 'add'}">
-`                        action="editUserServlet?UserAction=${userAction}"
+`                        action="addEditUserServlet?UserAction=${userAction}"
                     </c:if>
                   method="POST">
 
@@ -77,6 +77,7 @@
                     <div class="col-4 col-sm-3">
                         <input type="text" class="form-control d-inline-block" id="userName"
                                name="userName"
+                               required="required"
                                value = "${user.userName}"
                                data-error="Please enter the username."
                                required>
@@ -86,8 +87,9 @@
                         <label class="control-label d-inline-block" for="password">Password</label>
                     </div>
                     <div class="col-3 col-sm-3">
-                        <input type="text" class="form-control d-inline-block" id="password"
+                        <input type="password" class="form-control d-inline-block" id="password"
                                name="password"
+                               required="required"
                                value = "${user.password}"
                                data-error="Please enter the users password."
                                required>
@@ -163,7 +165,47 @@
                                         <option value="${roleListOption}" ${role.role == roleListOption ? 'selected="selected"' : ''}>${roleListOption}</option>
                                     </c:forEach>
                                 </select>
-                            </div>
+
+                                </div>
+                                    <!-- Button to Open the Modal.  data-toggle="modal" opens the modal window.
+                                                                    data-target="#roleModal" points to the id of the modal -->
+                                    <button type="button" class="btn btn-success fa fa-plus" data-toggle="modal" data-target="roleModal">
+                                    </button>
+
+                                    <!-- The Modal -->
+                                    <div class="modal" id="roleModal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Add Role for User</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <form id="addUserRoleForm" role="form" data-toggle="validator">
+                                                        <select class="form-control" id="roleToAdd" name="roleValueToAdd" >
+                                                            <option>Administrator</option>
+                                                            <option>Back Of House</option>
+                                                            <option>Busser</option>
+                                                            <option>Front Of House</option>
+                                                            <option>Manager</option>
+                                                        </select>
+                                                    </form>
+                                                </div>  <!-- Modal body -->
+
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <button type="submit" name="btnSave" id="btnSave" class="btn btn-primary" data-dismiss="modal">Save</button>
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+
+                                            </div> <!-- modal content -->
+                                        </div> <!-- modal dialog -->
+                                    </div> <!-- The Modal -->
+                                 </div> <!-- Modal to add roles -->
                             <div class="col-1 col-sm-5"></div>
                         </c:forEach>
                     </c:if>
