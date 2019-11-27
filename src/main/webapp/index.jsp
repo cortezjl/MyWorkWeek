@@ -16,13 +16,14 @@
                             <h4 class="card-title">Time Off Requests</h4>
                             <div>
                                 <a href="timeOffRequests.jsp">
-                                <img class="img-fluid" src="images/kisspng-computer-icons-calendar-date-iconfinder-calendar-date-event-month-icon-5ab06bc5db9aa6.0629959215215113658995.jpg"
-                                     alt="Calendar image">
+                                    <img class="img-fluid"
+                                         src="images/kisspng-computer-icons-calendar-date-iconfinder-calendar-date-event-month-icon-5ab06bc5db9aa6.0629959215215113658995.jpg"
+                                         alt="Calendar image">
                                 </a>
                             </div>
                             <br> <br>
                             <a class="card-link text-dark" href="timeOffRequestSearch.jsp">View Time Off Request</a>
-                            <a class="card-link text-dark" href="timeOffRequestAddEdit.jsp">Add Time Off Request</a>
+                            <a class="card-link text-dark" href="timeOffRequestAddEdit.jsp?timeOffRequestAction=add&">Add Time Off Request</a>
                         </div>
                     </div>
 
@@ -55,7 +56,7 @@
                                 </div>
                                 <br> <br>
                                 <a class="card-link text-dark" href="userSearch.jsp">View Users</a>
-                                <a class="card-link text-dark"href="editUserServlet?userAction=add&">Add Users</a>
+                                <a class="card-link text-dark"href="addEditUserServlet?userAction=add&">Add Users</a>
                             </div>
                         </div>
                     </c:if>
