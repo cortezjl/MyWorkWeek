@@ -34,7 +34,7 @@
                             </c:forEach>
                         </td>
                         <td>
-                            <a class="edit" title="Edit" data-toggle="tooltip" href="editUserServlet?userAction=edit&id=${user.id}"><i class="fa" >&#xf044;</i></a> <!--Font Awesome Edit symbol -->
+                            <a class="edit" title="Edit" data-toggle="tooltip" href="addEditUserServlet?userAction=edit&id=${user.id}"><i class="fa" >&#xf044;</i></a> <!--Font Awesome Edit symbol -->
                         </td>
                     </tr>
                     </c:forEach>
