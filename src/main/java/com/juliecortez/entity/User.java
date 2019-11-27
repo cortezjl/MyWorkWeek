@@ -58,9 +58,13 @@ public class User {
      cascadeType is for how the database should handle an object that is deleted, ie delete from other tables where value is used
      orphanRemoval has to do with Hibernate removing an object that has been deletee
      */
-    // There is one User with zero to many orders
+    // There is one User with zero to many roles
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();   // Hold collection/set of Roles for the user - zero to many
+
+    // There is one User with zero to many time off requests
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<TimeOffRequest> timeOffRequests = new HashSet<>();   // Hold collection/set of time off requests for the user - zero to many
 
     /**
      * Instantiates a new User.
@@ -289,6 +293,25 @@ public class User {
         role.setUser(null);
     }
 
+    /**
+     * Add time off request.
+     *
+     * @param timeOffRequest the time off request
+     */
+    public void addTimeOffRequest(TimeOffRequest timeOffRequest) {
+        timeOffRequests.add(timeOffRequest);
+        timeOffRequest.setUser(this);
+    }
+
+    /**
+     * Remove time off request.
+     *
+     * @param timeOffRequest the time off request.
+     */
+    public void removeTimeOffRequest(TimeOffRequest timeOffRequest) {
+        timeOffRequests.remove(timeOffRequest);
+        timeOffRequest.setUser(null);
+    }
     /**
      * Gets date of birth for display in datepicker
      *
