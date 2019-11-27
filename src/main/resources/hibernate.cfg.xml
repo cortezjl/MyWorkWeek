@@ -19,6 +19,7 @@
 
          <mapping class="com.juliecortez.entity.Role"/>
          <mapping class="com.juliecortez.entity.User"/>
+        <mapping class="com.juliecortez.entity.TimeOffRequest"/>
 
      </session-factory>
 
