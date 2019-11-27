@@ -40,3 +40,8 @@ Add functionality for Add user.  Need to work on roles part of it.
 Updated login icon on navbar to prompt user for logon.  Updated home page to not display the scheduling and
 user options if logged on user is not an Administrator or Manager.
 
+### Sunday, Nov 24th
+Add user name variable to role, since Hibernate does not seem to handle populating it, was leaving it as null.  Worked
+on adding a modal to the Add/Edit User jsp be be able to add additional roles for the user.
+
+
