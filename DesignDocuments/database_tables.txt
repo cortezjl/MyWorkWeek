@@ -43,35 +43,32 @@ create table role (
    CONSTRAINT role_user_user_name_fk FOREIGN KEY (user_name) REFERENCES user (user_name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE `role` (
-   `id` int(11) NOT NULL AUTO_INCREMENT,
-   `role` varchar(20) DEFAULT NULL,
-   `user_id`      int(11) NOT NULL,
-   `user_name` varchar(15) null,
-   PRIMARY KEY (`id`),
-   UNIQUE KEY `roles_id_uindex` (`id`),
-   KEY `role_user_id_fk` (`user_id`),
-   CONSTRAINT `role_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES user (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-   KEY `role_user_user_name_fk` (`user_name`),
-   CONSTRAINT `role_user_user_name_fk` FOREIGN KEY (`user_name`) REFERENCES `user` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
-);
 insert into role values (1, 'Administrator', 1, 'admin');
 
 --
 -- Create Table structure for table `Time_Off_Request`
 --
 
-CREATE TABLE `Time_Off_Request` (
-  `id`         int(11)      NOT NULL AUTO_INCREMENT,
-  `startDate` datetime      DEFAULT NULL,
-  `endDate` datetime        DEFAULT NULL,
-  `createDate` datetime     DEFAULT NULL,
-  `updateDate` datetime     DEFAULT NULL,
-  `userName`   varchar(15)  NOT NULL,
-  PRIMARY KEY (`id`),
-  CONSTRAINT `Time_Off_Request_User_userName_fk` FOREIGN KEY (`userName`) REFERENCES `User` (`userName`)
-) 
+CREATE TABLE time_off_request (
+  id        int(11)      NOT NULL AUTO_INCREMENT,
+  user_id   int(11)      NOT NULL,
+  user_name varchar(15)  NOT NULL,
+  startDate date         DEFAULT NULL,
+  endDate   date         DEFAULT NULL,
+  startTime varchar(08)  DEFAULT NULL,
+  endTime   varchar(08)  DEFAULT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY time_off_request_id_uindex (id),
+  KEY time_off_request_user_id_fk (user_id),
+  CONSTRAINT time_off_request_user_id_fk FOREIGN KEY (user_id) REFERENCES user (id),
+  KEY time_off_request_user_user_name_fk (user_name),
+  CONSTRAINT time_off_request_user_user_name_fk FOREIGN KEY (user_name) REFERENCES User (user_name)
+) ;
 
+insert into time_off_request values (1, 1, 'admin', '2019/11/15', '2019/11/18', '12:00 AM', '12:00 PM');
+
+  createDate datetime     DEFAULT NULL,
+  updateDate datetime     DEFAULT NULL,
 --
 -- Create Table structure for table `Schedule`
 --
