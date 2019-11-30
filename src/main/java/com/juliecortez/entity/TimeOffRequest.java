@@ -3,8 +3,7 @@ package com.juliecortez.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 /**
@@ -19,10 +18,8 @@ public class TimeOffRequest {
 @GenericGenerator(name = "native", strategy = "native")
 private int id;
 
-private LocalDate startDate;
-private LocalDate endDate;
-private String startTime;
-private String endTime;
+private LocalDateTime startDate;
+private LocalDateTime endDate;
 
 @Column(name = "user_name")
 private String userName;
@@ -63,16 +60,12 @@ private User user;
      * @param userName  user name value
      * @param startDate the start date
      * @param endDate   the start date
-     * @param startTime the start time
-     * @param endTime   the end time
      * @param user      the user
      */
-    public TimeOffRequest(String userName, LocalDate startDate, LocalDate endDate, String startTime, String endTime, User user ) {
+    public TimeOffRequest(String userName, LocalDateTime startDate, LocalDateTime endDate, User user ) {
     this.userName = userName;
     this.startDate = startDate;
     this.endDate = endDate;
-    this.startTime = startTime;
-    this.endTime = endTime;
     this.user = user;
 }
 
@@ -83,17 +76,13 @@ private User user;
      * @param userName  user name value
      * @param startDate the start date
      * @param endDate   the end date
-     * @param startTime the start time
-     * @param endTime   the end time
      * @param user      the user
      */
-    public TimeOffRequest(Integer id, String userName, LocalDate startDate, LocalDate endDate, String startTime, String endTime, User user ) {
+    public TimeOffRequest(Integer id, String userName, LocalDateTime startDate, LocalDateTime endDate, User user ) {
     this.id = id;
     this.userName = userName;
     this.startDate = startDate;
     this.endDate = endDate;
-    this.startTime = startTime;
-    this.endTime = endTime;
     this.user = user;
 }
 
@@ -120,7 +109,7 @@ private User user;
      *
      * @return the start date
      */
-    public LocalDate getStartDate() {
+    public LocalDateTime getStartDate() {
     return startDate;
 }
 
@@ -129,27 +118,17 @@ private User user;
      *
      * @param startDate the start date
      */
-    public void setStartDate(LocalDate startDate) {
+    public void setStartDate(LocalDateTime startDate) {
     this.startDate = startDate;
 }
 
-
-    /**
-     * Gets start date for display in datepicker
-     *
-     * @return the start date as a string
-     */
-    public String getStartDateForDisplay() {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        return dateTimeFormatter.format(startDate);
-    }
 
     /**
      * Gets end date.
      *
      * @return the end date
      */
-    public LocalDate getEndDate() {
+    public LocalDateTime getEndDate() {
         return endDate;
     }
 
@@ -158,55 +137,9 @@ private User user;
      *
      * @param endDate the end date
      */
-    public void setEndDate(LocalDate endDate) {
+    public void setEndDate(LocalDateTime endDate) {
         this.endDate = endDate;
     }
-
-    /**
-     * Gets end date for display in datepicker
-     *
-     * @return the end date as a string
-     */
-    public String getEndDateForDisplay() {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        return dateTimeFormatter.format(endDate);
-    }
-
-    /**
-     * Gets start time.
-     *
-     * @return the start time
-     */
-    public String getStartTime() {
-    return startTime;
-}
-
-    /**
-     * Sets start time.
-     *
-     * @param startTime the start time
-     */
-    public void setStartTime(String startTime) {
-    this.startTime = startTime;
-}
-
-    /**
-     * Gets end time.
-     *
-     * @return the end time
-     */
-    public String getEndTime() {
-    return endTime;
-}
-
-    /**
-     * Sets end time.
-     *
-     * @param endTime the end time
-     */
-    public void setEndTime(String endTime) {
-    this.endTime = endTime;
-}
 
     /**
      * Gets user name.
@@ -252,14 +185,12 @@ private User user;
         return id == that.id &&
                 startDate.equals(that.startDate) &&
                 endDate.equals(that.endDate) &&
-                startTime.equals(that.startTime) &&
-                endTime.equals(that.endTime) &&
                 userName.equals(that.userName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, startDate, endDate, startTime, endTime, userName);
+        return Objects.hash(id, startDate, endDate, userName);
     }
 
     @Override
@@ -268,8 +199,6 @@ private User user;
                 "id=" + id +
                 ", startDate=" + startDate +
                 ", endDate='" + endDate + '\'' +
-                ", startTime='" + startTime + '\'' +
-                ", endTime='" + endTime + '\'' +
                 ", userName='" + userName + '\'' +
                 '}';
     }
