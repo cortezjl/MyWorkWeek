@@ -1,6 +1,5 @@
 package com.juliecortez.controller;
 
-import com.juliecortez.entity.Role;
 import com.juliecortez.entity.TimeOffRequest;
 import com.juliecortez.entity.User;
 import com.juliecortez.persistence.GenericDao;
@@ -15,9 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -32,7 +30,7 @@ import java.util.List;
 
 public class AddEditTimeOffRequestServlet extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm:ss");
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -43,11 +41,10 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
 
         System.out.println("In post, actionToPerform=" + actionToPerform);
         if (actionToPerform.equals("add")) {
+            // Add time off request for the user
             TimeOffRequest timeOffRequest = new TimeOffRequest(request.getParameter("userName"),
-                    LocalDate.parse((request.getParameter("startDate")), dateTimeFormatter),
-                    LocalDate.parse((request.getParameter("endDate")), dateTimeFormatter),
-                    request.getParameter("startTime"),
-                    request.getParameter("endTime"),
+                    LocalDateTime.parse((request.getParameter("startDate")), dateTimeFormatter),
+                    LocalDateTime.parse((request.getParameter("endDate")), dateTimeFormatter),
                     getUserByUserName(request.getParameter("userName")));
             idToProcess = timeOffRequestDao.insert(timeOffRequest);
             message = "Time off request has been added";
@@ -96,10 +93,8 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
     }
 
     private TimeOffRequest setTimeOffRequestValuesFromForm(HttpServletRequest request, TimeOffRequest timeOffRequest) {
-        timeOffRequest.setStartDate(LocalDate.parse((request.getParameter("startDate")), dateTimeFormatter));
-        timeOffRequest.setEndDate(LocalDate.parse((request.getParameter("endDate")), dateTimeFormatter));
-        timeOffRequest.setStartTime(request.getParameter("startTime"));
-        timeOffRequest.setEndTime(request.getParameter("endTime"));
+        timeOffRequest.setStartDate(LocalDateTime.parse((request.getParameter("startDate")), dateTimeFormatter));
+        timeOffRequest.setEndDate(LocalDateTime.parse((request.getParameter("endDate")), dateTimeFormatter));
         timeOffRequest.setUser(getUserByUserName(request.getParameter("userName")));
         return timeOffRequest;
     }
