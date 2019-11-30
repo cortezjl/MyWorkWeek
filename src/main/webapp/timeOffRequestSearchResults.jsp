@@ -18,19 +18,19 @@
         <h2 class="text-center">Time Off Requests</h2>
         <table id="timeOffRequestTable"  class="table table-striped table-bordered display dt-responsive nowrap"  >
             <tr><th>User Name</th>
+                <th>Name</th>
                 <th>Start Date</th>
                 <th>End Date</th>
-                <th>Start Time</th>
-                <th>End Time</th>
                 <th></th>
             </tr>
             <c:forEach var="timeOffRequest" items="${timeOffRequests}">
             <tr>
                 <td>${timeOffRequest.userName}</td>
-                <td>${timeOffRequest.startDate}</td>
-                <td>${timeOffRequest.endDate}</td>
-                <td>${timeOffRequest.startTime}</td>
-                <td>${timeOffRequest.endTime}</td>
+                <td>${timeOffRequest.user.getFirstName()} ${timeOffRequest.user.getLastName()}</td>
+                <td><fmt:parseDate value="${ timeOffRequest.startDate }" pattern="yyyy-MM-dd'T'HH:mm" var="parsedStartDateTime" type="both" />
+                    <fmt:formatDate pattern="MM/dd/yyyy HH:mm" value="${ parsedStartDateTime }" /></td>
+                <td><fmt:parseDate value="${ timeOffRequest.endDate }" pattern="yyyy-MM-dd'T'HH:mm" var="parsedEndDateTime" type="both" />
+                    <fmt:formatDate pattern="MM/dd/yyyy HH:mm" value="${ parsedEndDateTime }" /></td>
                 <td>
                     <a class="edit" title="Edit" data-toggle="tooltip" href="addEditTimeOffRequestServlet?timeOffRequestAction=edit&id=${timeOffRequest.id}"><i class="fa" >&#xf044;</i></a>  <!--Font Awesome Edit symbol -->
                 </td>
