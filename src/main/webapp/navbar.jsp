@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="timeOffRequests.jsp">Time Off Requests</a></li>
+            <li class="nav-item"><a class="nav-link" href="timeOffRequestSearch.jsp">Time Off Requests</a></li>
             <li class="nav-item"><a class="nav-link" href="scheduling.jsp">Scheduling</a></li>
             <li class="nav-item"><a class="nav-link" href="userSearch.jsp">Users</a></li>
         </ul>
