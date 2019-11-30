@@ -50,22 +50,20 @@ insert into role values (1, 'Administrator', 1, 'admin');
 --
 
 CREATE TABLE time_off_request (
-  id        int(11)      NOT NULL AUTO_INCREMENT,
-  user_id   int(11)      NOT NULL,
-  user_name varchar(15)  NOT NULL,
-  startDate date         DEFAULT NULL,
-  endDate   date         DEFAULT NULL,
-  startTime varchar(08)  DEFAULT NULL,
-  endTime   varchar(08)  DEFAULT NULL,
-  PRIMARY KEY (id),
-  UNIQUE KEY time_off_request_id_uindex (id),
-  KEY time_off_request_user_id_fk (user_id),
-  CONSTRAINT time_off_request_user_id_fk FOREIGN KEY (user_id) REFERENCES user (id),
-  KEY time_off_request_user_user_name_fk (user_name),
-  CONSTRAINT time_off_request_user_user_name_fk FOREIGN KEY (user_name) REFERENCES User (user_name)
+      id        int(11)      NOT NULL AUTO_INCREMENT,
+      user_id   int(11)      NOT NULL,
+      user_name varchar(15)  NOT NULL,
+      startDate datetime     NOT NULL,
+      endDate  datetime      NOT NULL,
+      PRIMARY KEY (id),
+      UNIQUE KEY time_off_request_id_uindex (id),
+      KEY time_off_request_user_id_fk (user_id),
+      CONSTRAINT time_off_request_user_id_fk FOREIGN KEY (user_id) REFERENCES user (id),
+      KEY time_off_request_user_user_name_fk (user_name),
+      CONSTRAINT time_off_request_user_user_name_fk FOREIGN KEY (user_name) REFERENCES User (user_name)
 ) ;
 
-insert into time_off_request values (1, 1, 'admin', '2019/11/15', '2019/11/18', '12:00 AM', '12:00 PM');
+insert into time_off_request values (1, 1, 'admin', '2019/11/15 08:00:00', '2019/11/15 15:00:00');
 
   createDate datetime     DEFAULT NULL,
   updateDate datetime     DEFAULT NULL,
