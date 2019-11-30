@@ -7,7 +7,8 @@ import com.juliecortez.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,7 +52,8 @@ class TimeOffRequestDaoTest {
     void getByIdSuccess() {
         TimeOffRequest retrievedTimeOffRequest = (TimeOffRequest)timeOffRequestDao.getById(1);
         assertNotNull(retrievedTimeOffRequest);
-        assertEquals("12:00 AM", retrievedTimeOffRequest.getStartTime());
+        System.out.println("start date =" + retrievedTimeOffRequest.getStartDate());
+        assertEquals(LocalDateTime.parse("2019-11-15T08:00"), retrievedTimeOffRequest.getStartDate());
     }
 
     /**
@@ -64,7 +66,7 @@ class TimeOffRequestDaoTest {
         // retrieve user object by id
         User user = (User)userDao.getById(1);
         // create the new time off request including the user object
-        TimeOffRequest newTimeOffRequest = new TimeOffRequest("admin", LocalDate.parse("2019-12-24"), LocalDate.parse("2019-12-24"), "09:00 AM", "05:00 PM", user);
+        TimeOffRequest newTimeOffRequest = new TimeOffRequest("admin", LocalDateTime.parse("2019-12-24T01:00:00"), LocalDateTime.parse("2019-12-24T23:00:00"), user);
         // add the Role to the set of Roles for the user object
         user.addTimeOffRequest(newTimeOffRequest);
         // insert the time off request, which will update the user object
@@ -72,7 +74,7 @@ class TimeOffRequestDaoTest {
 
         assertNotEquals(0,id);
         TimeOffRequest insertedTimeOffRequest = (TimeOffRequest)timeOffRequestDao.getById(id);
-        assertEquals("09:00 AM", insertedTimeOffRequest.getStartTime());
+        assertEquals(LocalDateTime.parse("2019-12-24T01:00:00"), insertedTimeOffRequest.getStartDate());
         assertNotNull(insertedTimeOffRequest.getUser());
         // For the inserted Role object, get the user object and get the users first name, and compare to expected value
         assertEquals("System", insertedTimeOffRequest.getUser().getFirstName());
@@ -94,12 +96,12 @@ class TimeOffRequestDaoTest {
      */
     @Test
     void updateSuccess() {
-        String endTime = "01:30 PM";
+        LocalDateTime endDate = LocalDateTime.parse("2019-12-24T23:00:00");
         TimeOffRequest timeOffRequestToUpdate = (TimeOffRequest)timeOffRequestDao.getById(1);
-        timeOffRequestToUpdate.setEndTime(endTime);
+        timeOffRequestToUpdate.setEndDate(endDate);
         timeOffRequestDao.saveOrUpdate(timeOffRequestToUpdate);
         TimeOffRequest retrievedTimeOffRequest = (TimeOffRequest)timeOffRequestDao.getById(1);
-        assertEquals(endTime, retrievedTimeOffRequest.getEndTime());
+        assertEquals(endDate, retrievedTimeOffRequest.getEndDate());
         assertEquals(timeOffRequestToUpdate, retrievedTimeOffRequest);
     }
 
