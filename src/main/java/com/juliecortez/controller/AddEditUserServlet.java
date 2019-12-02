@@ -17,13 +17,12 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
 
 /**
  * Edit the user
- *
  * @author JCortez
- * sources used: https://www.javaguides.net/2019/03/jsp-servlet-jdbc-mysql-crud-example-tutorial.html
  */
 @WebServlet(
         urlPatterns = {"/addEditUserServlet"}
@@ -35,13 +34,23 @@ public class AddEditUserServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // display query string parameters
+        System.out.println("getQueryString returns: " + request.getQueryString());
+        Enumeration paramNames = request.getParameterNames();
+        while(paramNames.hasMoreElements()) {
+            String paramName = (String)paramNames.nextElement();
+            System.out.print("parameter name= " + paramName);
+            String paramValue = request.getHeader(paramName);
+            System.out.println("parameter value= " + paramValue);
+        }
         //String actionToPerform = (String)request.getParameter("userAction");
         String actionToPerform = request.getParameter("actionToPerform");
         int idToProcess = 0;
         String message = "";
+        String additionalRole = request.getParameter("roleValueToAdd");
         GenericDao userDao = new GenericDao(User.class);
 
-        System.out.println("In post, userAction=" + actionToPerform);
+        System.out.println("In post, userAction=" + actionToPerform + " addtionalRole=" + additionalRole);
         if (actionToPerform.equals("add")) {
             User user = new User(request.getParameter("firstName"),request.getParameter("lastName"),
                     request.getParameter("userName"), request.getParameter("password"),
@@ -49,7 +58,7 @@ public class AddEditUserServlet extends HttpServlet {
                     LocalDate.parse((request.getParameter("startDate")), dateTimeFormatter),
                     LocalDate.parse((request.getParameter("endDate")), dateTimeFormatter));
             // Get list of role values from the form
-            String[] roleValues = request.getParameterValues("roleName");
+            String[] roleValues = request.getParameterValues("roleNameAdd");
             // Loop through the list of role values and add the role(s) to the user object
             // int loopCounter = 0;
             for (String roleValue : roleValues) {
@@ -57,18 +66,19 @@ public class AddEditUserServlet extends HttpServlet {
                 // Instantiate and create a new Role and add the user object to the Role object
                 Role role = new Role(roleValue, user);
                 role.setUser_name(user.getUserName());
-                //role.setUser(user);
                 // add the Role to the set of Roles for the User
                 user.addRole(role);
                 //loopCounter = loopCounter + 1;
             }
-             System.out.println("After adding role(s) to user, User is: " + user);
+            System.out.println("After adding role(s) to user, User is: " + user);
              idToProcess = userDao.insert(user);
             message = "User has been added";
             User userAdded = (User)userDao.getById(idToProcess);
             System.out.println("After user has been inserted, User is: " + userAdded);
             request.setAttribute("userAction", "edit");
             request.setAttribute("user", userAdded);
+            // Select list of values for Role select field on form
+            request.setAttribute("roleListAdd",setRoleSelectOptions());
         } else if (actionToPerform.equals("edit")) {
             // Set id of User to edit
             idToProcess = Integer.valueOf(request.getParameter("id"));
@@ -96,20 +106,29 @@ public class AddEditUserServlet extends HttpServlet {
             user = (User)userDao.getById(idToProcess);
             user = setUserValuesFromForm(request, user);
             userDao.saveOrUpdate(user);
+            if (additionalRole != null) {
+                String newRoleValue = request.getParameter("roleValueToAdd");
+                // Instantiate and create a new Role and add the user object to the Role object
+                Role newRole = new Role(newRoleValue, user);
+                newRole.setUser_name(user.getUserName());
+                // add the Role to the set of Roles for the User
+                user.addRole(newRole);
+            }
             request.setAttribute("userAction", "edit");
             message = "User has been updated";
             System.out.println("user is" + user);
             request.setAttribute("user",(User)userDao.getById(idToProcess));
+            // Select list of values for Role select field on form
+            request.setAttribute("roleList",setRoleSelectOptions());
         }
 
         // Access the session
         HttpSession session = request.getSession();
         // Add a message from adding or updating the User to the session.
         request.setAttribute("userUpdateMessage", message);
-        // Select list of values for Role select field on form
-        request.setAttribute("roleList",setRoleSelectOptions());
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/userEdit.jsp");
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/userAddEdit.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -129,7 +148,7 @@ public class AddEditUserServlet extends HttpServlet {
         request.setAttribute("roleList",setRoleSelectOptions());
         System.out.println("Leaving the get and user action is " + request.getAttribute("userAction"));
         // forward the request to the page to add or edit a User
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/userEdit.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/userAddEdit.jsp");
         dispatcher.forward(request, response);
     }
 
