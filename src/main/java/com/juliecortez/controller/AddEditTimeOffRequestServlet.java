@@ -30,27 +30,42 @@ import java.util.List;
 
 public class AddEditTimeOffRequestServlet extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm:ss");
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a");
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String actionToPerform = request.getParameter("actionToPerform");
+        logger.info("action to perform is= " + actionToPerform);
         int idToProcess = 0;
         String message = "";
         GenericDao timeOffRequestDao = new GenericDao(TimeOffRequest.class);
 
         System.out.println("In post, actionToPerform=" + actionToPerform);
         if (actionToPerform.equals("add")) {
-            // Add time off request for the user
-            TimeOffRequest timeOffRequest = new TimeOffRequest(request.getParameter("userName"),
-                    LocalDateTime.parse((request.getParameter("startDate")), dateTimeFormatter),
-                    LocalDateTime.parse((request.getParameter("endDate")), dateTimeFormatter),
-                    getUserByUserName(request.getParameter("userName")));
-            idToProcess = timeOffRequestDao.insert(timeOffRequest);
-            message = "Time off request has been added";
-            TimeOffRequest timeOffRequestAdded = (TimeOffRequest)timeOffRequestDao.getById(idToProcess);
-            request.setAttribute("timeOffRequestAction", "edit");
-            request.setAttribute("timeOffRequest", timeOffRequestAdded);
+            // Add time off request for the user, first make sure username is a valid user
+            List<User> userList = getUserByUserName(request.getParameter("userName"));
+            if (userList.size() == 0) {
+                User user = null;
+                TimeOffRequest timeOffRequest = new TimeOffRequest(request.getParameter("userName"),
+                        LocalDateTime.parse((request.getParameter("startDate"))),
+                        LocalDateTime.parse((request.getParameter("endDate"))),
+                        user);
+                message = "Username is not a valid user";
+                request.setAttribute("timeOffRequest",(TimeOffRequest)timeOffRequestDao.getById(Integer.valueOf(request.getParameter("id"))));
+                request.setAttribute("timeOffRequestAction", "add");
+            } else {
+                System.out.println("startDate value is: " + request.getParameter("startDate"));
+                TimeOffRequest timeOffRequest = new TimeOffRequest(request.getParameter("userName"),
+                        LocalDateTime.parse((request.getParameter("startDate"))),
+                        LocalDateTime.parse((request.getParameter("endDate"))),
+                        userList.get(0));
+                System.out.println("ready to insert");
+                idToProcess = timeOffRequestDao.insert(timeOffRequest);
+                message = "Time off request has been added";
+                TimeOffRequest timeOffRequestAdded = (TimeOffRequest) timeOffRequestDao.getById(idToProcess);
+                request.setAttribute("timeOffRequestAction", "edit");
+                request.setAttribute("timeOffRequest", timeOffRequestAdded);
+            }
         } else if (actionToPerform.equals("edit")) {
             // Set id of time off request to edit
             idToProcess = Integer.valueOf(request.getParameter("id"));
@@ -93,15 +108,15 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
     }
 
     private TimeOffRequest setTimeOffRequestValuesFromForm(HttpServletRequest request, TimeOffRequest timeOffRequest) {
-        timeOffRequest.setStartDate(LocalDateTime.parse((request.getParameter("startDate")), dateTimeFormatter));
-        timeOffRequest.setEndDate(LocalDateTime.parse((request.getParameter("endDate")), dateTimeFormatter));
-        timeOffRequest.setUser(getUserByUserName(request.getParameter("userName")));
+        timeOffRequest.setStartDate(LocalDateTime.parse(request.getParameter("startDate")));
+        timeOffRequest.setEndDate(LocalDateTime.parse((request.getParameter("endDate"))));
+        //timeOffRequest.setEndDate(LocalDateTime.parse((request.getParameter("endDate")), dateTimeFormatter));
         return timeOffRequest;
     }
 
-    private User getUserByUserName(String userName) {
+    private List<User> getUserByUserName(String userName) {
         GenericDao userDao =  new GenericDao(User.class);
         List<User> users = userDao.getByPropertyEqual("userName", userName);
-        return users.get(0);
+        return users;
     }
 }
