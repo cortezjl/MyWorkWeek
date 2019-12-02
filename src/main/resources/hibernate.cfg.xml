@@ -20,7 +20,9 @@
          <mapping class="com.juliecortez.entity.Role"/>
          <mapping class="com.juliecortez.entity.User"/>
         <mapping class="com.juliecortez.entity.TimeOffRequest"/>
+        <mapping class="com.juliecortez.entity.Schedule"/>
+        <mapping class="com.juliecortez.entity.ScheduleDetail"/>
 
-     </session-factory>
+    </session-factory>
 
  </hibernate-configuration>
