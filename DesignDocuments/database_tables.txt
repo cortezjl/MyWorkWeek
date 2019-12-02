@@ -71,44 +71,50 @@ insert into time_off_request values (1, 1, 'admin', '2019/11/15 08:00:00', '2019
 -- Create Table structure for table `Schedule`
 --
 
-CREATE TABLE `Schedule` (
-  `id`         int(11)      NOT NULL AUTO_INCREMENT,
-  `startDate` datetime      DEFAULT NULL,
-  `endDate` datetime        DEFAULT NULL,
-  `createDate` datetime     DEFAULT NULL,
-  `updateDate` datetime     DEFAULT NULL,
-  PRIMARY KEY (`id`),
-) 
+CREATE TABLE schedule (
+  id        int(11)   auto_increment primary key,
+  startDate date      DEFAULT NULL,
+  endDate   date      DEFAULT NULL
+);
+
+insert into schedule values (1, '2019/11/11', '2019/11/18');
 
 --
 -- Create Table structure for table `Schedule_Detail`
 --
 
-CREATE TABLE `Schedule_Detail` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `startDate` datetime      DEFAULT NULL,
-  `endDate` datetime        DEFAULT NULL,
-  'startTime1 varchar(07) DEFAULT NULL,
-  'endTime1   varchar(07) DEFAULT NULL,
-  'startTime2 varchar(07) DEFAULT NULL,
-  'endTime2   varchar(07) DEFAULT NULL,
-  'startTime3 varchar(07) DEFAULT NULL,
-  'endTime3   varchar(07) DEFAULT NULL,
-  'startTime4 varchar(07) DEFAULT NULL,
-  'endTime4   varchar(07) DEFAULT NULL,
-  'startTime5 varchar(07) DEFAULT NULL,
-  'endTime5   varchar(07) DEFAULT NULL,
-  'startTime6 varchar(07) DEFAULT NULL,
-  'endTime6   varchar(07) DEFAULT NULL,
-  'startTime7 varchar(07) DEFAULT NULL,
-  'endTime7   varchar(07) DEFAULT NULL,
-  `userName`   varchar(15) NOT NULL,
-  `scheduleId` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-  CONSTRAINT `Schedule_Detail_User_userName_fk` FOREIGN KEY (`userName`) REFERENCES `User` (`userName`)
-  KEY `Schedule_Detail_Schedule_id_fk` (`schedule`),
-     KEY `role_user_id_fk` (`scheduleId`),
-     CONSTRAINT `schedule_detail_schedule_id_fk` FOREIGN KEY (`scheduleId`) REFERENCES schedule (`id`)
-)
+CREATE TABLE schedule_detail (
+     id int(11) NOT NULL AUTO_INCREMENT,
+     startTime1 varchar(08) DEFAULT NULL,
+     endTime1   varchar(08) DEFAULT NULL,
+     startTime2 varchar(08) DEFAULT NULL,
+     endTime2   varchar(08) DEFAULT NULL,
+     startTime3 varchar(08) DEFAULT NULL,
+     endTime3   varchar(08) DEFAULT NULL,
+     startTime4 varchar(08) DEFAULT NULL,
+     endTime4   varchar(08) DEFAULT NULL,
+     startTime5 varchar(08) DEFAULT NULL,
+     endTime5   varchar(08) DEFAULT NULL,
+     startTime6 varchar(08) DEFAULT NULL,
+     endTime6   varchar(08) DEFAULT NULL,
+     startTime7 varchar(08) DEFAULT NULL,
+     endTime7   varchar(08) DEFAULT NULL,
+     user_name  varchar(15) NOT NULL,
+     scheduleId int(11) DEFAULT NULL,
+     userId     int(11) DEFAULT NULL,
+     PRIMARY KEY (id),
+     UNIQUE KEY schedule_detail_id_uindex (id),
+     CONSTRAINT schedule_detail_schedule_scheduleId_fk FOREIGN KEY (scheduleId) REFERENCES schedule (id),
+     KEY schedule_detail_schedule_scheduleId_fk (scheduleId),
+     CONSTRAINT schedule_detail_user_userId_fk FOREIGN KEY (userId) REFERENCES user (id),
+     KEY schedule_detail_user_userId_fk (userId),
+     CONSTRAINT schedule_detail_user_userName_fk FOREIGN KEY (user_name) REFERENCES user (user_name),
+     KEY schedule_detail_user_userName_fk (user_name)
+);
+
+insert into schedule values (1, '2019/11/11', '2019/11/18');
+
+insert into schedule_detail values (1, 'open', '04:00 PM', 'open', '04:00 PM','open', '04:00 PM','open', '04:00 PM','open', '04:00 PM','open', '02:00 PM','open', '02:00 PM', 'admin', 1, 1);
+
 
 
