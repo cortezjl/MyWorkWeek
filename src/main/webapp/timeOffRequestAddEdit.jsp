@@ -48,7 +48,10 @@
                 </div>
                 <div class="col-10 col-sm-2">
                     <input type="text" class="form-control d-inline-block" id="userName"
-                           name="userName" readonly
+                           name="userName"
+                            <c:if test="${timeOffRequestAction == 'edit'}">
+                                   readonly
+                            </c:if>
                            value = "${timeOffRequest.userName}"
                            data-error="Please enter the username.">
                 </div>
@@ -58,7 +61,8 @@
                 </div>
                 <div class="col-10 col-sm-2">
                     <input type="text" class="form-control d-inline-block" id="name"
-                           name="name" readonly
+                           name="name"
+                           readonly
                            value = "${timeOffRequest.user.getFirstName()} ${timeOffRequest.user.getLastName()}">
                 </div>
                 <div class="col-0 col-sm-3 "></div>
@@ -82,7 +86,7 @@
             <div class="row form-group">
                 <label class="control-label text-right col-4 col-sm-5" for="endDate">Ending Date and time</label>
                 <div class="col-6 col-sm-3">
-                    <div class="input-group date mydatetimepicker" data-provide="datepicker">
+                    <div class="input-append" >
                         <input data-format="MM/dd/yyyy HH:mm:ss PP" type="datetime-local"
                                id="endDate" name="endDate"
                                value = "${timeOffRequest.endDate}"
@@ -115,6 +119,7 @@
                             Add
                         </c:if>
                     </button>
+                    <br><br>
                 </div>
                 <div class="col-4 col-sm-5"></div>
             </div>
