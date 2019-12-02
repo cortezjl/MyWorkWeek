@@ -23,7 +23,7 @@
                             </div>
                             <br> <br>
                             <a class="card-link text-dark" href="timeOffRequestSearch.jsp">View Time Off Request</a>
-                            <a class="card-link text-dark" href="timeOffRequestAddEdit.jsp?timeOffRequestAction=add&">Add Time Off Request</a>
+                            <a class="card-link text-dark" href="addEditTimeOffRequestServlet?timeOffRequestAction=add&">Add Time Off Request</a>
                         </div>
                     </div>
 
