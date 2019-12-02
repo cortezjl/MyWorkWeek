@@ -66,6 +66,10 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<TimeOffRequest> timeOffRequests = new HashSet<>();   // Hold collection/set of time off requests for the user - zero to many
 
+    // There is one User with zero to many schedule details
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<ScheduleDetail> scheduleDetails = new HashSet<>();   // Hold collection/set of schedule details for the user - zero to many
+
     /**
      * Instantiates a new User.
      */
@@ -312,6 +316,28 @@ public class User {
         timeOffRequests.remove(timeOffRequest);
         timeOffRequest.setUser(null);
     }
+
+
+    /**
+     * Add scheduleDetail
+     *
+     * @param scheduleDetail the schedule detail
+     */
+    public void addScheduleDetail(ScheduleDetail scheduleDetail) {
+        scheduleDetails.add(scheduleDetail);
+        scheduleDetail.setUser(this);
+    }
+
+    /**
+     * Remove schedule detail
+     *
+     * @param scheduleDetail the schedule detail
+     */
+    public void removeScheduleDetail(ScheduleDetail scheduleDetail) {
+        scheduleDetails.remove(scheduleDetail);
+        scheduleDetail.setUser(null);
+    }
+
     /**
      * Gets date of birth for display in datepicker
      *
