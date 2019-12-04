@@ -44,4 +44,13 @@ user options if logged on user is not an Administrator or Manager.
 Add user name variable to role, since Hibernate does not seem to handle populating it, was leaving it as null.  Worked
 on adding a modal to the Add/Edit User jsp be be able to add additional roles for the user.
 
+### Sun, Dec 1st
+Create Schedule and Schedule_Detail tables as well and the java class and unit test files for those tables.
+
+### Mon, Dec 2nd
+Add code to search and display schedule and schedule detail data.  Start for add and edit of a 
+schedule and it's details.
+
+### Tuesday, Dec 3rd
+Worked on using Hibernate Query Language ann
 
