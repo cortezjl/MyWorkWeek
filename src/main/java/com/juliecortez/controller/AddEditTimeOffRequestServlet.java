@@ -40,7 +40,7 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
         String message = "";
         GenericDao timeOffRequestDao = new GenericDao(TimeOffRequest.class);
 
-        System.out.println("In post, actionToPerform=" + actionToPerform);
+        logger.info("In post, actionToPerform=" + actionToPerform);
         if (actionToPerform.equals("add")) {
             // Add time off request for the user, first make sure username is a valid user
             List<User> userList = getUserByUserName(request.getParameter("userName"));
@@ -54,12 +54,12 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
                 request.setAttribute("timeOffRequest",(TimeOffRequest)timeOffRequestDao.getById(Integer.valueOf(request.getParameter("id"))));
                 request.setAttribute("timeOffRequestAction", "add");
             } else {
-                System.out.println("startDate value is: " + request.getParameter("startDate"));
+                logger.info("startDate value is: " + request.getParameter("startDate"));
                 TimeOffRequest timeOffRequest = new TimeOffRequest(request.getParameter("userName"),
                         LocalDateTime.parse((request.getParameter("startDate"))),
                         LocalDateTime.parse((request.getParameter("endDate"))),
                         userList.get(0));
-                System.out.println("ready to insert");
+                logger.info("ready to insert");
                 idToProcess = timeOffRequestDao.insert(timeOffRequest);
                 message = "Time off request has been added";
                 TimeOffRequest timeOffRequestAdded = (TimeOffRequest) timeOffRequestDao.getById(idToProcess);
@@ -76,7 +76,7 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
             timeOffRequestDao.saveOrUpdate(timeOffRequest);
             request.setAttribute("timeOffRequestAction", "edit");
             message = "Time off request has been updated";
-            System.out.println("timeOffRequest is" + timeOffRequest);
+            logger.info("timeOffRequest is" + timeOffRequest);
             request.setAttribute("timeOffRequest",(TimeOffRequest)timeOffRequestDao.getById(idToProcess));
         }
 
@@ -93,7 +93,7 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         GenericDao timeOffRequestDao = new GenericDao(TimeOffRequest.class);
         String actionToPerform = request.getParameter("timeOffRequestAction");
-        System.out.println("In get, actionToPerform=" + actionToPerform);
+        logger.info("In get, actionToPerform=" + actionToPerform);
         if (actionToPerform.equals("edit")) {
             request.setAttribute("timeOffRequest",(TimeOffRequest)timeOffRequestDao.getById(Integer.valueOf(request.getParameter("id"))));
             request.setAttribute("timeOffRequestAction", "edit");
@@ -101,7 +101,7 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
             request.removeAttribute("timeOffRequest");
             request.setAttribute("timeOffRequestAction", "add");
         }
-        System.out.println("Leaving the get and time off request action is " + request.getAttribute("timeOffRequestAction"));
+        logger.info("Leaving the get and time off request action is " + request.getAttribute("timeOffRequestAction"));
         // forward the request to the page to add or edit a time off request
         RequestDispatcher dispatcher = request.getRequestDispatcher("/timeOffRequestAddEdit.jsp");
         dispatcher.forward(request, response);
