@@ -35,13 +35,13 @@ public class AddEditUserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // display query string parameters
-        System.out.println("getQueryString returns: " + request.getQueryString());
+        logger.info("getQueryString returns: " + request.getQueryString());
         Enumeration paramNames = request.getParameterNames();
         while(paramNames.hasMoreElements()) {
             String paramName = (String)paramNames.nextElement();
             System.out.print("parameter name= " + paramName);
             String paramValue = request.getHeader(paramName);
-            System.out.println("parameter value= " + paramValue);
+            logger.info("parameter value= " + paramValue);
         }
         //String actionToPerform = (String)request.getParameter("userAction");
         String actionToPerform = request.getParameter("actionToPerform");
@@ -50,7 +50,7 @@ public class AddEditUserServlet extends HttpServlet {
         String additionalRole = request.getParameter("roleValueToAdd");
         GenericDao userDao = new GenericDao(User.class);
 
-        System.out.println("In post, userAction=" + actionToPerform + " addtionalRole=" + additionalRole);
+        logger.info("In post, userAction=" + actionToPerform + " addtionalRole=" + additionalRole);
         if (actionToPerform.equals("add")) {
             User user = new User(request.getParameter("firstName"),request.getParameter("lastName"),
                     request.getParameter("userName"), request.getParameter("password"),
@@ -62,7 +62,7 @@ public class AddEditUserServlet extends HttpServlet {
             // Loop through the list of role values and add the role(s) to the user object
             // int loopCounter = 0;
             for (String roleValue : roleValues) {
-                System.out.println("ready to add role to user - roleValue=" + roleValue + " for user name " + user.getUserName());
+                logger.info("ready to add role to user - roleValue=" + roleValue + " for user name " + user.getUserName());
                 // Instantiate and create a new Role and add the user object to the Role object
                 Role role = new Role(roleValue, user);
                 role.setUser_name(user.getUserName());
@@ -70,11 +70,11 @@ public class AddEditUserServlet extends HttpServlet {
                 user.addRole(role);
                 //loopCounter = loopCounter + 1;
             }
-            System.out.println("After adding role(s) to user, User is: " + user);
+            logger.info("After adding role(s) to user, User is: " + user);
              idToProcess = userDao.insert(user);
             message = "User has been added";
             User userAdded = (User)userDao.getById(idToProcess);
-            System.out.println("After user has been inserted, User is: " + userAdded);
+            logger.info("After user has been inserted, User is: " + userAdded);
             request.setAttribute("userAction", "edit");
             request.setAttribute("user", userAdded);
             // Select list of values for Role select field on form
@@ -91,12 +91,12 @@ public class AddEditUserServlet extends HttpServlet {
             // get list of role id's and role values for the user
             String[] ids = request.getParameterValues("roleId");
             String[] roleValues = request.getParameterValues("roleName");
-            System.out.println("size of roleName is =" + roleValues.length);
+            logger.info("size of roleName is =" + roleValues.length);
             // loop through the role id's and update the role values for the user
             int loopCounter = 0;
             for (String idForUserRole : ids) {
                 String updatedRole = roleValues[loopCounter];
-                System.out.println("ready to update role for user to: " + updatedRole);
+                logger.info("ready to update role for user to: " + updatedRole);
                 updateRole(idForUserRole, updatedRole);
                 loopCounter = loopCounter + 1;
             }
@@ -116,7 +116,7 @@ public class AddEditUserServlet extends HttpServlet {
             }
             request.setAttribute("userAction", "edit");
             message = "User has been updated";
-            System.out.println("user is" + user);
+            logger.info("user is" + user);
             request.setAttribute("user",(User)userDao.getById(idToProcess));
             // Select list of values for Role select field on form
             request.setAttribute("roleList",setRoleSelectOptions());
@@ -136,7 +136,7 @@ public class AddEditUserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         GenericDao userDao = new GenericDao(User.class);
         String actionToPerform = request.getParameter("userAction");
-        System.out.println("In get, userAction=" + actionToPerform);
+        logger.info("In get, userAction=" + actionToPerform);
         if (actionToPerform.equals("edit")) {
             request.setAttribute("user",(User)userDao.getById(Integer.valueOf(request.getParameter("id"))));
             request.setAttribute("userAction", "edit");
@@ -146,7 +146,7 @@ public class AddEditUserServlet extends HttpServlet {
         }
         // Select list of values for Role select field on form
         request.setAttribute("roleList",setRoleSelectOptions());
-        System.out.println("Leaving the get and user action is " + request.getAttribute("userAction"));
+        logger.info("Leaving the get and user action is " + request.getAttribute("userAction"));
         // forward the request to the page to add or edit a User
         RequestDispatcher dispatcher = request.getRequestDispatcher("/userAddEdit.jsp");
         dispatcher.forward(request, response);
@@ -165,7 +165,7 @@ public class AddEditUserServlet extends HttpServlet {
     }
 
     private void  updateRole(String roleId, String newRole) {
-        System.out.println("In updateRole method for id " + roleId + " with new role value of " + newRole);
+        logger.info("In updateRole method for id " + roleId + " with new role value of " + newRole);
         GenericDao roleDao = new GenericDao(Role.class);
         // Retrieve the Role record to update
         Role roleToUpdate = (Role)roleDao.getById(Integer.parseInt(roleId));
@@ -174,7 +174,7 @@ public class AddEditUserServlet extends HttpServlet {
         // Update the record
         roleDao.saveOrUpdate(roleToUpdate);
         Role retrievedRole = (Role)roleDao.getById(Integer.parseInt(roleId));
-        System.out.println("Role for id " + roleId + " is now set to " + retrievedRole.getRole());
+        logger.info("Role for id " + roleId + " is now set to " + retrievedRole.getRole());
     }
 
     private User setUserValuesFromForm(HttpServletRequest request, User user) {
