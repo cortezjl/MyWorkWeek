@@ -30,12 +30,12 @@
                     <div class="col-12 col-md-4">
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="searchType" value="allSchedules" checked>All Schedules
+                                <input type="radio" class="form-check-input" name="searchType" value="findAllSchedules" checked>All Schedules
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input mb-sm-3" name="searchType" value="StartDate">By Start Date
+                                <input type="radio" class="form-check-input mb-sm-3" name="searchType" value="findByStartDate">By Start Date
                             </label>
                         </div>
                     </div>
