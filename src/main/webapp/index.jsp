@@ -39,7 +39,7 @@
                                 </div>
                                 <br> <br>
                                 <a  class="card-link text-dark" href="scheduleSearch.jsp">View Schedule</a>
-                                <a  class="card-link text-dark"href="scheduleAddEdit.jsp">Add Schedule</a>
+                                <a  class="card-link text-dark"href="schedules.jsp">Add Schedule</a>
                             </div>
                         </div>
                     </c:if>
