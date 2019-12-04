@@ -55,38 +55,33 @@ implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.
 
 ### Week 10
 - [ ] Weekly journal entry
-- [ ] Add the Schedule and schedule_detail table, populate with data, (test and prod dbs)
-- [ ] Create the schedule and schedule_detail entities
-- [ ] Add the timeOffRequest table
-- [ ] Add the timeOffRequest entity
-- [ ] Create the timeOffRequest dao unit tests
-- [ ] Add a jsp to display timeOffRequests
+- [x] Create the timeOffRequest dao unit tests
+- [x] Add the timeOffRequest table
+- [x] Add the timeOffRequest entity
+- [x] Create the timeOffRequest dao unit tests
+
 ### Week 11 - Team project work week
-- [ ] Weekly journal entry
-- [ ] Add the timeOffRequest table
-- [ ] Add the timeOffRequest entity
-- [ ] Create the timeOffRequest dao unit tests
-- [ ] Add a jsp to display timeOffRequests
-- [ ] Add jsp to add time off request
-- [ ] Add update functionality in jsp fortimeOffRequest
-- [ ] Integration with working days to retrieve public holidays into schedule
-- [ ] Unit test all api integrations
+- [x] Weekly journal entry
+- [x] Add a jsp to display timeOffRequests
+- [x] Add jsp to add time off request
+- [x] Add update functionality in jsp for timeOffRequest
 
 ### Week 12 - Team project due
-- [ ] Weekly journal entry
-- [ ] Review indie project and create list of todos
-- [ ] Add the Schedule and schedule_detail table, populate with data, (test and prod dbs)
-- [ ] Create the schedule and schedule_detail entities
+- [x] Weekly journal entry (no entries, on vacation)
+
 
 ### Week 13
-- [ ] Weekly journal entry
-- [ ] Complete todos identified in week 12
+- [x] Weekly journal entry
+- [x] Add the Schedule and schedule_detail table, populate with data, (test and prod dbs)
+- [x] Create the schedule and schedule_detail entities
 - [ ] Prepare for week 13 peer code reviews
 - [ ] Code quality check
 - [ ] Review rubric to make sure I'm on target
 
 ### Week 14
 - [ ] Weekly journal entry
+- [ ] Integration with working days or other api to retrieve public holidays into schedule
+- [ ] Unit test all api integrations
 - [ ] Create final presentation
 - [ ] Implement paging of search results
 
