@@ -87,7 +87,7 @@
                 <label class="control-label text-right col-4 col-sm-5" for="endDate">Ending Date and time</label>
                 <div class="col-6 col-sm-3">
                     <div class="input-append" >
-                        <input data-format="MM/dd/yyyy HH:mm:ss PP" type="datetime-local"
+                        <input
                                id="endDate" name="endDate"
                                value = "${timeOffRequest.endDate}"
                                data-error="Please enter the ending date for time off">
