@@ -30,7 +30,7 @@
                 <td><fmt:parseDate value="${schedule.endDate}" pattern="yyyy-MM-dd"  var="parsedEndDate" type="date" />
                     <fmt:formatDate pattern="MM/dd/yyyy" value="${ parsedEndDate }"  type="date" /></td>
                 <td>
-                    <a class="edit" title="Edit" data-toggle="tooltip" href="addEditScheduleServlet?scheduleRequestAction=edit&id=${schedule.id}"><i class="fa" >&#xf044;</i></a>  <!--Font Awesome Edit symbol -->
+                    <a class="edit" title="Edit" data-toggle="tooltip" href="addEditScheduleServlet?userAction=edit&id=${schedule.id}"><i class="fa" >&#xf044;</i></a>  <!--Font Awesome Edit symbol -->
                 </td>
             </tr>
         </c:forEach>
