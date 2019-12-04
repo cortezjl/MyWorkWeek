@@ -13,8 +13,15 @@ import java.util.Set;
  *
  * @author JCortez
  */
+
 @Entity(name = "Schedule") // Annotation to indicate this class is to be managed by Hibernate.  This is the name of the class
 @Table(name = "schedule") // case sensitive!   This is the name of the table
+@NamedQueries({
+        @NamedQuery(
+                name = "findScheduleByStartDate",
+                query = "select s from Schedule s where s.startDate = :startDate"
+        )
+})
 public class Schedule {
     // Every Entity must have a unique identifier which is annotated @Id
     // Notice there is no @Column here as the column and instance variable name are the same
