@@ -1,5 +1,5 @@
+<%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <body>
 <div class="wrapper">
@@ -54,7 +54,7 @@
 
                     <div class="col-12 col-md-4">
                         <br><br>
-                        <p class="font-weight-bold">Starting Date</p>
+                        <p class="font-weight-bold">Starting Date (Required to find or add a Schedule)</p>
                     </div>
 
                     <div class="col-0 col-md-4"></div>
