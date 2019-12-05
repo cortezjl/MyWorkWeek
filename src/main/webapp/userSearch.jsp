@@ -1,7 +1,8 @@
+<%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
+<html lang="en">
 <body>
+
 <div class="wrapper">
     <div class="container-fluid">
         <%@include file="header.jsp"%>
@@ -120,5 +121,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
