@@ -57,9 +57,9 @@ public class SearchSchedule extends HttpServlet {
             logger.info("ready to do a search for all schedules");
         } else {
             // Whether searching for a specific startDate or adding.  Need to check if schedule exists for the startDate
-            System.out.println("ready to do getScheduleByStartDate for startDate = " + startDate);
+            logger.info("ready to do getScheduleByStartDate for startDate = " + startDate);
             schedules = getScheduleByStartDate(startDate);
-            System.out.println("size of schedules is: " + schedules.size() );
+            logger.info("size of schedules is: " + schedules.size() );
             if (schedules.size() == 0) {
                 // schedule not found, send startDate to use for new schedule to add
                 req.setAttribute("userAction", "add");
@@ -70,7 +70,7 @@ public class SearchSchedule extends HttpServlet {
                 req.setAttribute("userAction", "edit");
                 destination = "addEditScheduleServlet?userAction=edit&id=" + schedules.get(0).getId();
             }
-            System.out.println("ready to do a add or edit of schedule.  The action is: " + req.getAttribute("userAction"));
+            logger.info("ready to do a add or edit of schedule.  The action is: " + req.getAttribute("userAction"));
         }
         logger.info("number of schedule entries=" + scheduleDao.getAll().size());
         logger.info("schedule=" + req.getAttribute("schedule"));
@@ -88,7 +88,7 @@ public class SearchSchedule extends HttpServlet {
         query.setParameter("startDate",startDate);
         List<Schedule> schedules = query.list();
 
-        System.out.println("size of list returned from hibernate query is: " + query.list().size());
+        logger.info("size of list returned from hibernate query is: " + query.list().size());
 
         session.close();
         return schedules;
