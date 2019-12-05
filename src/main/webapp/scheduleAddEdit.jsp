@@ -1,6 +1,6 @@
 <%@include file="head.jsp"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
+<html lang="en">
 <body>
 <div class="wrapper">
     <div class="container-fluid">
@@ -32,29 +32,27 @@
 
 
         <div class="row form-group">
-            <div class="col-2 col-sm-3 ">
-                <label class="control-label d-inline-block text-right" for="startDate">For week starting</label>
-            </div>
-            <div class="col-10 col-sm-2">
+            <label class="control-label d-inline-block text-right col-2 col-sm-4" for="startDate">For week starting</label>
+            <div class="col-10 col-sm-1">
                 <input type="text" class="form-control d-inline-block" id="startDate"
-                       name="startDate"
+                       name="startDate" readonly
                 <c:if test="${userAction == 'edit'}">
                        readonly
                 </c:if>
-                       value = "${schedule.startDate}"
+                       value = "${schedule.getStartDateForDisplay()}"
                        data-error="Please enter the username.">
             </div>
             <div class="col-0 col-sm-1 "></div>
-            <div class="col-2 col-sm-1 ">
-                <label class="control-label d-inline-block text-right" for="name">End Date</label>
-            </div>
-            <div class="col-10 col-sm-2">
+            <label class="control-label d-inline-block text-right col-2 col-sm-1" for="name">Week Ending</label>
+            <div class="col-9 col-sm-2">
                 <input type="text" class="form-control d-inline-block" id="name"
                        name="name"
                        readonly
-                       value = "${schedule.endDate}">
+                       value = "${schedule.getEndDateForDisplay()}">
             </div>
-            <div class="col-0 col-sm-3 "></div>
+            <div class="col-1 col-sm-3 ">
+                <!-- TODO Add link to displays time off requests for the schedule week in a new window -->
+            </div>
             <br><br><br>
         </div>
         <table id="scheduleTable"  class="table table-striped table-bordered display dt-responsive nowrap"  >
@@ -65,7 +63,7 @@
                        name="scheduleDetailId"
                        value="${scheduleDetail.id}">
                 <tr>
-                    <td><input value = "${scheduleDetail.userName}" size="15"/></td>
+                    <td><input value = "${scheduleDetail.user.getFirstName()} ${scheduleDetail.user.getLastName()}" readonly ></td>
                     <td><input value = "${scheduleDetail.startTime1}" size="8"/></td>
                     <td><input value = "${scheduleDetail.startTime2}" size="8"/></td>
                     <td><input value = "${scheduleDetail.startTime3}" size="8"/></td>
