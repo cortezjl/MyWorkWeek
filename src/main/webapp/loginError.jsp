@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lange="en">
 <%@include file="head.jsp"%>
+<c:set var="title" value="Login error" />
 <body>
 <div class="wrapper">
     <div class="container-fluid">
