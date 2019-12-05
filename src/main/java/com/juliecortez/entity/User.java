@@ -16,6 +16,12 @@ import java.util.Set;
  */
 @Entity(name = "User") // Annotation to indicate this class is to be managed by Hibernate.  This is the name of the class
 @Table(name = "user") // case sensitive!   This is the name of the table
+@NamedQueries({
+        @NamedQuery(
+                name = "findUsersActiveDuringDates",
+                query = "select u from User u where u.startDate <= :endDate and u.endDate >= :startDate"
+        )
+})
 public class User {
     // Every Entity must have a unique identifier which is annotated @Id
     // Notice there is no @Column here as the column and instance variable name are the same
