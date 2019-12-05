@@ -30,13 +30,14 @@ public class SearchTimeOffRequest extends HttpServlet {
         String searchType = req.getParameter("searchType");
         String searchField = "userName";
         String searchValue = req.getParameter("searchValue");
+        // Retrieve time off requests based on search type and set attribute with list of qualifying time off requests
         if (searchType.equals("allTimeOffRequests")) {
             req.setAttribute("timeOffRequests", timeOffRequestDao.getAll());
         } else {
             req.setAttribute("timeOffRequests", timeOffRequestDao.getByPropertyLike(searchField, searchValue));
         }
+        // forward the request to jsp to display the search results
         RequestDispatcher dispatcher = req.getRequestDispatcher("timeOffRequestSearchResults.jsp");
         dispatcher.forward(req, resp);
     }
-
 }
