@@ -20,7 +20,9 @@
     <auth-constraint>
       <role-name>Administrator</role-name>
       <role-name>Manager</role-name>
-      <role-name>All</role-name>
+      <role-name>Back Of House</role-name>
+      <role-name>Busser</role-name>
+      <role-name>Front Of House</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -32,7 +34,9 @@
     <auth-constraint>
       <role-name>Administrator</role-name>
       <role-name>Manager</role-name>
-      <role-name>All</role-name>
+      <role-name>Back Of House</role-name>
+      <role-name>Busser</role-name>
+      <role-name>Front Of House</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -61,12 +65,52 @@
 
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>user-edit</web-resource-name>
-      <url-pattern>/userEdit.jsp</url-pattern>
+      <web-resource-name>user-add-or-edit</web-resource-name>
+      <url-pattern>/userAddEdit.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>Administrator</role-name>
       <role-name>Manager</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>schedules</web-resource-name>
+      <url-pattern>/schedules.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>time-off-request-search</web-resource-name>
+      <url-pattern>/timeOffRequestSearch.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+      <role-name>Back Of House</role-name>
+      <role-name>Busser</role-name>
+      <role-name>Front Of House</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>time-off-request-search-add-or-edit</web-resource-name>
+      <url-pattern>/timeOffRequestAddEdit.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+      <role-name>Back Of House</role-name>
+      <role-name>Busser</role-name>
+      <role-name>Front Of House</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -78,6 +122,12 @@
     <role-name>Manager</role-name>
   </security-role>
   <security-role>
-    <role-name>All</role-name>
+    <role-name>Back Of House</role-name>
+  </security-role>
+  <security-role>
+    <role-name>Front Of House</role-name>
+  </security-role>
+  <security-role>
+    <role-name>Busser</role-name>
   </security-role>
 </web-app>
