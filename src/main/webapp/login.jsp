@@ -7,9 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lange="en">
-<!--<head>
-    <title>Login</title>
-</head> -->
+<title>Login</title>
+
 <%@include file="head.jsp"%>
 
 <body>
@@ -28,6 +27,7 @@
                 <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In" class="btn btn-primary">
             </TABLE>
         </FORM>
+        <br><br>
     </div>
 </div>
 
