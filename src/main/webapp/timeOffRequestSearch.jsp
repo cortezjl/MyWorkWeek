@@ -1,8 +1,9 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
 <c:set var="title" value="Time Off Request Search" />
-<html>
+<html lang="en">
 <body>
+
 <div class="wrapper">
     <div class="container-fluid">
         <%@include file="header.jsp"%>
@@ -82,5 +83,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
