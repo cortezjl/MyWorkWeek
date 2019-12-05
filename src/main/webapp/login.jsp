@@ -7,8 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lange="en">
-<title>Login</title>
-
+<c:set var="title" value="Login" />
 <%@include file="head.jsp"%>
 
 <body>
