@@ -1,8 +1,8 @@
+<%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="title" value="Add/Edit Time Off Request" />
 
-<html>
+<html lang="en">
 <body>
 
 <div class="wrapper">
