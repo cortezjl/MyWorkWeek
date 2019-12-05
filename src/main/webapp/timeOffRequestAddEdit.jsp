@@ -43,9 +43,7 @@
 
             <div class="row form-group">
                 <div class="col-0 col-sm-2"></div>
-                <div class="col-2 col-sm-1 ">
-                    <label class="control-label d-inline-block" for="userName">Username</label>
-                </div>
+                <label class="control-label d-inline-block text-right col-2 col-sm-1" for="userName">Username</label>
                 <div class="col-10 col-sm-2">
                     <input type="text" class="form-control d-inline-block" id="userName"
                            name="userName"
@@ -56,9 +54,7 @@
                            data-error="Please enter the username.">
                 </div>
                 <div class="col-0 col-sm-1 "></div>
-                <div class="col-2 col-sm-1 ">
-                    <label class="control-label d-inline-block" for="name">Name</label>
-                </div>
+                <label class="control-label d-inline-block text-right col-2 col-sm-1" for="name">Name</label>
                 <div class="col-10 col-sm-2">
                     <input type="text" class="form-control d-inline-block" id="name"
                            name="name"
@@ -87,7 +83,7 @@
                 <label class="control-label text-right col-4 col-sm-5" for="endDate">Ending Date and time</label>
                 <div class="col-6 col-sm-3">
                     <div class="input-append" >
-                        <input
+                        <input data-format="MM/dd/yyyy HH:mm:ss PP" type="datetime-local"
                                id="endDate" name="endDate"
                                value = "${timeOffRequest.endDate}"
                                data-error="Please enter the ending date for time off">
