@@ -1,9 +1,14 @@
 package com.juliecortez.controller;
 
 import com.juliecortez.entity.Schedule;
+import com.juliecortez.entity.ScheduleDetail;
+import com.juliecortez.entity.User;
 import com.juliecortez.persistence.GenericDao;
+import com.juliecortez.persistence.SessionFactoryProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -28,7 +33,7 @@ import java.util.List;
 
 public class AddEditScheduleServlet extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("EEE, MM/dd/yyyy");
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -85,8 +90,10 @@ public class AddEditScheduleServlet extends HttpServlet {
             request.setAttribute("userAction", "edit");
             request.setAttribute("tableHeader", setTableHeaderDates(schedule.getStartDate()));
         } else if (actionToPerform.equals("add")) {
-            request.removeAttribute("schedule");
+            LocalDate startDate = (LocalDate)request.getAttribute("startDate");
+            request.setAttribute("schedule", setValuesForScheduleToAdd(startDate, startDate.plusDays(6)));
             request.setAttribute("userAction", "add");
+            request.setAttribute("tableHeader", setTableHeaderDates(startDate));
         }
         logger.info("Leaving the get and user action is " + request.getAttribute("userAction"));
         // forward the request to the page to add or edit a User
@@ -99,10 +106,42 @@ public class AddEditScheduleServlet extends HttpServlet {
         LocalDate nextDay = weekStartingDate;
         String formattedDateTime;
         for (int i = 0; i < 7; i++) {
-            tableHeaderValue = tableHeaderValue + "<th>" + nextDay.getDayOfWeek() + " " + nextDay.format(dateTimeFormatter) + "</th>";
+            tableHeaderValue = tableHeaderValue + "<th>" + nextDay.format(dateTimeFormatter) + "</th>";
             nextDay = nextDay.plusDays(1);
         }
 
         return tableHeaderValue;
+    }
+
+
+    public Schedule setValuesForScheduleToAdd(LocalDate startDate, LocalDate endDate) {
+        Schedule scheduleToAdd = new Schedule();
+        scheduleToAdd.setStartDate(startDate);
+        scheduleToAdd.setEndDate(endDate);
+        List<User> activeUsers = getActiveUsersByDateRange(startDate, endDate);
+        for (User user : activeUsers) {
+            ScheduleDetail scheduleDetail = new ScheduleDetail();
+            scheduleDetail.setUserName(user.getUserName());
+            scheduleDetail.setUser(user);
+            scheduleToAdd.addScheduleDetail(scheduleDetail);
+        }
+        return scheduleToAdd;
+    }
+
+
+    public List<User> getActiveUsersByDateRange(LocalDate startDate, LocalDate endDate) {
+
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+
+        String hql = "select u FROM User u WHERE u.startDate <= :endDate and u.endDate >= :startDate ";
+        Query<User> query = session.createQuery(hql, User.class);
+        query.setParameter("startDate",startDate);
+        query.setParameter("endDate",endDate);
+        List<User> users = query.list();
+
+        System.out.println("size of user list returned from hibernate query is: " + query.list().size());
+
+        session.close();
+        return users;
     }
 }
