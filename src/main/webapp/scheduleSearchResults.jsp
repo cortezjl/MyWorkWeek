@@ -2,7 +2,7 @@
 <%@include file="head.jsp"%>
 
 <c:set var="title" value="Schedule Search Results" />
-<html>
+<html lang="en">
 <body>
 
 <script type="text/javascript" class="init">
@@ -36,5 +36,6 @@
         </c:forEach>
     </div>
 </div>
+
 </body>
 </html>
