@@ -1,7 +1,6 @@
+<%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
-<html>
+<html lang="en">
     <body>
         <div class="wrapper">
             <div class="container-fluid">
@@ -15,7 +14,7 @@
                         <div class="card-body text-center">
                             <h4 class="card-title">Time Off Requests</h4>
                             <div>
-                                <a href="timeOffRequests.jsp">
+                                <a href="timeOffRequestSearch.jsp">
                                     <img class="img-fluid"
                                          src="images/kisspng-computer-icons-calendar-date-iconfinder-calendar-date-event-month-icon-5ab06bc5db9aa6.0629959215215113658995.jpg"
                                          alt="Calendar image">
@@ -27,24 +26,21 @@
                         </div>
                     </div>
 
-                    <c:if test="${pageContext.request.isUserInRole('Administrator') || pageContext.request.isUserInRole('Manager')}">
                         <div class="card bg-info">
                             <div class="card-body text-center">
                                 <h4 class="card-title">Scheduling</h4>
                                 <div>
-                                    <a href="scheduling.jsp">
+                                    <a href="schedules.jsp">
                                         <img class="img-fluid" src="images/calendar-blue-152-262206.webp"
                                              alt="Calendar image">
                                     </a>
                                 </div>
                                 <br> <br>
-                                <a  class="card-link text-dark" href="scheduleSearch.jsp">View Schedule</a>
-                                <a  class="card-link text-dark"href="schedules.jsp">Add Schedule</a>
+                                    <a  class="card-link text-dark" href="schedules.jsp">View or Add Schedule</a>
+
                             </div>
                         </div>
-                    </c:if>
 
-                    <c:if test="${pageContext.request.isUserInRole('Administrator') || pageContext.request.isUserInRole('Manager')}">
                         <div class="card bg-info">
                             <div class="card-body text-center">
                                 <h4 class="card-title">Users</h4>
@@ -59,7 +55,6 @@
                                 <a class="card-link text-dark"href="addEditUserServlet?userAction=add&">Add Users</a>
                             </div>
                         </div>
-                    </c:if>
                 </div>
             </div>
         </div>
