@@ -6,17 +6,30 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
+<html lange="en">
+<!--<head>
     <title>Login</title>
-</head>
+</head> -->
+<%@include file="head.jsp"%>
+
 <body>
-<FORM ACTION="j_security_check" METHOD="POST">
-    <TABLE>
-        <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
-        <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
-        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
-    </TABLE>
-</FORM>
+
+<div class="wrapper">
+    <div class="container-fluid">
+        <%@include file="header.jsp"%>
+        <%@include file="navbar.jsp"%>
+        <h2>My Work Week Login</h2>
+
+        <FORM ACTION="j_security_check" METHOD="POST">
+            <br>
+            <TABLE>
+                <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
+                <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password" >
+                <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In" class="btn btn-primary">
+            </TABLE>
+        </FORM>
+    </div>
+</div>
+
 </body>
 </html>
