@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -140,6 +141,26 @@ public class Schedule {
     }
 
     /**
+     * Gets start date for display in datepicker
+     *
+     * @return the start date as a string
+     */
+    public String getStartDateForDisplay() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        return dateTimeFormatter.format(startDate);
+    }
+
+    /**
+     * Gets end date for display in datepicker
+     *
+     * @return the end date as a string
+     */
+    public String getEndDateForDisplay() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        return dateTimeFormatter.format(endDate);
+    }
+
+    /**
      * Gets Schedule Details.
      *
      * @return scheduleDetails the Schedule Details
@@ -168,7 +189,7 @@ public class Schedule {
     }
 
     /**
-     * Remove role.
+     * Remove scheduleDetail.
      *
      * @param scheduleDetail the schedule detail for a user for a given schedule
      */
