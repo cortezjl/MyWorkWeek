@@ -12,6 +12,11 @@
     </form-login-config>
   </login-config>
 
+  <error-page>
+    <error-code>403</error-code>
+    <location>/forbidden.jsp</location>
+  </error-page>
+
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>login</web-resource-name>
@@ -85,6 +90,38 @@
     </auth-constraint>
   </security-constraint>
 
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>schedule-search</web-resource-name>
+      <url-pattern>/scheduleSearch.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>schedules-search-results</web-resource-name>
+      <url-pattern>/scheduleSearchResults.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>schedule-add-edit</web-resource-name>
+      <url-pattern>/scheduleAddEdit.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+    </auth-constraint>
+  </security-constraint>
 
   <security-constraint>
     <web-resource-collection>
@@ -102,7 +139,21 @@
 
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>time-off-request-search-add-or-edit</web-resource-name>
+      <web-resource-name>time-off-request-search-results</web-resource-name>
+      <url-pattern>/timeOffRequestSearchResults.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+      <role-name>Back Of House</role-name>
+      <role-name>Busser</role-name>
+      <role-name>Front Of House</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>time-off-request-add-or-edit</web-resource-name>
       <url-pattern>/timeOffRequestAddEdit.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
