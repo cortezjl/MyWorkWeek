@@ -26,6 +26,7 @@
                 <c:if test="${timeOffRequestAction == 'add'}">
                     action="addEditTimeOffRequestServlet?TimeOffRequestAction=${timeOffRequestAction}"
                 </c:if>
+              onReset="clearForm();
               method="POST">
 
             <c:if test="${timeOffRequestAction == 'edit'}">
@@ -106,7 +107,7 @@
             <div class="row">
                 <div class="col-4 col-sm-5"></div>
                 <div class="col-4 col-sm-2">
-                    <button type="submit" class="btn btn-primary col-sm-offset-3"
+                    <button type="submit" class="btn btn-success col-sm-offset-3"
                             data-disable="true">
                         <c:if test="${timeOffRequestAction == 'edit'}">
                             Update
@@ -115,9 +116,10 @@
                             Add
                         </c:if>
                     </button>
+                    <button type="reset" class="btn btn-primary col-sm-offset-3">Clear</button>
                     <br><br>
                 </div>
-                <div class="col-4 col-sm-5"></div>
+                <div class="col-4 col-sm-2"></div>
             </div>
         </form>
     </div>
