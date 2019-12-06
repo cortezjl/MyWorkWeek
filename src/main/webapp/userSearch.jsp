@@ -1,5 +1,7 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
+<c:set var="title" value="userSearch" />
+<script src="js/userSearch.js"></script>
 <html lang="en">
 <body>
 
