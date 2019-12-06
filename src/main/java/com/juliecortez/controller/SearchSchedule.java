@@ -38,9 +38,12 @@ public class SearchSchedule extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // Declare variables and object referenes
         GenericDao scheduleDao = new GenericDao(Schedule.class);
         LocalDate startDate = null;
         LocalDate endDate = null;
+        List<Schedule> schedules = new ArrayList<Schedule>();
+        String destination = "";
 
         // get parameters from request
         String searchType = req.getParameter("searchType");
@@ -49,8 +52,8 @@ public class SearchSchedule extends HttpServlet {
             startDate = LocalDate.parse(req.getParameter("startDate"));
         }
         //logger.info("searchType = " + searchType + "startDate = " + startDate);
-        List<Schedule> schedules = new ArrayList<Schedule>();
-        String destination = "";
+
+        // set request attributes and destination jsp value based on type of search (or add) requested by user
         if (searchType.equals("findAllSchedules")) {
             req.setAttribute("schedules", scheduleDao.getAll());
             destination = "scheduleSearchResults.jsp";
@@ -61,7 +64,7 @@ public class SearchSchedule extends HttpServlet {
             schedules = getScheduleByStartDate(startDate);
             //logger.info("size of schedules is: " + schedules.size() );
             if (schedules.size() == 0) {
-                // schedule not found, send startDate to use for new schedule to add
+                // schedule not found, will send startDate to use for new schedule to be added
                 req.setAttribute("userAction", "add");
                 req.setAttribute("startDate", startDate);
                 destination = "addEditScheduleServlet?userAction=add";
@@ -75,10 +78,18 @@ public class SearchSchedule extends HttpServlet {
         //logger.info("number of schedule entries=" + scheduleDao.getAll().size());
         //logger.info("schedule=" + req.getAttribute("schedule"));
         //logger.info("the destination to forward to is: " + destination);
+
+        // forward the request based on action selected by the user
         RequestDispatcher dispatcher = req.getRequestDispatcher(destination);
         dispatcher.forward(req, resp);
     }
 
+    /**
+     * Gets a list of schedule objects that match by start date (should only be 1)
+     *
+     * @param startDate the start date
+     * @return the schedule that qualified by by start date
+     */
     public List<Schedule> getScheduleByStartDate(LocalDate startDate) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
