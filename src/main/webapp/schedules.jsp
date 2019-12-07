@@ -1,5 +1,7 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
+<c:set var="title" value="Schedules" />
+<script src="js/schedules.js"></script>
 <html lang="en">
 <body>
 
@@ -65,7 +67,7 @@
                     <div class="col-0 col-md-4"></div>
 
                     <div class="col-12 col-md-4">
-                        <input type="date" class="form-control" name="startDate" id="startDate" p>
+                        <input type="date" class="form-control" name="startDate" id="startDate" >
                     </div>
 
                     <div class="col-0 col-md-4"></div>
