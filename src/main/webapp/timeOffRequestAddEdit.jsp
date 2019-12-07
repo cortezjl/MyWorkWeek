@@ -26,7 +26,6 @@
                 <c:if test="${timeOffRequestAction == 'add'}">
                     action="addEditTimeOffRequestServlet?TimeOffRequestAction=${timeOffRequestAction}"
                 </c:if>
-              onReset="clearForm();
               method="POST">
 
             <c:if test="${timeOffRequestAction == 'edit'}">
