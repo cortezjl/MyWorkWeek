@@ -17,12 +17,7 @@
 
         <form:form id="editScheduleForm" role="form" data-toggle="validator"
                    class="form-horizontal"
-                    <c:if test="${userAction == 'edit'}">
-                        action="addEditTimeOffRequestServlet?timeOffRequestAction=${userAction}"
-                    </c:if>
-                    <c:if test="${userAction == 'add'}">
-                        action="addEditTimeOffRequestServlet?TimeOffRequestAction=${userAction}"
-                    </c:if>
+                   action="addEditTimeOffRequestServlet?timeOffRequestAction=${userAction}"
                     method="POST">
 
         <input type="hidden"
