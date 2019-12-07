@@ -60,7 +60,7 @@
                     <div class="col-0 col-md-4"></div>
 
                     <div class="col-12 col-md-4">
-                        <input type="date" class="form-control" name="startDate" id="startDate" p>
+                        <input type="date" class="form-control" name="startDate" id="startDate" >
                     </div>
 
                     <div class="col-0 col-md-4"></div>
