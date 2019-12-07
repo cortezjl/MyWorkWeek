@@ -1,7 +1,9 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
 <c:set var="title" value="Time Off Request Search" />
+<script src="js/timeOffRequestSearch.js"></script>
 <html lang="en">
+
 <body>
 
 <div class="wrapper">
@@ -61,7 +63,7 @@
                     <div class="col-0 col-md-4"></div>
 
                     <div class="col-12 col-md-4">
-                        <input type="text" class="form-control" name="searchValue" id="searchValue" p>
+                        <input type="text" class="form-control" name="searchValue" id="searchValue" >
                     </div>
 
                     <div class="col-0 col-md-4"></div>
