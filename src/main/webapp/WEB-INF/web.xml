@@ -81,6 +81,17 @@
 
   <security-constraint>
     <web-resource-collection>
+      <web-resource-name>user-add-or-edit</web-resource-name>
+      <url-pattern>/addEditUserServlet</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
       <web-resource-name>schedules</web-resource-name>
       <url-pattern>/schedules.jsp</url-pattern>
     </web-resource-collection>
@@ -165,6 +176,19 @@
     </auth-constraint>
   </security-constraint>
 
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>time-off-request-add-or-edit</web-resource-name>
+      <url-pattern>/addEditTimeOffRequestServlet</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Administrator</role-name>
+      <role-name>Manager</role-name>
+      <role-name>Back Of House</role-name>
+      <role-name>Busser</role-name>
+      <role-name>Front Of House</role-name>
+    </auth-constraint>
+  </security-constraint>
   <!-- Security roles used by this web application -->
   <security-role>
     <role-name>Administrator</role-name>
