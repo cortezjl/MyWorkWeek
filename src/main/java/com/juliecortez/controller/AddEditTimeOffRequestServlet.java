@@ -1,10 +1,13 @@
 package com.juliecortez.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.juliecortez.entity.TimeOffRequest;
 import com.juliecortez.entity.User;
 import com.juliecortez.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openweathermap.WeatherResponse;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,10 +16,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Properties;
 
 
 /**
@@ -91,15 +99,21 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
         GenericDao timeOffRequestDao = new GenericDao(TimeOffRequest.class);
         String actionToPerform = request.getParameter("timeOffRequestAction");
         logger.info("In get, actionToPerform=" + actionToPerform);
         if (actionToPerform.equals("edit")) {
-            request.setAttribute("timeOffRequest",(TimeOffRequest)timeOffRequestDao.getById(Integer.valueOf(request.getParameter("id"))));
+            request.setAttribute("timeOffRequest",timeOffRequestDao.getById(Integer.valueOf(request.getParameter("id"))));
             request.setAttribute("timeOffRequestAction", "edit");
         } else if (actionToPerform.equals("add")) {
             request.removeAttribute("timeOffRequest");
             request.setAttribute("timeOffRequestAction", "add");
+        }
+
+        if (session.getAttribute ("currentWeather") == null) {
+            session.setAttribute("currentWeather", getCurrentWeather());
+            System.out.println("setting current weather attribute as: " + session.getAttribute("currentWeather"));
         }
         logger.info("Leaving the get and time off request action is " + request.getAttribute("timeOffRequestAction"));
         // forward the request to the page to add or edit a time off request
@@ -118,5 +132,26 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
         GenericDao userDao =  new GenericDao(User.class);
         List<User> users = userDao.getByPropertyEqual("userName", userName);
         return users;
+    }
+
+    private String getCurrentWeather() throws JsonProcessingException {
+        // Create a new client with ClientBuilder
+        Client client = ClientBuilder.newClient();
+        String apiKey = "cc1f07102b573a5e4a1844ae499f557c";
+        // Set the target api that we want to access
+        WebTarget target =
+                client.target("https://api.openweathermap.org/data/2.5/weather?zip=53598,us&units=imperial&APPID=" + apiKey);
+        // Identify the type of request we want from the target and return a string
+        String apiResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
+        //logger.info("api response= " + apiResponse);
+        // Use ObjectMapper from Jackson library to help map the response
+        ObjectMapper mapper = new ObjectMapper();
+        /// Map the response
+        WeatherResponse weatherResponse = mapper.readValue(apiResponse, WeatherResponse.class);
+        // Put together the string to display on the screen with the temperature and description of current weather condition
+        String weatherInfo = ("Current weather:  " + weatherResponse.getMain().getTemp() + "\u00B0" +  "F " + weatherResponse.getWeather().get(0).getDescription());
+        //logger.info("current weather is: " + weatherInfo);
+
+        return weatherInfo;
     }
 }
