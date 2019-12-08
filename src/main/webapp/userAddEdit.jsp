@@ -199,10 +199,10 @@
                 <div class="col-4 col-sm-2">
                     <button type="submit" class="btn btn-primary col-sm-offset-3"
                             data-disable="true">
-                        <c:if test="${user != null}">
+                        <c:if test="${userAction == 'edit'}">
                             Update
                         </c:if>
-                        <c:if test="${user == null}">
+                        <c:if test="${userAction == 'add'}">
                             Add
                         </c:if>
                     </button>
