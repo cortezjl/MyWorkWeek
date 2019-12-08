@@ -1,7 +1,6 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
 <c:set var="title" value="Add/Edit Time Off Request" />
-
 <html lang="en">
 <body>
 
@@ -9,6 +8,7 @@
     <div class="container-fluid">
         <%@include file="header.jsp"%>
         <%@include file="navbar.jsp"%>
+        <p><%= session.getAttribute("currentWeather") %></p>
         <h2 class="text-center">
             <c:if test="${timeOffRequestAction == 'edit'}">
                 Edit Time Off Request
@@ -17,6 +17,7 @@
                 Add New Time Off Request
             </c:if>
         </h2><br/>
+
 
         <form id="editTimeOffRequestForm" role="form" data-toggle="validator"
               class="form-horizontal"
@@ -45,13 +46,12 @@
                 <div class="col-0 col-sm-2"></div>
                 <label class="control-label d-inline-block text-right col-2 col-sm-1" for="userName">Username</label>
                 <div class="col-10 col-sm-2">
-                    <input type="text" class="form-control d-inline-block" id="userName"
+                    <input type="text" class="form-control d-inline-block" id="userName" required
                            name="userName"
                             <c:if test="${timeOffRequestAction == 'edit'}">
                                    readonly
                             </c:if>
-                           value = "${timeOffRequest.userName}"
-                           data-error="Please enter the username.">
+                           value = "${timeOffRequest.userName}">
                 </div>
                 <div class="col-0 col-sm-1 "></div>
                 <label class="control-label d-inline-block text-right col-2 col-sm-1" for="name">Name</label>
@@ -70,9 +70,8 @@
                 <div class="col-6 col-sm-3">
                     <div class="input-append" >
                         <input data-format="MM/dd/yyyy HH:mm:ss PP" type="datetime-local"
-                               id="startDate" name="startDate"
-                               value = "${timeOffRequest.startDate}"
-                               data-error="Please enter the starting date for time off">
+                               id="startDate" name="startDate" required
+                               value = "${timeOffRequest.startDate}">
                     </div>
                 </div>
                 <div class="help-block with-errors col-2 col-sm-4"></div>
@@ -84,23 +83,22 @@
                 <div class="col-6 col-sm-3">
                     <div class="input-append" >
                         <input data-format="MM/dd/yyyy HH:mm:ss PP" type="datetime-local"
-                               id="endDate" name="endDate"
-                               value = "${timeOffRequest.endDate}"
-                               data-error="Please enter the ending date for time off">
+                               id="endDate" name="endDate" required
+                               value = "${timeOffRequest.endDate}">
                     </div>
                 </div>
                 <div class="help-block with-errors col-2 col-sm-4"></div>
             </div>
 
             <div class="row">
-                <div class="col-0 col-sm-2"></div>
+                <div class="col-0 col-sm-5"></div>
                 <div class="col-12 col-sm-4">
-                    <h3 class="text-sm-left">${timeOffRequestUpdateMessage}</h3>
+                <h3 class="text-sm-left">${timeOffRequestUpdateMessage}</h3>
                 </div>
                 <c:if test="${timeOffRequestUpdateMessage != null}" >
                     <c:remove var="userUpdateMessage"  />
                 </c:if>
-                <div class="col-0 col-sm-6"></div>
+                <div class="col-0 col-sm-3"></div>
             </div>
 
             <div class="row">
@@ -121,6 +119,20 @@
                 <div class="col-4 col-sm-2"></div>
             </div>
         </form>
+        <script>
+            $("#editTimeOffRequestForm").validate({
+                rules: {
+                    userName: "required",
+                    startDate: "required",
+                    endDate: "required"
+                },
+                messages: {
+                    userName: "Username value is required",
+                    startDate: "Start date and time is required",
+                    endDate: "End date and time is required"
+                }
+            });
+        </script>
     </div>
 </div>
 
