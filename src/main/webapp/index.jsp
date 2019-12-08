@@ -53,7 +53,7 @@
                         </div>
                         <br> <br>
                         <a class="card-link text-dark" href="userSearch.jsp">View Users</a>
-                        <a class="card-link text-dark"href="addEditUserServlet?userAction=add&">Add Users</a>
+                        <a class="card-link text-dark" href="addEditUserServlet?userAction=add&">Add Users</a>
                     </div>
                 </div>
             </div>
