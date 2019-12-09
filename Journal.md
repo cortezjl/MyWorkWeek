@@ -52,5 +52,11 @@ Add code to search and display schedule and schedule detail data.  Start for add
 schedule and it's details.
 
 ### Tuesday, Dec 3rd
-Worked on using Hibernate Query Language ann
+Worked on using Hibernate Query Language annotations
+
+### Sunday, Dec 8th
+Was having issue with post not executing for AddEditScheduleServlet.java after submitting new
+schedule on scheduleAddEdit.jsp.  Found there was a unexpected end of file message showing in Intellij
+It turned out to be an error because of a missing closing form tag.  After adding that in the doPost
+in the servlet was exeuting.
 

@@ -25,7 +25,7 @@ import java.util.List;
  * @author JCortez
  */
 @WebServlet(
-        urlPatterns = {"/addEditUserServlet"}
+    urlPatterns = {"/addEditUserServlet"}
 )
 
 public class AddEditUserServlet extends HttpServlet {

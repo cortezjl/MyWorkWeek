@@ -8,6 +8,12 @@
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
 
+# files with info not to put on github
+/src/main/resources/hibernate.cfg.xml
+/src/main/resources/weather.properties
+/src/test/resources/database.properties
+src/test/resources/hibernate.cfg.xml
+
 # Sensitive or high-churn files:
 .idea/dataSources.ids
 .idea/dataSources.xml
@@ -34,6 +40,7 @@
 # Maven
 /target/
 /log/
+/logs/
 /lib/
 
 # mpeltonen/sbt-idea plugin

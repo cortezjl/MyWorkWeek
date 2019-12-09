@@ -109,6 +109,8 @@ public class ScheduleDetail {
         this.user = user;
     }
 
+
+
         /**
          * Gets id.
          *

@@ -34,12 +34,12 @@
                     <div class="col-12 col-md-4">
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="searchType" value="allTimeOffRequests" checked>All Users
+                                <input type="radio" id="radioAll" class="form-check-input" name="searchType" value="allTimeOffRequests" checked>All Users
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input mb-sm-3" name="searchType" value="UserName">By User Name
+                                <input type="radio" id="radioUserName" class="form-check-input mb-sm-3" name="searchType" value="UserName">By User Name
                             </label>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                     <div class="col-0 col-md-4"></div>
                     <br>
                     <div class="col-12 col-md-4">
-                        <button type="submit" class="btn btn-success mr-sm-4 mt-sm-4 mb-sm-3">Submit</button>
+                        <button type="submit" id="submitButton" class="btn btn-success mr-sm-4 mt-sm-4 mb-sm-3">Submit</button>
                         <button type="reset" class="btn btn-primary mt-sm-4 mb-sm-3">Clear</button>
                     </div>
 
@@ -82,6 +82,19 @@
                 </div>
 
             </form>
+            <!-- when user clicks on submit button, check if doing a search by user name selected.  If so, user name value is required -->
+            <script>
+                $("#timeOffRequestSearchForm").validate({
+                    rules: {
+                        searchValue: {
+                            required: "#radioUserName:checked"
+                        }
+                    },
+                    message: {
+                        searchValue: "User name is required for search by user name"
+                    }
+                })
+            </script>
         </div>
     </div>
 </div>
