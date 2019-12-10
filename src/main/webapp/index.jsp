@@ -16,7 +16,7 @@
                         <h4 class="card-title">Time Off Requests</h4>
                         <div>
                             <a href="timeOffRequestSearch.jsp">
-                                <img class="img-fluid"
+                                <img class="img-fluid" id="headerPicture"
                                      src="images/kisspng-computer-icons-calendar-date-iconfinder-calendar-date-event-month-icon-5ab06bc5db9aa6.0629959215215113658995.jpg"
                                      alt="Calendar image">
                             </a>
