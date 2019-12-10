@@ -20,20 +20,6 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>login</web-resource-name>
-      <url-pattern>/loginServlet</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
-      <role-name>Administrator</role-name>
-      <role-name>Manager</role-name>
-      <role-name>Back Of House</role-name>
-      <role-name>Busser</role-name>
-      <role-name>Front Of House</role-name>
-    </auth-constraint>
-  </security-constraint>
-
-  <security-constraint>
-    <web-resource-collection>
-      <web-resource-name>login-icon</web-resource-name>
       <url-pattern>/loginAction</url-pattern>
     </web-resource-collection>
     <auth-constraint>
