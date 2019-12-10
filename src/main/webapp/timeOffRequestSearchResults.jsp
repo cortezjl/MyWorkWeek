@@ -32,7 +32,12 @@
                 <td><fmt:parseDate value="${ timeOffRequest.endDate }" pattern="yyyy-MM-dd'T'HH:mm" var="parsedEndDateTime" type="both" />
                     <fmt:formatDate pattern="MM/dd/yyyy hh:mm a" value="${ parsedEndDateTime }" /></td>
                 <td>
+                    <c:if test="${timeOffRequestsDisplayOnly == null}" >
                     <a class="edit" title="Edit" data-toggle="tooltip" href="addEditTimeOffRequestServlet?timeOffRequestAction=edit&id=${timeOffRequest.id}"><i class="fa" >&#xf044;</i></a>  <!--Font Awesome Edit symbol -->
+                    </c:if>
+                    <c:if test="${timeOffRequestsDisplayOnly != null}" >
+                        <c:remove var="timeOffRequestsDisplayOnly"  />
+                    </c:if>
                 </td>
             </tr>
             </c:forEach>
