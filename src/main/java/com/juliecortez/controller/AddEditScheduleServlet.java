@@ -24,7 +24,7 @@ import java.util.Enumeration;
 import java.util.List;
 
 /**
- * Edit the user
+ * This servlet is used to add or edit a schedule and the schedule details associated with it.  Schedules are for a week.
  *
  * @author JCortez
  */
@@ -50,7 +50,7 @@ public class AddEditScheduleServlet extends HttpServlet {
             // set schedule values with values from form
             Schedule schedule = new Schedule(LocalDate.parse((request.getParameter("startDate")), dateTimeFormatter2),
                     LocalDate.parse((request.getParameter("endDate")), dateTimeFormatter2));
-            // set values in the schedule details from the form.  For an edit it will perform the updates
+            // set values in the schedule details from the form.
             schedule = setScheduleDetailValues(request, schedule, actionToPerform);
             idToProcess = scheduleDao.insert(schedule);
             message = "Schedule has been added";
@@ -63,10 +63,12 @@ public class AddEditScheduleServlet extends HttpServlet {
             idToProcess = Integer.parseInt(request.getParameter("id"));
             // Create Schedule object and populate by retrieving Schedule object values by id
             Schedule schedule = (Schedule)scheduleDao.getById(idToProcess);
-            // update the schedule details associated with the schedule from values entered in the form
+            // set values in the schedule details from the form - for an edit the schedule details are updated
             // there are no schedule fields that get updated once a schedule exists
             schedule = setScheduleDetailValues(request, schedule, actionToPerform);
+            // retrieve the updated schedule
             Schedule scheduleUpdated = (Schedule) scheduleDao.getById(idToProcess);
+            // set attributes for the request
             request.setAttribute("userAction", "edit");
             logger.info("Schedule is" + scheduleUpdated);
             request.setAttribute("schedule",scheduleUpdated);
@@ -83,7 +85,7 @@ public class AddEditScheduleServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         GenericDao scheduleDao = new GenericDao(Schedule.class);
         String actionToPerform = request.getParameter("userAction");
-        logger.debug("In get, userAction=" + actionToPerform);
+
         // set attributes based on whether user is doing a search or adding a new schedule
         if (actionToPerform.equals("edit")) {
             Schedule schedule = (Schedule)scheduleDao.getById(Integer.valueOf(request.getParameter("id")));
@@ -96,24 +98,27 @@ public class AddEditScheduleServlet extends HttpServlet {
             request.setAttribute("userAction", "add");
             request.setAttribute("tableHeader", setTableHeaderDates(startDate));
         }
-        logger.debug("Leaving the get and user action is " + request.getAttribute("userAction"));
+
         // forward the request to the page to add or edit a User
         RequestDispatcher dispatcher = request.getRequestDispatcher("/scheduleAddEdit.jsp");
         dispatcher.forward(request, response);
     }
 
     /**
-     * Sets table header dates for displaying the schedule detail information
+     * Sets table header dates for displaying the dates in the schedule detail information
      *
      * @param weekStartingDate the week starting date
      * @return the table header dates
      */
     public String setTableHeaderDates(LocalDate weekStartingDate) {
         String tableHeaderValue = "<th>User Name</th>";
+        // set initial value of date to display in header column
         LocalDate nextDay = weekStartingDate;
         String formattedDateTime;
         for (int i = 0; i < 7; i++) {
+            // set the date in the column header
             tableHeaderValue = tableHeaderValue + "<th>" + nextDay.format(dateTimeFormatter) + "</th>";
+            // add 1 day to display for the next column date header
             nextDay = nextDay.plusDays(1);
         }
 
@@ -121,7 +126,7 @@ public class AddEditScheduleServlet extends HttpServlet {
     }
 
     /**
-     * Sets some values for schedule and schedule detail to add.
+     * Set values for the schedule and schedule details to add.
      *
      * @param startDate the start date
      * @param endDate   the end date
@@ -152,15 +157,12 @@ public class AddEditScheduleServlet extends HttpServlet {
     public List<User> getActiveUsersByDateRange(LocalDate startDate, LocalDate endDate) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-
         String hql = "select u FROM User u WHERE u.startDate <= :endDate and u.endDate >= :startDate ";
         Query<User> query = session.createQuery(hql, User.class);
         query.setParameter("startDate",startDate);
         query.setParameter("endDate",endDate);
         List<User> users = query.list();
-
         //logger.info("size of user list returned from hibernate query is: " + query.list().size());
-
         session.close();
         return users;
     }

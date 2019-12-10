@@ -51,18 +51,14 @@ public class SearchSchedule extends HttpServlet {
         if (!searchType.equals("findAllSchedules")) {
             startDate = LocalDate.parse(req.getParameter("startDate"));
         }
-        //logger.info("searchType = " + searchType + "startDate = " + startDate);
 
         // set request attributes and destination jsp value based on type of search (or add) requested by user
         if (searchType.equals("findAllSchedules")) {
             req.setAttribute("schedules", scheduleDao.getAll());
             destination = "scheduleSearchResults.jsp";
-            //logger.info("ready to do a search for all schedules");
         } else {
             // Whether searching for a specific startDate or adding.  Need to check if schedule exists for the startDate
-            //logger.info("ready to do getScheduleByStartDate for startDate = " + startDate);
             schedules = getScheduleByStartDate(startDate);
-            //logger.info("size of schedules is: " + schedules.size() );
             if (schedules.size() == 0) {
                 // schedule not found, will send startDate to use for new schedule to be added
                 req.setAttribute("userAction", "add");
@@ -73,11 +69,7 @@ public class SearchSchedule extends HttpServlet {
                 req.setAttribute("userAction", "edit");
                 destination = "addEditScheduleServlet?userAction=edit&id=" + schedules.get(0).getId();
             }
-            //logger.info("ready to do a add or edit of schedule.  The action is: " + req.getAttribute("userAction"));
         }
-        //logger.info("number of schedule entries=" + scheduleDao.getAll().size());
-        //logger.info("schedule=" + req.getAttribute("schedule"));
-        //logger.info("the destination to forward to is: " + destination);
 
         // forward the request based on action selected by the user
         RequestDispatcher dispatcher = req.getRequestDispatcher(destination);
@@ -93,14 +85,10 @@ public class SearchSchedule extends HttpServlet {
     public List<Schedule> getScheduleByStartDate(LocalDate startDate) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-
         String hql = "select s FROM Schedule s WHERE s.startDate = :startDate ";
         Query<Schedule> query = session.createQuery(hql, Schedule.class);
         query.setParameter("startDate",startDate);
         List<Schedule> schedules = query.list();
-
-        //logger.info("size of list returned from hibernate query is: " + query.list().size());
-
         session.close();
         return schedules;
     }
