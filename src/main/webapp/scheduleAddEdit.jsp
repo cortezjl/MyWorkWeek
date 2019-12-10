@@ -15,6 +15,7 @@
                 Add Weekly Schedule
             </c:if>
         </h2>
+        <p class="text-right"><a href="searchTimeOffRequest?searchType=weeklyRequests&searchValue=${schedule.startDate} 00:00" target="_blank">View Time Off Requests for the week</a></p>
         <br/>
 
         <form id="editScheduleForm" role="form" data-toggle="validator"
@@ -73,7 +74,7 @@
                        name="detail"
                        value="${scheduleDetail.userName}">
                 <tr>
-                    <td><input readonly value = "${scheduleDetail.user.getFirstName()} ${scheduleDetail.user.getLastName()}" /></td>
+                    <td>${scheduleDetail.user.getFirstName()} ${scheduleDetail.user.getLastName()}</td>
                     <td><input value = "${scheduleDetail.startTime1}" size="8" name="detail" /></td>
                     </td>
                     <td><input value = "${scheduleDetail.startTime2}" size="8" name="detail" /></td>
@@ -99,7 +100,7 @@
         <div class="row">
             <div class="col-0 col-sm-2"></div>
             <div class="col-12 col-sm-4">
-                <h3 class="text-sm-left">${schedulepessage}</h3>
+                <h3 class="text-sm-left">${scheduleMessage}</h3>
             </div>
             <c:if test="${scheduleMessage != null}" >
                 <c:remove var="scheduleMessage"  />
