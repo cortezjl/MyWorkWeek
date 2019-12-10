@@ -31,8 +31,23 @@
                 </div>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item" ><a class="nav-link" href="loginAction"><i class="fa fa-fw fa-sign-in"></i>Login</a></li><!--uses fixed width font awesome sign-in icon -->
-        </ul>
+
+
+        <c:if test="${welcomeUser == null}">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" ><a class="nav-link" href="loginAction"><i class="fa fa-fw fa-sign-in"></i>Login</a></li><!--uses fixed width font awesome sign-in icon -->
+            </ul>
+        </c:if>
+
+        <c:if test="${welcomeUser != null}">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" ><i class="fa fa-fw"></i>${welcomeUser}</li><!--uses fixed width font awesome sign-in icon -->
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" ><a class="nav-link" href="logout"><i class="fa fa-fw fa-sign-out"></i>Logout</a></li><!--uses fixed width font awesome sign-in icon -->
+            </ul>
+        </c:if>
+
+
     </div>   <!-- close Navbar links -->
 </nav>
