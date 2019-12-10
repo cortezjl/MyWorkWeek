@@ -2712,3 +2712,1001 @@
 [DEBUG] 2019-12-0817:19:38.732 [http-nio-8080-exec-10] GenericDao - Searching for entity with userName = MMasters
 [INFO ] 2019-12-0817:19:38.755 [http-nio-8080-exec-10] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=6, startTime1='', endTime1='', startTime2='', endTime2='', startTime3='', endTime3='', startTime4='', endTime4='', startTime5='', endTime5='', startTime6='', endTime6='', startTime7='', endTime7='', userName='MMasters'}
 [INFO ] 2019-12-0817:19:38.783 [http-nio-8080-exec-10] AddEditScheduleServlet - Schedule isSchedule{id=6, startDate=2019-11-18, endDate=2019-11-24}
+[DEBUG] 2019-12-0820:33:29.522 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0820:33:29.804 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0820:33:29.894 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0820:33:30.057 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0820:33:30.166 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0820:33:30.277 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0820:33:30.290 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=368, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0820:33:30.360 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0820:33:30.600 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0820:33:30.726 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0820:33:30.877 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0820:33:30.948 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0820:33:31.092 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0820:33:31.186 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0820:33:31.272 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0820:33:31.397 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0820:33:31.478 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0820:33:31.623 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0820:33:31.704 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0820:33:31.792 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0820:33:31.916 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0820:33:31.974 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0820:33:32.105 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0820:33:32.173 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0821:03:31.577 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0821:03:31.839 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0821:03:31.927 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0821:03:32.109 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0821:03:32.200 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0821:03:32.285 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0821:03:32.299 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=370, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0821:03:32.376 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0821:03:32.672 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0821:03:32.794 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0821:03:32.938 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0821:03:33.034 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0821:03:33.222 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0821:03:33.295 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0821:03:33.382 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0821:03:33.515 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0821:03:33.583 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0821:03:33.713 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0821:03:33.789 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0821:03:33.924 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0821:03:34.050 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0821:03:34.112 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0821:03:34.245 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0821:03:34.313 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0915:30:39.887 [http-nio-8080-exec-9] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0915:54:54.647 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0915:54:54.935 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0915:54:55.016 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0915:54:55.171 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0915:54:55.256 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0915:54:55.346 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0915:54:55.362 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=372, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0915:54:55.431 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0915:54:55.670 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0915:54:55.806 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0915:54:55.966 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0915:54:56.034 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0915:54:56.177 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0915:54:56.257 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0915:54:56.339 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0915:54:56.468 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0915:54:56.529 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0915:54:56.669 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0915:54:56.764 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0915:54:56.862 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0915:54:57.001 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0915:54:57.065 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0915:54:57.205 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0915:54:57.277 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0915:56:01.116 [http-nio-8080-exec-6] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0915:56:01.199 [http-nio-8080-exec-6] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:02:41.042 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:02:41.284 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:02:41.383 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:02:41.583 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:02:41.738 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:02:41.850 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:02:41.865 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=374, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:02:41.945 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:02:42.223 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:02:42.338 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:02:42.485 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:02:42.570 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:02:42.747 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:02:42.838 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:02:42.924 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:02:43.081 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:02:43.150 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:02:43.292 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:02:43.372 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:02:43.476 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:02:43.602 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:02:43.668 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:02:43.802 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:02:43.888 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:03:40.415 [http-nio-8080-exec-8] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:03:40.496 [http-nio-8080-exec-8] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:09:44.562 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:09:44.811 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:09:44.923 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:09:45.113 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:09:45.193 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:09:45.283 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:09:45.298 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=376, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:09:45.400 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:09:45.625 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:09:45.734 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:09:45.881 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:09:45.946 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:09:46.094 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:09:46.201 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:09:46.281 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:09:46.492 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:09:46.556 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:09:46.684 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:09:46.755 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:09:46.855 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:09:46.981 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:09:47.046 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:09:47.185 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:09:47.252 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:10:30.766 [http-nio-8080-exec-4] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:10:30.854 [http-nio-8080-exec-4] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:17:16.719 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:17:17.016 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:17:17.124 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:17:17.344 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:17:17.456 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:17:17.578 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:17:17.602 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=378, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:17:17.712 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:17:17.985 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:17:18.128 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:17:18.287 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:17:18.365 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:17:18.562 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:17:18.681 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:17:18.781 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:17:18.917 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:17:18.983 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:17:19.130 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:17:19.216 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:17:19.319 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:17:19.477 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:17:19.544 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:17:19.695 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:17:19.775 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:18:18.486 [http-nio-8080-exec-7] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:18:18.581 [http-nio-8080-exec-7] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:24:08.336 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:24:08.649 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:24:08.775 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:24:08.973 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:24:09.071 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:24:09.192 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:24:09.229 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=380, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:24:09.323 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:24:09.615 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:24:09.770 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:24:09.965 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:24:10.059 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:24:10.238 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:24:10.355 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:24:10.489 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:24:10.654 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:24:10.759 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:24:10.952 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:24:11.080 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:24:11.224 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:24:11.365 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:24:11.438 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:24:11.585 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:24:11.662 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:25:02.086 [http-nio-8080-exec-4] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:25:02.168 [http-nio-8080-exec-4] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:26:45.797 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:26:46.029 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:26:46.143 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:26:46.296 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:26:46.381 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:26:46.466 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:26:46.482 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=382, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:26:46.552 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:26:46.777 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:26:46.884 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:26:47.038 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:26:47.110 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:26:47.243 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:26:47.331 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:26:47.413 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:26:47.535 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:26:47.614 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:26:47.745 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:26:47.823 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:26:47.920 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:26:48.044 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:26:48.108 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:26:48.240 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:26:48.334 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:27:31.106 [http-nio-8080-exec-4] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:27:31.106 [http-nio-8080-exec-6] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:27:31.253 [http-nio-8080-exec-6] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:27:31.253 [http-nio-8080-exec-4] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:34:58.508 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:34:58.836 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:34:58.974 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:34:59.202 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:34:59.290 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:34:59.380 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:34:59.396 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=384, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:34:59.470 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:34:59.731 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:34:59.866 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:35:00.309 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:35:00.398 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:35:00.550 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:35:00.641 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:35:00.738 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:35:00.894 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:35:00.957 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:35:01.099 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:35:01.198 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:35:01.304 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:35:01.435 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:35:01.510 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:35:01.669 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:35:01.739 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:36:02.752 [http-nio-8080-exec-8] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:36:02.872 [http-nio-8080-exec-8] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:38:53.243 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:38:53.518 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:38:53.641 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:38:53.843 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:38:53.940 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:38:54.040 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:38:54.056 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=386, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:38:54.159 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:38:54.442 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:38:54.570 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:38:54.758 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:38:54.841 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:38:55.040 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:38:55.130 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:38:55.235 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:38:55.404 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:38:55.484 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:38:55.658 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:38:55.755 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:38:55.871 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:38:56.008 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:38:56.100 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:38:56.242 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:38:56.327 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:39:50.151 [http-nio-8080-exec-10] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:39:50.234 [http-nio-8080-exec-10] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0916:48:14.568 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0916:48:14.828 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0916:48:14.914 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0916:48:15.059 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0916:48:15.143 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0916:48:15.244 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:48:15.260 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=388, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:48:15.330 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0916:48:15.568 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0916:48:15.685 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:48:15.827 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0916:48:15.886 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0916:48:16.024 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:48:16.096 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0916:48:16.188 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0916:48:16.317 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0916:48:16.389 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0916:48:16.537 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:48:16.623 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0916:48:16.709 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:48:16.843 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0916:48:16.910 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0916:48:17.048 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0916:48:17.117 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0916:49:03.010 [http-nio-8080-exec-8] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0916:49:03.100 [http-nio-8080-exec-8] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0917:00:12.664 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:00:13.110 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:00:13.264 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:00:13.511 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:00:13.647 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:00:13.800 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:00:13.839 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=390, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:00:13.916 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:00:14.200 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:00:14.340 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:00:14.506 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:00:14.594 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:00:14.781 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:00:14.908 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:00:15.039 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:00:15.267 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:00:15.343 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:00:15.504 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:00:15.597 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:00:15.728 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:00:15.903 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:00:15.969 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:00:16.143 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:00:16.268 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0917:01:09.857 [http-nio-8080-exec-9] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0917:01:09.950 [http-nio-8080-exec-9] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0917:04:12.757 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:04:13.144 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:04:13.291 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:04:13.539 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:04:13.685 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:04:13.856 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:04:13.892 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=392, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:04:14.017 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:04:14.326 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:04:14.540 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:04:14.833 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:04:14.918 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:04:15.081 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:04:15.175 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:04:15.291 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:04:15.451 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:04:15.534 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:04:15.679 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:04:15.826 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:04:15.946 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:04:16.088 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:04:16.158 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:04:16.337 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:04:16.432 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0917:05:09.420 [http-nio-8080-exec-5] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0917:05:09.524 [http-nio-8080-exec-5] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0917:12:52.843 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:12:53.285 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:12:53.494 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:12:53.752 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:12:53.874 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:12:54.013 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:12:54.032 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=394, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:12:54.112 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:12:54.380 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:12:54.511 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:12:54.728 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:12:54.821 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:12:55.064 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:12:55.208 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:12:55.362 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:12:55.551 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:12:55.622 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:12:55.784 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:12:55.890 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:12:56.010 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:12:56.197 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:12:56.299 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:12:56.481 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:12:56.584 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0917:13:49.316 [http-nio-8080-exec-9] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0917:13:49.412 [http-nio-8080-exec-9] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0917:14:54.569 [http-nio-8080-exec-2] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0917:14:54.666 [http-nio-8080-exec-2] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0917:18:58.075 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:18:58.344 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:18:58.440 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:18:58.584 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:18:58.670 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:18:58.773 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:18:58.788 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=396, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:18:58.851 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:18:59.060 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:18:59.179 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:18:59.347 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:18:59.412 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:18:59.552 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:18:59.637 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:18:59.723 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:18:59.868 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:18:59.933 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:19:00.086 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:19:00.169 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:19:00.268 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:19:00.390 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:19:00.450 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:19:00.572 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:19:00.639 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0917:19:46.682 [http-nio-8080-exec-6] AddEditScheduleServlet - In get, userAction=edit
+[DEBUG] 2019-12-0917:19:46.764 [http-nio-8080-exec-6] AddEditScheduleServlet - Leaving the get and user action is edit
+[DEBUG] 2019-12-0917:40:40.952 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:40:41.258 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:40:41.405 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:40:41.609 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:40:41.718 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:40:41.843 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:40:41.859 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=398, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:40:41.938 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:40:42.185 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:40:42.312 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:40:42.476 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:40:42.553 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:40:42.710 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:40:42.802 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:40:42.965 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:40:43.102 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:40:43.169 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:40:43.309 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:40:43.402 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:40:43.512 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:40:43.651 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:40:43.717 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:40:43.852 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:40:43.922 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0917:41:21.194 [http-nio-8080-exec-6] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0917:41:21.211 [http-nio-8080-exec-6] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0917:41:26.281 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:42:35.749 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:42:36.055 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:42:36.167 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:42:36.339 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:42:36.456 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:42:36.552 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:42:36.570 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=400, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:42:36.662 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:42:36.899 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:42:37.061 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:42:37.218 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:42:37.291 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:42:37.454 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:42:37.566 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:42:37.728 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:42:37.925 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:42:37.995 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:42:38.188 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:42:38.270 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:42:38.367 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:42:38.531 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:42:38.603 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:42:38.735 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:42:38.805 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0917:43:22.268 [http-nio-8080-exec-3] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0917:43:22.299 [http-nio-8080-exec-3] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0917:43:27.001 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:50:49.756 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:50:50.018 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:50:50.124 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:50:50.333 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:50:50.424 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:50:50.529 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:50:50.543 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=402, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:50:50.615 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:50:50.854 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:50:50.958 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:50:51.087 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:50:51.150 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:50:51.288 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:50:51.364 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:50:51.451 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:50:51.607 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:50:51.695 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:50:51.864 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:50:51.965 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:50:52.083 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:50:52.212 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:50:52.281 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:50:52.410 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:50:52.478 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0917:53:45.674 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:53:45.901 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:53:46.007 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:53:46.172 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:53:46.254 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:53:46.339 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:53:46.355 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=404, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:53:46.426 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:53:46.649 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:53:46.771 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:53:46.922 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:53:46.999 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:53:47.166 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:53:47.245 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:53:47.335 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:53:47.480 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:53:47.538 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:53:47.686 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:53:47.788 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:53:47.883 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:53:48.001 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:53:48.064 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:53:48.219 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:53:48.300 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0917:55:35.916 [http-nio-8080-exec-1] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0917:55:35.934 [http-nio-8080-exec-1] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0917:55:40.105 [http-nio-8080-exec-1] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:57:56.792 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0917:57:57.041 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0917:57:57.151 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0917:57:57.324 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0917:57:57.457 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0917:57:57.564 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:57:57.579 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=406, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:57:57.654 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0917:57:57.902 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0917:57:58.020 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:57:58.165 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0917:57:58.256 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0917:57:58.389 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:57:58.472 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0917:57:58.559 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0917:57:58.680 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0917:57:58.745 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0917:57:58.914 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:57:58.987 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0917:57:59.077 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:57:59.199 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0917:57:59.279 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0917:57:59.424 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0917:57:59.488 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0918:00:51.969 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0918:00:52.211 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0918:00:52.319 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0918:00:52.507 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0918:00:52.589 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0918:00:52.682 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:00:52.697 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=408, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:00:52.783 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:00:53.029 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0918:00:53.137 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:00:53.293 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0918:00:53.362 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0918:00:53.493 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:00:53.571 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:00:53.657 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0918:00:53.825 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0918:00:53.891 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0918:00:54.021 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0918:00:54.091 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0918:00:54.175 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0918:00:54.294 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0918:00:54.352 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0918:00:54.483 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0918:00:54.561 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0918:02:49.714 [http-nio-8080-exec-7] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0918:02:49.729 [http-nio-8080-exec-7] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0918:02:53.824 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0918:04:01.332 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0918:04:01.804 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0918:04:01.960 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0918:04:02.132 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0918:04:02.241 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0918:04:02.336 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:04:02.352 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=410, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:04:02.429 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:04:02.682 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0918:04:02.793 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:04:02.936 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0918:04:03.021 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0918:04:03.171 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:04:03.250 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:04:03.345 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0918:04:03.472 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0918:04:03.535 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0918:04:03.673 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0918:04:03.752 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0918:04:03.839 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0918:04:03.962 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0918:04:04.056 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0918:04:04.180 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0918:04:04.246 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0918:04:56.300 [http-nio-8080-exec-7] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0918:04:56.315 [http-nio-8080-exec-7] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0918:05:00.396 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0918:15:48.582 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0918:15:48.860 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0918:15:48.954 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0918:15:49.174 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0918:15:49.271 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0918:15:49.363 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:15:49.382 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=412, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:15:49.450 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0918:15:49.660 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0918:15:49.799 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:15:49.945 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0918:15:50.012 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0918:15:50.160 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:15:50.240 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0918:15:50.323 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0918:15:50.482 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0918:15:50.544 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0918:15:50.679 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0918:15:50.752 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0918:15:50.865 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0918:15:50.986 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0918:15:51.049 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0918:15:51.178 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0918:15:51.243 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0918:41:10.039 [http-nio-8080-exec-1] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0918:41:10.057 [http-nio-8080-exec-1] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0918:41:14.522 [http-nio-8080-exec-1] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0919:57:14.321 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0919:57:14.580 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0919:57:14.668 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0919:57:14.823 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0919:57:14.910 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0919:57:14.994 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0919:57:15.013 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=414, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0919:57:15.085 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0919:57:15.303 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0919:57:15.413 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0919:57:15.553 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0919:57:15.626 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0919:57:15.781 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0919:57:15.863 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0919:57:15.956 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0919:57:16.072 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0919:57:16.133 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0919:57:16.264 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0919:57:16.345 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0919:57:16.445 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0919:57:16.560 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0919:57:16.625 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0919:57:16.761 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0919:57:16.824 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0919:58:02.933 [http-nio-8080-exec-7] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0919:58:02.948 [http-nio-8080-exec-7] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0919:58:07.179 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0919:59:40.338 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = TWilcox
+[INFO ] 2019-12-0919:59:50.212 [http-nio-8080-exec-8] AddEditTimeOffRequestServlet - In get, actionToPerform=edit
+[DEBUG] 2019-12-0920:00:01.583 [http-nio-8080-exec-9] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=2, startDate=2019-11-10T08:00, endDate='2019-11-11T17:00', userName='TWilcox'}
+[DEBUG] 2019-12-0920:05:06.058 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:05:06.314 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:05:06.411 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:05:06.653 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:05:06.740 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:05:06.832 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:05:06.847 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=416, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:05:06.917 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:05:07.135 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:05:07.237 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:05:07.379 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:05:07.446 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:05:07.581 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:05:07.688 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:05:07.786 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:05:07.912 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:05:07.978 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:05:08.134 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:05:08.217 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:05:08.313 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:05:08.429 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:05:08.491 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:05:08.631 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:05:08.726 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0920:05:41.730 [http-nio-8080-exec-5] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0920:05:41.742 [http-nio-8080-exec-5] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0920:05:45.893 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = admin
+[INFO ] 2019-12-0920:05:56.772 [http-nio-8080-exec-10] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0920:05:56.773 [http-nio-8080-exec-10] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0920:05:56.773 [http-nio-8080-exec-10] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:07:21.192 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:07:21.398 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:07:21.478 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:07:21.697 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:07:21.786 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:07:21.892 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:07:21.910 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=418, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:07:21.983 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:07:22.202 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:07:22.306 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:07:22.456 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:07:22.529 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:07:22.678 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:07:22.795 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:07:22.881 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:07:23.000 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:07:23.061 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:07:23.210 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:07:23.286 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:07:23.383 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:07:23.506 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:07:23.569 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:07:23.701 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:07:23.771 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0920:11:35.288 [http-nio-8080-exec-9] AddEditUserServlet - In post, userAction=edit
+[DEBUG] 2019-12-0920:13:31.793 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:13:32.087 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:13:32.183 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:13:32.392 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:13:32.484 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:13:32.567 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:13:32.582 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=420, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:13:32.665 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:13:33.006 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:13:33.142 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:13:33.279 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:13:33.368 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:13:33.543 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:13:33.620 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:13:33.712 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:13:33.838 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:13:33.910 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:13:34.041 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:13:34.111 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:13:34.207 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:13:34.327 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:13:34.386 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:13:34.522 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:13:34.592 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[INFO ] 2019-12-0920:14:08.509 [http-nio-8080-exec-4] LoginAction - The logged in user: admin has a role of Administrator: true
+[INFO ] 2019-12-0920:14:08.522 [http-nio-8080-exec-4] LoginAction - The logged in user: admin has a role of Manager: false
+[DEBUG] 2019-12-0920:14:12.480 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = admin
+[INFO ] 2019-12-0920:14:29.632 [http-nio-8080-exec-10] AddEditUserServlet - In post, userAction=edit
+[INFO ] 2019-12-0920:14:29.735 [http-nio-8080-exec-10] AddEditUserServlet - size of roleName is =1
+[INFO ] 2019-12-0920:14:29.736 [http-nio-8080-exec-10] AddEditUserServlet - ready to update role for user to: Front Of House
+[INFO ] 2019-12-0920:14:29.736 [http-nio-8080-exec-10] AddEditUserServlet - In updateRole method for id 5 with new role value of Front Of House
+[DEBUG] 2019-12-0920:14:29.853 [http-nio-8080-exec-10] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=5, role='Front Of House', user_name='JJackson'}
+[INFO ] 2019-12-0920:14:30.007 [http-nio-8080-exec-10] AddEditUserServlet - Role for id 5 is now set to Front Of House
+[DEBUG] 2019-12-0920:14:30.077 [http-nio-8080-exec-10] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=9, firstName='Jeffrey', lastName='Jackson', userName='JJackson', password='password', dateOfBirth=2000-08-18, startDate=2016-08-16, endDate=2019-12-31, roles=[Role{id=5, role='Front Of House', user_name='JJackson'}]}
+[INFO ] 2019-12-0920:14:30.158 [http-nio-8080-exec-10] AddEditUserServlet - updated user isUser{id=9, firstName='Jeffrey', lastName='Jackson', userName='JJackson', password='password', dateOfBirth=2000-08-18, startDate=2016-08-16, endDate=2019-12-31, roles=[Role{id=5, role='Front Of House', user_name='JJackson'}]}
+[INFO ] 2019-12-0920:14:34.323 [http-nio-8080-exec-1] AddEditUserServlet - In post, userAction=edit
+[INFO ] 2019-12-0920:14:34.397 [http-nio-8080-exec-1] AddEditUserServlet - size of roleName is =1
+[INFO ] 2019-12-0920:14:34.397 [http-nio-8080-exec-1] AddEditUserServlet - ready to update role for user to: Back Of House
+[INFO ] 2019-12-0920:14:34.397 [http-nio-8080-exec-1] AddEditUserServlet - In updateRole method for id 5 with new role value of Back Of House
+[DEBUG] 2019-12-0920:14:34.445 [http-nio-8080-exec-1] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=5, role='Back Of House', user_name='JJackson'}
+[INFO ] 2019-12-0920:14:34.493 [http-nio-8080-exec-1] AddEditUserServlet - Role for id 5 is now set to Back Of House
+[DEBUG] 2019-12-0920:14:34.536 [http-nio-8080-exec-1] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=9, firstName='Jeffrey', lastName='Jackson', userName='JJackson', password='password', dateOfBirth=2000-08-18, startDate=2016-08-16, endDate=2019-12-31, roles=[Role{id=5, role='Back Of House', user_name='JJackson'}]}
+[INFO ] 2019-12-0920:14:34.599 [http-nio-8080-exec-1] AddEditUserServlet - updated user isUser{id=9, firstName='Jeffrey', lastName='Jackson', userName='JJackson', password='password', dateOfBirth=2000-08-18, startDate=2016-08-16, endDate=2019-12-31, roles=[Role{id=5, role='Back Of House', user_name='JJackson'}]}
+[INFO ] 2019-12-0920:17:20.385 [http-nio-8080-exec-10] AddEditUserServlet - In post, userAction=add
+[DEBUG] 2019-12-0920:17:20.385 [http-nio-8080-exec-10] GenericDao - Searching for entity with userName = KFrancis
+[INFO ] 2019-12-0920:17:20.391 [http-nio-8080-exec-10] AddEditUserServlet - ready to add role to user - roleValue=Front Of House for user name KFrancis
+[INFO ] 2019-12-0920:17:20.391 [http-nio-8080-exec-10] AddEditUserServlet - After adding role(s) to user, User is: User{id=0, firstName='Keith', lastName='Francis', userName='KFrancis', password='password', dateOfBirth=1994-09-21, startDate=2019-01-01, endDate=2019-03-31, roles=[Role{id=0, role='Front Of House', user_name='KFrancis'}]}
+[DEBUG] 2019-12-0920:17:20.393 [http-nio-8080-exec-10] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Keith', lastName='Francis', userName='KFrancis', password='password', dateOfBirth=1994-09-21, startDate=2019-01-01, endDate=2019-03-31, roles=[Role{id=0, role='Front Of House', user_name='KFrancis'}]}
+[DEBUG] 2019-12-0920:43:20.850 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:43:21.150 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:43:21.240 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:43:21.454 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:43:21.562 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:43:21.659 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:43:21.679 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=422, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:43:21.767 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:43:22.024 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:43:22.172 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:43:22.313 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:43:22.380 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:43:22.516 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:43:22.594 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:43:22.681 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:43:22.826 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:43:22.897 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:43:23.059 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:43:23.176 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:43:23.311 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:43:23.438 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:43:23.505 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:43:23.641 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:43:23.708 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0920:45:08.338 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:45:08.575 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:45:08.665 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:45:08.811 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:45:08.896 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:45:08.983 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:45:08.997 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=424, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:45:09.067 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:45:09.307 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:45:09.425 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:45:09.564 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:45:09.626 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:45:09.755 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:45:09.843 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:45:09.924 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:45:10.055 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:45:10.118 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:45:10.258 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:45:10.336 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:45:10.426 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:45:10.557 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:45:10.610 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:45:10.730 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:45:10.800 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0920:46:59.629 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:46:59.861 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:46:59.944 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:47:00.094 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:47:00.177 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:47:00.265 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:47:00.278 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=426, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:47:00.346 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:47:00.573 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:47:00.696 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:47:00.842 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:47:00.928 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:47:01.062 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:47:01.141 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:47:01.235 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:47:01.359 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:47:01.431 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:47:01.574 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:47:01.643 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:47:01.731 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:47:01.848 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:47:01.943 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:47:02.070 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:47:02.148 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0920:48:25.634 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:48:25.897 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:48:25.985 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:48:26.165 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:48:26.277 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:48:26.393 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:48:26.410 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=428, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:48:26.486 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:48:26.816 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:48:26.978 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:48:27.109 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:48:27.173 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:48:27.318 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:48:27.402 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:48:27.497 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:48:27.629 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:48:27.692 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:48:27.849 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:48:27.932 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:48:28.029 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:48:28.158 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:48:28.222 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:48:28.358 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:48:28.425 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0920:50:00.395 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:50:00.624 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:50:00.718 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:50:00.883 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:50:00.994 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:50:01.104 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:50:01.125 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=430, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:50:01.204 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:50:01.417 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:50:01.517 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:50:01.644 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:50:01.710 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:50:01.855 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:50:01.937 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:50:02.021 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:50:02.139 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:50:02.201 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:50:02.337 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:50:02.406 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:50:02.497 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:50:02.623 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:50:02.709 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:50:02.866 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:50:02.935 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0920:51:57.769 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:51:58.031 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:51:58.125 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:51:58.279 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:51:58.366 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:51:58.458 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:51:58.474 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=432, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:51:58.545 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:51:58.786 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:51:58.905 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:51:59.076 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:51:59.145 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:51:59.286 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:51:59.362 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:51:59.452 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:51:59.575 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:51:59.659 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:51:59.814 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:51:59.892 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:51:59.976 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:52:00.123 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:52:00.188 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:52:00.355 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:52:00.428 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0920:54:56.452 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0920:54:56.669 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0920:54:56.756 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0920:54:56.976 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0920:54:57.064 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0920:54:57.160 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:54:57.176 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=434, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:54:57.257 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0920:54:57.478 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0920:54:57.614 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:54:57.749 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0920:54:57.817 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0920:54:57.960 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:54:58.041 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0920:54:58.140 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0920:54:58.262 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0920:54:58.327 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0920:54:58.470 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:54:58.575 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0920:54:58.670 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:54:58.796 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0920:54:58.862 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0920:54:58.993 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0920:54:59.067 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0921:01:21.780 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0921:01:22.033 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0921:01:22.121 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0921:01:22.300 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0921:01:22.443 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0921:01:22.589 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:01:22.624 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=436, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:01:22.731 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:01:22.972 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0921:01:23.098 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:01:23.274 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0921:01:23.353 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0921:01:23.494 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:01:23.583 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:01:23.682 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0921:01:23.829 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0921:01:23.904 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0921:01:24.029 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:01:24.103 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:01:24.189 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:01:24.311 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0921:01:24.373 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0921:01:24.500 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:01:24.563 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0921:04:53.222 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0921:04:53.574 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0921:04:53.680 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0921:04:53.964 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0921:04:54.070 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0921:04:54.174 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:04:54.209 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=438, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:04:54.347 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:04:54.609 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0921:04:54.720 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:04:54.859 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0921:04:54.927 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0921:04:55.090 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:04:55.176 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:04:55.271 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0921:04:55.427 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0921:04:55.491 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0921:04:55.632 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:04:55.715 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:04:55.845 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:04:56.016 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0921:04:56.110 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0921:04:56.309 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:04:56.381 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0921:09:52.857 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0921:09:53.167 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0921:09:53.262 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0921:09:53.431 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0921:09:53.516 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0921:09:53.613 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:09:53.629 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=440, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:09:53.702 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:09:54.218 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0921:09:54.316 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:09:54.449 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0921:09:54.515 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0921:09:54.665 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:09:54.740 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:09:54.842 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0921:09:55.006 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0921:09:55.074 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0921:09:55.221 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:09:55.308 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:09:55.398 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:09:55.528 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0921:09:55.595 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0921:09:55.735 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:09:55.810 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
+[DEBUG] 2019-12-0921:14:51.733 [main] GenericDao - Deleting class com.juliecortez.entity.Role Role{id=1, role='Administrator', user_name='admin'}
+[DEBUG] 2019-12-0921:14:51.969 [main] GenericDao - Searching for entity with role = Administrator
+[DEBUG] 2019-12-0921:14:52.048 [main] GenericDao - Searching for entity with role = M
+[DEBUG] 2019-12-0921:14:52.268 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Role Role{id=1, role='Manager', user_name='admin'}
+[DEBUG] 2019-12-0921:14:52.351 [main] GenericDao - Inserting class com.juliecortez.entity.Role Role{id=0, role='Busser', user_name='null'}
+[DEBUG] 2019-12-0921:14:52.437 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:14:52.455 [main] GenericDao - Deleting class com.juliecortez.entity.Schedule Schedule{id=442, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:14:52.532 [main] GenericDao - Inserting class com.juliecortez.entity.Schedule Schedule{id=0, startDate=2018-01-01, endDate=2018-01-08}
+[DEBUG] 2019-12-0921:14:52.740 [main] GenericDao - Saving or Updating class com.juliecortez.entity.Schedule Schedule{id=1, startDate=2019-11-12, endDate=2019-11-17}
+[DEBUG] 2019-12-0921:14:52.858 [main] GenericDao - Deleting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:14:53.022 [main] GenericDao - Searching for entity with startTime1 = open
+[DEBUG] 2019-12-0921:14:53.125 [main] GenericDao - Searching for entity with startTime1 = o
+[DEBUG] 2019-12-0921:14:53.255 [main] GenericDao - Saving or Updating class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=1, startTime1='09:00 AM', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:14:53.336 [main] GenericDao - Inserting class com.juliecortez.entity.ScheduleDetail ScheduleDetail{id=0, startTime1='open', endTime1='04:00 PM', startTime2='open', endTime2='04:00 PM', startTime3='open', endTime3='04:00 PM', startTime4='open', endTime4='04:00 PM', startTime5='open', endTime5='04:00 PM', startTime6='open', endTime6='02:00 PM', startTime7='open', endTime7='02:00 PM', userName='admin'}
+[DEBUG] 2019-12-0921:14:53.464 [main] GenericDao - Deleting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-11-15T15:00', userName='admin'}
+[DEBUG] 2019-12-0921:14:53.596 [main] GenericDao - Searching for entity with userName = admin
+[DEBUG] 2019-12-0921:14:53.680 [main] GenericDao - Searching for entity with userName = a
+[DEBUG] 2019-12-0921:14:53.875 [main] GenericDao - Saving or Updating class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=1, startDate=2019-11-15T08:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:14:53.993 [main] GenericDao - Inserting class com.juliecortez.entity.TimeOffRequest TimeOffRequest{id=0, startDate=2019-12-24T01:00, endDate='2019-12-24T23:00', userName='admin'}
+[DEBUG] 2019-12-0921:14:54.097 [main] GenericDao - Deleting class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Administrator', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:14:54.218 [main] GenericDao - Searching for entity with firstName = System
+[DEBUG] 2019-12-0921:14:54.282 [main] GenericDao - Searching for entity with lastName = A
+[DEBUG] 2019-12-0921:14:54.427 [main] GenericDao - Saving or Updating class com.juliecortez.entity.User User{id=1, firstName='System', lastName='Davis', userName='admin', password='password', dateOfBirth=2000-01-01, startDate=2019-01-01, endDate=9999-12-31, roles=[Role{id=1, role='Administrator', user_name='admin'}]}
+[DEBUG] 2019-12-0921:14:54.498 [main] GenericDao - Inserting class com.juliecortez.entity.User User{id=0, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='password', dateOfBirth=1968-01-01, startDate=2015-08-16, endDate=9999-12-31, roles=[Role{id=0, role='Front Of House', user_name='null'}]}
