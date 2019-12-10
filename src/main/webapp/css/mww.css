@@ -14,7 +14,13 @@
     color: #B84014;
 }
 
-
+img {
+    max-width: 100%;
+}
+#headerPicture {
+    padding: 0;
+    margin: 0 0 0 0;
+}
 body, footer {
     background-color: #F7F0D4;
 }
