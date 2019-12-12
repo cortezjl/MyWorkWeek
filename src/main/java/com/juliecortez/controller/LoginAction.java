@@ -36,21 +36,13 @@ public class LoginAction extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("The logged in user: " + request.getRemoteUser() + " has a role of Administrator: " + request.isUserInRole("Administrator"));
-        logger.info("The logged in user: " + request.getRemoteUser() + " has a role of Manager: " + request.isUserInRole("Manager"));
+        logger.debug("The logged in user: " + request.getRemoteUser() + " has a role of Administrator: " + request.isUserInRole("Administrator"));
+        logger.debug("The logged in user: " + request.getRemoteUser() + " has a role of Manager: " + request.isUserInRole("Manager"));
         // get the session from the request
         HttpSession session = request.getSession();
 
-        // get the user name value for the user that is logged in
-        String remoteUserId = request.getRemoteUser();
-
-        // Instantiate a generic DAO for the User object and get the user data to display their name on the web page
-        User user = (User)genericDao.getByPropertyEqual("userName",remoteUserId).get(0);
-
-        // format the welcome message to display
-        String welcomeMessage = "Welcome " + user.getFirstName() + " " + user.getLastName();
-        // set the welcome message as a session attribute
-        session.setAttribute("welcomeUser", welcomeMessage);
+        // get the user name value for the user that is logged in and set a session attribute
+        session.setAttribute("remoteUser", request.getRemoteUser());
 
         // forward the request to the home page
         RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
