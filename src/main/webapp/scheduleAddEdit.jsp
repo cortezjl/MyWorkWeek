@@ -16,7 +16,6 @@
             </c:if>
         </h2>
         <p class="text-right"><a href="searchTimeOffRequest?searchType=weeklyRequests&searchValue=${schedule.startDate} 00:00" target="_blank">View Time Off Requests for the week</a></p>
-        <br/>
 
         <form id="editScheduleForm" role="form" data-toggle="validator"
                    class="form-horizontal"
@@ -55,12 +54,18 @@
                        readonly
                        value = "${schedule.getEndDateForDisplay()}">
             </div>
+        </div>
 
-            <div class="col-1 col-sm-4 ">
-                <!-- TODO Add link to displays time off requests for the schedule week in a new window -->
+
+        <div class="row">
+            <div class="col-0 col-sm-2"></div>
+            <div class="col-12 col-sm-4">
+                <h3 class="text-sm-left">${scheduleMessage}</h3>
             </div>
-
-            <br><br><br>
+            <c:if test="${scheduleMessage != null}" >
+                <c:remove var="scheduleMessage"  />
+            </c:if>
+            <div class="col-0 col-sm-6"></div>
         </div>
 
         <table id="scheduleTable"  class="table table-striped table-bordered display dt-responsive nowrap"  >
@@ -97,16 +102,6 @@
             </c:forEach>
         </table>
 
-        <div class="row">
-            <div class="col-0 col-sm-2"></div>
-            <div class="col-12 col-sm-4">
-                <h3 class="text-sm-left">${scheduleMessage}</h3>
-            </div>
-            <c:if test="${scheduleMessage != null}" >
-                <c:remove var="scheduleMessage"  />
-            </c:if>
-            <div class="col-0 col-sm-6"></div>
-        </div>
 
         <div class="row">
             <div class="col-4 col-sm-5"></div>
