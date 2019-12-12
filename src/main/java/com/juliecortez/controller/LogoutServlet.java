@@ -19,8 +19,8 @@ public class LogoutServlet extends HttpServlet{
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // get session from the request
         HttpSession session = request.getSession();
-        // remove welcome message for user that is displayed on the navigation bar
-        session.removeAttribute( "welcomeUser" );
+        // remove attribute for user that is displayed on the navigation bar
+        session.removeAttribute( "remoteUser" );
         // invalidate the session for the user
         session.invalidate();
         // sent user back to home page
