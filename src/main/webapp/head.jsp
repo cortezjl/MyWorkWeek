@@ -1,3 +1,4 @@
+<%@include file="taglib.jsp"%>
 <!DOCTYPE html lang="en">
 <%--
   User: JCortez
