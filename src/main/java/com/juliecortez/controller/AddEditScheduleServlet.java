@@ -16,11 +16,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Enumeration;
 import java.util.List;
 
 /**
@@ -53,7 +51,6 @@ public class AddEditScheduleServlet extends HttpServlet {
             // set values in the schedule details from the form.
             schedule = setScheduleDetailValues(request, schedule, actionToPerform);
             idToProcess = scheduleDao.insert(schedule);
-            message = "Schedule has been added";
             Schedule scheduleAdded = (Schedule) scheduleDao.getById(idToProcess);
             request.setAttribute("userAction", "edit");
             request.setAttribute("schedule", scheduleAdded);
@@ -183,7 +180,6 @@ public class AddEditScheduleServlet extends HttpServlet {
         String[] scheduleDetailValues = request.getParameterValues("detail");
         // Loop through the list of schedule detail values and add or update the schedule(s) to the schedule object
         int fieldCounter = 0;
-        int idBeingProcessed = 0;
         for (String fieldValue : scheduleDetailValues) {
             // add 1 to field counter
             fieldCounter = fieldCounter + 1;
@@ -191,13 +187,11 @@ public class AddEditScheduleServlet extends HttpServlet {
                 scheduleDetail = new ScheduleDetail();
             } else if (fieldCounter == 1 && actionToPerform.equals("edit")) {
                 // find the existing ScheduleDetail matching by id
-                idBeingProcessed = Integer.parseInt(fieldValue);
-                scheduleDetail = (ScheduleDetail)scheduleDetailDao.getById(idBeingProcessed);
+                scheduleDetail = (ScheduleDetail)scheduleDetailDao.getById(Integer.parseInt(fieldValue));
             }
 
             // add the field value from the form to the schedule detail based on the fieldCounter value
-            addfieldToScheduleDetail(scheduleDetailDao, scheduleDetail, fieldValue, fieldCounter, request.getParameter("userAction"));
-            // reset counter, fieldCounter is for the number of schedule detail fields to populate from form information
+            scheduleDetail = addfieldToScheduleDetail(scheduleDetail, fieldValue, fieldCounter);
 
             // there are 16 fields we use values from, so after done with field 16 can add or update the schedule detail record
             if (fieldCounter == 16 && actionToPerform.equals("add")) {
@@ -205,7 +199,7 @@ public class AddEditScheduleServlet extends HttpServlet {
             } else if (fieldCounter == 16 && actionToPerform.equals("edit")) {
                 scheduleDetailDao.saveOrUpdate(scheduleDetail);
             }
-
+            // reset counter, fieldCounter is for the number of schedule detail fields to populate from form information
             if (fieldCounter == 16) {
                 // all fields processed, so reset counter for next record (if there is one)
                 fieldCounter = 0;
@@ -218,17 +212,14 @@ public class AddEditScheduleServlet extends HttpServlet {
      * This method will sets the values in the schedule detail fields that are associated with the schedule
      * the fields are set to the values from the form
      *
-     * @param scheduleDetailDao dao associated with the schedule detail
      * @param scheduleDetail   the schedule detail being added or updated
      * @param fieldValue the field value from the form that is being processed
      * @param fieldNumber  a counter value being used to keep track of what field the value from the form is for
-     * @param actionToPerform set to either add or edit
      * @return Schedule the updated schedule and schedule detail information
      */
-    private ScheduleDetail addfieldToScheduleDetail(GenericDao<ScheduleDetail> scheduleDetailDao, ScheduleDetail scheduleDetail, String fieldValue, Integer fieldNumber, String actionToPerform) {
-        if (fieldNumber == 1) {
-            // field number 1 is id
-        } else if (fieldNumber == 2) {
+    private ScheduleDetail addfieldToScheduleDetail(ScheduleDetail scheduleDetail, String fieldValue, Integer fieldNumber) {
+        // field number 1 is id which is a hidden field, don't need to set that value from the form
+        if (fieldNumber == 2) {
             // second field for schedule details form is userName
             scheduleDetail.setUserName(fieldValue);
             scheduleDetail.setUser(getUserByUserName(fieldValue));
@@ -291,7 +282,6 @@ public class AddEditScheduleServlet extends HttpServlet {
         // retrieve qualifying users for the user name value
         List<User> userList = userDao.getByPropertyEqual("userName", userName);
         // set to the first entry in the list returned of qualifying users
-        User user = userList.get(0);
-        return user;
+        return userList.get(0);
     }
 }
