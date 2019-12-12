@@ -10,6 +10,9 @@ public class Main {
 	@JsonProperty("temp")
 	private double temp;
 
+	@JsonProperty("feels_like")
+	private double feelsLike;
+
 	@JsonProperty("pressure")
 	private int pressure;
 
@@ -31,6 +34,10 @@ public class Main {
 	public double getTemp(){
 		return temp;
 	}
+
+	public double getFeelsLike() { return feelsLike; 	}
+
+	public void setFeelsLike(double feelsLike) { this.feelsLike = feelsLike; }
 
 	public void setTempMin(double tempMin){
 		this.tempMin = tempMin;
