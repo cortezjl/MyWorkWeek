@@ -22,9 +22,7 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Properties;
 
 
 /**
@@ -38,12 +36,10 @@ import java.util.Properties;
 
 public class AddEditTimeOffRequestServlet extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a");
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String actionToPerform = request.getParameter("actionToPerform");
-        // logger.info("In post, action to perform is= " + actionToPerform);
         int idToProcess = 0;
         String message = "";
         GenericDao timeOffRequestDao = new GenericDao(TimeOffRequest.class);
@@ -63,12 +59,10 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
                 request.setAttribute("timeOffRequestAction", "add");
             } else {
                 // user name is valid, can add the time off request
-                logger.info("startDate value is: " + request.getParameter("startDate"));
                 TimeOffRequest timeOffRequest = new TimeOffRequest(request.getParameter("userName"),
                         LocalDateTime.parse((request.getParameter("startDate"))),
                         LocalDateTime.parse((request.getParameter("endDate"))),
                         userList.get(0));
-                logger.info("ready to insert");
                 idToProcess = timeOffRequestDao.insert(timeOffRequest);
                 message = "Time off request has been added";
                 TimeOffRequest timeOffRequestAdded = (TimeOffRequest) timeOffRequestDao.getById(idToProcess);
@@ -78,6 +72,7 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
         } else if (actionToPerform.equals("edit")) {
             // Set id of time off request to edit
             idToProcess = Integer.valueOf(request.getParameter("id"));
+            logger.info("post will update time off request for id#" + idToProcess);
             // Create time off request object and populate by retrieving TimeOffRequest object values by id
             TimeOffRequest timeOffRequest = (TimeOffRequest)timeOffRequestDao.getById(idToProcess);
             // Update fields from values changed on the screen
@@ -87,9 +82,7 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
             message = "Time off request has been updated";
             request.setAttribute("timeOffRequest",(TimeOffRequest)timeOffRequestDao.getById(idToProcess));
         }
-        // Access the session
-        HttpSession session = request.getSession();
-        // Add a message from adding or updating the User to the session.
+        // Add a message from adding or updating the User
         request.setAttribute("timeOffRequestUpdateMessage", message);
         // forward the request to the page to add or edit a time off request
         RequestDispatcher dispatcher = request.getRequestDispatcher("/timeOffRequestAddEdit.jsp");
@@ -101,7 +94,6 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
         GenericDao timeOffRequestDao = new GenericDao(TimeOffRequest.class);
         String actionToPerform = request.getParameter("timeOffRequestAction");
         // set request attributes based on the action to perform (add or edit)
-        logger.info("In get, actionToPerform=" + actionToPerform);
         if (actionToPerform.equals("edit")) {
             request.setAttribute("timeOffRequest",timeOffRequestDao.getById(Integer.valueOf(request.getParameter("id"))));
             request.setAttribute("timeOffRequestAction", "edit");
@@ -114,7 +106,6 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
         HttpSession session = request.getSession();
         if (session.getAttribute ("currentWeather") == null) {
             session.setAttribute("currentWeather", getCurrentWeather());
-            System.out.println("setting current weather attribute as: " + session.getAttribute("currentWeather"));
         }
 
         // forward the request to the page to add or edit a time off request
@@ -159,14 +150,12 @@ public class AddEditTimeOffRequestServlet extends HttpServlet {
                 client.target("https://api.openweathermap.org/data/2.5/weather?zip=53598,us&units=imperial&APPID=" + apiKey);
         // Identify the type of request we want from the target and return a string
         String apiResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        //logger.info("api response= " + apiResponse);
         // Use ObjectMapper from Jackson library to help map the response
         ObjectMapper mapper = new ObjectMapper();
         /// Map the response
         WeatherResponse weatherResponse = mapper.readValue(apiResponse, WeatherResponse.class);
         // Put together the string to display on the screen with the temperature and description of current weather condition
         String weatherInfo = ("Current weather:  " + weatherResponse.getMain().getTemp() + "\u00B0" +  "F " + weatherResponse.getWeather().get(0).getDescription());
-        //logger.info("current weather is: " + weatherInfo);
 
         return weatherInfo;
     }
