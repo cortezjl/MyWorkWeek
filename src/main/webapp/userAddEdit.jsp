@@ -145,7 +145,10 @@
                 <div class="col-1 col-sm-1">
                     <button type="button" class="btn btn-success fa fa-plus" data-toggle="modal" data-target="#roleModal">
                     </button>  <!-- Button to Open the Modal to add a role -->
-
+                    <input type="hidden"
+                           name="additionalRoleSelected"  id="additionalRoleSelected"
+                           value=""
+                    />
                 </div>
                 <div class="col-10 col-sm-9"></div>
             </div>
@@ -238,12 +241,18 @@
                 </div> <!-- Modal Body -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success" id="roleModalSave">Submit</button>
                 </div> <!-- Modal Footer -->
             </form>
         </div> <!-- Modal Content -->
     </div> <!-- Modal Dialog -->
 </div> <!-- Modal for additional role -->
-
+<script>
+    $('#roleModal').on('click', 'btn-success', function(){
+        var value = $('#roleToAdd').val(); <!-- get value selected on the modal -->
+        $('#additionalRoleSelected').val(value);  <!-- set value selected on the hidden field on this page -->
+        $('#roleModal').modal('hide');
+    });
+</script>
 </body>
 </html>
