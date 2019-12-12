@@ -2,6 +2,7 @@
 <%@include file="head.jsp"%>
 <c:set var="title" value="Schedules" />
 <script src="js/schedules.js"></script>
+<c:set var="title" value="Schedules" />
 <html lang="en">
 <body>
 
