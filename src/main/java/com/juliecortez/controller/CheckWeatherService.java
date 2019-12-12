@@ -38,7 +38,7 @@ public class CheckWeatherService extends PropertiesLoader {
         // call the api with a get request and get back a response to be able to check the status
         // Identify the type of request we want from the target and return a string
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        //System.out.println(response);
+        //logger.info(response);
         // Use ObjectMapper from Jackson library to help map the response
         ObjectMapper mapper = new ObjectMapper();
         /// Map the response
