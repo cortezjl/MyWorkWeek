@@ -1,6 +1,5 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
-
 <c:set var="title" value="Schedule Search Results" />
 <html lang="en">
 <body>
