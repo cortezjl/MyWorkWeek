@@ -37,6 +37,7 @@ public class AddEditUserServlet extends HttpServlet {
         // retrieve parameter of action to perform (add or edit)
         String actionToPerform = request.getParameter("actionToPerform");
         logger.info("In post, userAction=" + actionToPerform);
+        System.out.println("additionalRoleSelected= " + request.getParameter("additionalRoleSelected"));
         int idToProcess = 0;
         String message = "";
         List<User> users = null;
