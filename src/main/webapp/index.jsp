@@ -1,5 +1,6 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
+<c:set var="title" value="Index" />
 <html lang="en">
 <body>
 
