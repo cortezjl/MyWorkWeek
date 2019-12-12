@@ -32,16 +32,26 @@
             </li>
         </ul>
 
+        <!-- get user name if user logged into session.  Will use that value to set either login or logout icon
+        getSession(false) will check existence of session. If session exists, then it returns the reference of that
+        session object, if not, this methods will return null   -->
 
-        <c:if test="${welcomeUser == null}">
+        <!--if(sessionUserName!=null && request.getSession(false)!=null && session.getAttribute("remoteUser")==null) -->
+
+        <%
+            String sessionUserName = request.getRemoteUser();
+            session.setAttribute("remoteUser", sessionUserName);
+        %>
+
+        <c:if test="${remoteUser == null}">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" ><a class="nav-link" href="loginAction"><i class="fa fa-fw fa-sign-in"></i>Login</a></li><!--uses fixed width font awesome sign-in icon -->
+                <li class="nav-item" ><a class="nav-link" href="loginAction"><i class="fa fa-fw fa-sign-in"></i>Login</a></li><!--uses font awesome sign-in icon -->
             </ul>
         </c:if>
 
-        <c:if test="${welcomeUser != null}">
+        <c:if test="${remoteUser != null}">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" ><i class="fa fa-fw"></i>${welcomeUser}</li><!--uses fixed width font awesome sign-in icon -->
+                <li class="nav-item" ><i class="fa fa-fw"></i>Welcome ${remoteUser}</li><!--uses font awesome sign-out icon -->
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" ><a class="nav-link" href="logout"><i class="fa fa-fw fa-sign-out"></i>Logout</a></li><!--uses fixed width font awesome sign-in icon -->
